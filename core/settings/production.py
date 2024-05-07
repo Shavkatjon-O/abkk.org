@@ -1,7 +1,7 @@
 from core.settings.base import *
 
 ALLOWED_HOSTS = [
-    "tempo-clone.dev-space.uz",
+    "abkk-org.dev-space.uz",
 ]
 
 DEBUG = False
