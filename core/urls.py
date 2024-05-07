@@ -4,9 +4,16 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 
+def index(request):
+    from django.shortcuts import render
+
+    return render(request, "index.html")
+
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("rosetta/", include("rosetta.urls")),
+    path("", index),
 ]
 
 if settings.DEBUG:
