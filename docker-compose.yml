@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  db:
+    container_name: tempo_clone_db
+    image: postgres:16
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
+      - POSTGRES_HOST=${DB_HOST}
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_PORT=${DB_PORT}
+    restart: always
+
+  django:
+    container_name: tempo_clone_django
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:${DJANGO_WEB_PORT} --workers=4
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ./:/app
+      - ./static:/home/app/web/static
+      - ./media:/home/app/web/media
+      - ./locale:/home/app/web/locale
+    env_file:
+      - .env
+    environment:
+      - TZ=Asia/Tashkent
+    ports:
+      - ${DJANGO_WEB_PORT}:${DJANGO_WEB_PORT}
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

@@ -1,0 +1,14 @@
+.idea
+*.iws
+*.iml
+*.ipr
+venv
+env
+.DS_Store
+__pycache__/
+*.py[cod]
+.git
+.cache
+README.md
+.vscode
+db.sqlite3
