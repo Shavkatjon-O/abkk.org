@@ -43,7 +43,7 @@ jobs:
             echo "DB_PORT=5432" >> .env
 
             echo "DJANGO_SETTINGS_MODULE=core.settings.production" >> .env
-            echo "DJANGO_WEB_PORT=8002" >> .env
+            echo "DJANGO_WEB_PORT=8003" >> .env
 
             echo "TELEGRAM_CHAT_ID=-4124140593" >> .env
             echo "TELEGRAM_BOT_TOKEN=6294802650:AAFenYBdnVhD_ZJpElqNqRndymxk8GhMhFE" >> .env
