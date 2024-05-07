@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   db:
-    container_name: tempo_clone_db
+    container_name: abkk_db
     image: postgres:16
     volumes:
       - postgres_data:/var/lib/postgresql/data/
@@ -15,7 +15,7 @@ services:
     restart: always
 
   django:
-    container_name: tempo_clone_django
+    container_name: abkk_django
     restart: always
     build:
       context: .
