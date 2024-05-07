@@ -25,8 +25,8 @@ services:
       - seccomp:unconfined
     volumes:
       - ./:/app
-      - ./static:/home/app/web/static
-      - ./media:/home/app/web/media
+      - ./staticfiles:/home/app/web/staticfiles
+      - ./mediafiles:/home/app/web/mediafiles
       - ./locale:/home/app/web/locale
     env_file:
       - .env
