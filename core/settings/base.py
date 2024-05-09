@@ -96,11 +96,11 @@ LANGUAGES = (
 LOCALE_PATHS = (BASE_DIR / "locale/",)
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = (BASE_DIR / "static",)
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = (BASE_DIR / "staticfiles",)
+STATIC_ROOT = BASE_DIR / "static"
 
 MEDIA_URL = "media/"
-MEDIA_ROOT = BASE_DIR / "mediafiles"
+MEDIA_ROOT = BASE_DIR / "media"
 
 TAILWIND_APP_NAME = "theme"
 INTERNAL_IPS = [
