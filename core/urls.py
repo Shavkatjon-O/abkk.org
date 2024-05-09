@@ -7,7 +7,7 @@ from django.conf import settings
 def index(request):
     from django.shortcuts import render
 
-    return render(request, "index.html")
+    return render(request, "home.html")
 
 
 urlpatterns = [
