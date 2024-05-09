@@ -1,8 +1,7 @@
 from core.settings.base import *
 
 ALLOWED_HOSTS = [
-    # "abkk-org.dev-space.uz",
-    "*",
+    "abkk-org.dev-space.uz",
 ]
 
 DEBUG = False
