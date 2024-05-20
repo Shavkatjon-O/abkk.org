@@ -44,8 +44,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'footer-blue': '#2588FA',
-                'footer-green': '#11DAAD',
+                'custom-blue': '#2588FA',
+                'custom-green': '#11DAAD',
             },
             fontFamily: {
                 'pt-sans': ['PT Sans Caption', 'sans-serif'],
