@@ -1,1 +1,32 @@
 {% load static %}
+
+<header class="bg-gray-100">
+  <div class="px-8">
+    <div class="py-8 flex justify-between items-center">
+
+      <div>
+        <a href="">
+          <img class="w-52" src="{% static 'img/logo.png' %}">
+        </a>
+      </div>
+
+      <nav class="hidden xl:flex uppercase space-x-6">
+        <a href="" class="hover:text-green-500 transition-all duration-200">о нас</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">белбогли кураш</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">соревнования</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">мероприятия</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">галерея</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">контакты</a>
+      </nav>
+
+      <div class="hidden w-52 xl:flex justify-end">
+        <select class="rounded-md">
+          <option value="">🇷🇺 Russian</option>
+          <option value="">🇺🇿 Uzbek</option>
+          <option value="">🇬🇧 English</option>
+        </select>
+      </div>
+
+    </div>
+  </div>
+</header>
