@@ -27,6 +27,32 @@
         </select>
       </div>
 
+      <div class="xl:hidden">
+        <button id="mobile-menu-button" class="w-12 h-12 space-y-1 flex flex-col justify-center items-center bg-green-500 rounded-full">
+          <div class="w-6 h-1 rounded-full bg-white"></div>
+          <div class="w-6 h-1 rounded-full bg-white"></div>
+          <div class="w-6 h-1 rounded-full bg-white"></div>
+        </button>
+      </div>
+
     </div>
   </div>
 </header>
+
+<div class="hidden" id="mobile-menu">
+  <div class="px-2 pt-2 pb-3 space-y-1">
+    <a href="#" class="block text-gray-700 hover:text-gray-900">Home</a>
+    <a href="#" class="block text-gray-700 hover:text-gray-900">About</a>
+    <a href="#" class="block text-gray-700 hover:text-gray-900">Services</a>
+    <a href="#" class="block text-gray-700 hover:text-gray-900">Contact</a>
+  </div>
+</div>
+
+<script>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
