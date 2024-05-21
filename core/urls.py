@@ -14,6 +14,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("rosetta/", include("rosetta.urls")),
     path("", index),
+    path("about/", include("about.urls")),
 ]
 
 if settings.DEBUG:
