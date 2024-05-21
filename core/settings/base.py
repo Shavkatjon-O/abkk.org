@@ -20,6 +20,7 @@ DJANGO_APPS = [
 CUSTOM_APPS = [
     "common",
     "theme",
+    "about",
 ]
 
 THIRD_PARTY_APPS = [
