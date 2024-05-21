@@ -1,260 +1,266 @@
 {% load static %}
 <header class="bg-blue-50">
-    <div class="px-8">
-        <div class="h-32 flex justify-between items-center">
-            <div>
-                <a href="">
-                    <img class="w-52" src="{% static 'img/logo.png' %}">
-                </a>
-            </div>
-            <nav class="hidden xl:flex uppercase space-x-6">
-                <!-- <a href="" class="hover:text-green-500 transition-all duration-200">о нас</a>
-                <a href="" class="hover:text-green-500 transition-all duration-200">белбогли кураш</a>
-                <a href="" class="hover:text-green-500 transition-all duration-200">соревнования</a>
-                <a href="" class="hover:text-green-500 transition-all duration-200">мероприятия</a>
-                <a href="" class="hover:text-green-500 transition-all duration-200">галерея</a>
-                <a href="" class="hover:text-green-500 transition-all duration-200">контакты</a> -->
-                <div class="flex items-center justify-center">
-                    <div class="group relative cursor-pointer ">
-                        <div class="flex items-center justify-between space-x-5 px-4">
-                          <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
-                            О нас
-                          </a>
-                          <span>
-                              <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="1.5"
-                                  stroke="currentColor"
-                                  class="h-6 w-6"
-                              >
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                              </svg>
-                          </span>
-                      </div>
+  <div class="px-8">
+    <div class="h-32 flex justify-between items-center">
+      <div>
+        <a href="">
+          <img class="w-52" src="{% static 'img/logo.png' %}">
+        </a>
+      </div>
+      <nav class="hidden xl:flex uppercase space-x-6">
+        <!-- <a href="" class="hover:text-green-500 transition-all duration-200">о нас</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">белбогли кураш</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">соревнования</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">мероприятия</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">галерея</a>
+        <a href="" class="hover:text-green-500 transition-all duration-200">контакты</a> -->
+        <div class="flex items-center justify-center">
+            <div class="group relative cursor-pointer ">
+                <div class="flex items-center justify-between space-x-5 px-4">
+                  <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
+                    О нас
+                  </a>
+                  <span>
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="h-6 w-6"
+                      >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                      </svg>
+                  </span>
+              </div>
 
 
-                        <div class="text-sm invisible absolute z-50 flex flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                              О Азиатской конфедерации белбогли кураш
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Monday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Tuesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Wednesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Thursday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Friday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Saturday
-                            </a>
-                        </div>
-                    </div>
-                    <div class="group relative cursor-pointer ">
-                        <div class="flex items-center justify-between space-x-5 px-4">
-                            <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
-                                o nas
-                            </a>
-                            <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="h-6 w-6"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Sunday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Monday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Tuesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Wednesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Thursday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Friday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Saturday
-                            </a>
-                        </div>
-                    </div>
-                    <div class="group relative cursor-pointer ">
-                        <div class="flex items-center justify-between space-x-5 px-4">
-                            <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
-                                o nas
-                            </a>
-                            <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="h-6 w-6"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Sunday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Monday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Tuesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Wednesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Thursday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Friday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Saturday
-                            </a>
-                        </div>
-                    </div>
-                    <div class="group relative cursor-pointer ">
-                        <div class="flex items-center justify-between space-x-5 px-4">
-                            <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
-                                o nas
-                            </a>
-                            <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="h-6 w-6"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Sunday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Monday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Tuesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Wednesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Thursday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Friday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Saturday
-                            </a>
-                        </div>
-                    </div>
-                    <div class="group relative cursor-pointer ">
-                        <div class="flex items-center justify-between space-x-5 px-4">
-                            <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
-                                o nas
-                            </a>
-                            <span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="h-6 w-6"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Sunday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Monday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Tuesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Wednesday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Thursday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Friday
-                            </a>
-                            <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                Saturday
-                            </a>
-                        </div>
-                    </div>
+                <div class="text-sm invisible absolute z-50 flex flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                      О Азиатской конфедерации белбогли кураш
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Monday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Tuesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Wednesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Thursday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Friday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Saturday
+                    </a>
                 </div>
-            </nav>
-            <div class="hidden w-52 xl:flex justify-end">
-                <select class="rounded-md appearance-none focus:ring-0 border-none bg-green-500 text-white">
-                    <option value="">🇷🇺 Russian</option>
-                    <option value="">🇺🇿 Uzbek</option>
-                    <option value="">🇬🇧 English</option>
-                </select>
             </div>
-            <div class="xl:hidden">
-                <button id="mobile-menu-button" class="w-12 h-12 space-y-1 flex flex-col justify-center items-center bg-green-500 rounded-full">
-                    <div class="w-6 h-1 rounded-full bg-white"></div>
-                    <div class="w-6 h-1 rounded-full bg-white"></div>
-                    <div class="w-6 h-1 rounded-full bg-white"></div>
-                </button>
+            <div class="group relative cursor-pointer ">
+                <div class="flex items-center justify-between space-x-5 px-4">
+                    <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
+                        o nas
+                    </a>
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Sunday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Monday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Tuesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Wednesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Thursday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Friday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Saturday
+                    </a>
+                </div>
+            </div>
+            <div class="group relative cursor-pointer ">
+                <div class="flex items-center justify-between space-x-5 px-4">
+                    <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
+                        o nas
+                    </a>
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Sunday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Monday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Tuesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Wednesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Thursday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Friday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Saturday
+                    </a>
+                </div>
+            </div>
+            <div class="group relative cursor-pointer ">
+                <div class="flex items-center justify-between space-x-5 px-4">
+                    <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
+                        o nas
+                    </a>
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Sunday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Monday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Tuesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Wednesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Thursday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Friday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Saturday
+                    </a>
+                </div>
+            </div>
+            <div class="group relative cursor-pointer ">
+                <div class="flex items-center justify-between space-x-5 px-4">
+                    <a class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4" onClick="">
+                        o nas
+                    </a>
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Sunday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Monday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Tuesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Wednesday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Thursday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Friday
+                    </a>
+                    <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Saturday
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</header>
-<div class="hidden xl:hidden absolute w-full" id="mobile-menu">
-    <div class="p-8 bg-gradient-to-tr from-white to-blue-200 shadow-sm">
-        <select class="rounded-md appearance-none focus:ring-0 border-none bg-green-500 text-white w-full">
-            <option value="">🇷🇺 Russian</option>
-            <option value="">🇺🇿 Uzbek</option>
-            <option value="">🇬🇧 English</option>
+      </nav>
+      <div class="hidden w-52 xl:flex justify-end">
+        <select class="rounded-md appearance-none focus:ring-0 border-none bg-green-500 text-white">
+          <option value="">🇷🇺 Russian</option>
+          <option value="">🇺🇿 Uzbek</option>
+          <option value="">🇬🇧 English</option>
         </select>
+      </div>
+      <div class="xl:hidden">
+        <button id="mobile-menu-button" class="w-12 h-12 space-y-1 flex flex-col justify-center items-center bg-green-500 rounded-full">
+          <div class="w-6 h-1 rounded-full bg-white"></div>
+          <div class="w-6 h-1 rounded-full bg-white"></div>
+          <div class="w-6 h-1 rounded-full bg-white"></div>
+        </button>
+      </div>
     </div>
+  </div>
+</header>
+
+<!-- header menu mobile view -->
+
+<div class="hidden xl:hidden absolute w-full" id="mobile-menu">
+  <div class="p-8 bg-gradient-to-tr from-white to-blue-200 shadow-sm">
+    <select class="rounded-md appearance-none focus:ring-0 border-none bg-green-500 text-white w-full">
+      <option value="">🇷🇺 Russian</option>
+      <option value="">🇺🇿 Uzbek</option>
+      <option value="">🇬🇧 English</option>
+    </select>
+  </div>
 </div>
+
+<!-- header menu toggler script -->
+
 <script>
   const menuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
