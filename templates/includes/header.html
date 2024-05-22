@@ -182,8 +182,19 @@
 <script>
   const menuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
+  const menuItems = document.querySelectorAll('.relative.group');
 
   menuButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+  });
+
+  menuItems.forEach((item) => {
+    const parentLink = item.querySelector('a');
+    const subMenu = item.querySelector('.pl-4');
+
+    parentLink.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent the default link behavior
+      subMenu.classList.toggle('hidden');
+    });
   });
 </script>
