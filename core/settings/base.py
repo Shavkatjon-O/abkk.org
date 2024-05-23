@@ -27,6 +27,7 @@ THIRD_PARTY_APPS = [
     "tailwind",
     "rosetta",
     "django_browser_reload",
+    "django_ckeditor_5",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PARTY_APPS

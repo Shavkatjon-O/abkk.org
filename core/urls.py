@@ -8,6 +8,7 @@ from common.views import home_page_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("ckeditor5/", include("django_ckeditor_5.urls")),
     path("rosetta/", include("rosetta.urls")),
     path("", home_page_view),
     path("about/", include("about.urls")),
