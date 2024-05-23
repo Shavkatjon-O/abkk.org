@@ -27,6 +27,7 @@ THIRD_PARTY_APPS = [
     "tailwind",
     "rosetta",
     "django_browser_reload",
+    "django_ckeditor_5",
     "ckeditor",
 ]
 
