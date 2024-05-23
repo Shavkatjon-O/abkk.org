@@ -1,8 +1,14 @@
 from django.views.generic import TemplateView
+from about import models
 
 
 class ConfederationTemplateView(TemplateView):
     template_name = "about/confederation.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["common_objects"] = models.Common.objects.first()
+        return context
 
 
 class GuidesTemplateView(TemplateView):
