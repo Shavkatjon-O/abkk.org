@@ -24,10 +24,10 @@ CUSTOM_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    "tailwind",
     "rosetta",
+    "tailwind",
     "django_browser_reload",
-    "django_ckeditor_5",
+    "ckeditor",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PARTY_APPS
@@ -109,3 +109,13 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 NPM_BIN_PATH = env.str("NPM_BIN_PATH")
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_CONFIGS = {
+    "default": {
+        "toolbar": "full",
+        "height": "full",
+        "width": "full",
+    },
+}

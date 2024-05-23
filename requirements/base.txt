@@ -10,4 +10,4 @@ django-browser-reload==1.12.1
 psycopg2-binary==2.9.9
 
 # ckeditor
-django-ckeditor-5==0.2.13
+django-ckeditor==6.6.1
