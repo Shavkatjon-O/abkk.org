@@ -88,11 +88,10 @@
 </header>
 
 <div class="hidden xl:hidden absolute uppercase shadow-sm w-full z-50 space-y-1 px-4 py-8 border-t border-t-gray-300 bg-white" id="mobile-menu">
-
   <div class="menuItems group cursor-pointer">
     <div class="w-full p-4 flex justify-between items-center hover:bg-gray-100">
       <a href="" class="font-medium">о нас</a>
-      <svg class="menuItemArrow transition duration-200 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg class="menuItemArrow transition duration-200 rotate-90 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </div>
@@ -105,11 +104,10 @@
       <a href="" class="block border-b border-gray-200 py-3 hover:text-black">членство в конфедерации</a>
     </div>
   </div>
-
   <div class="menuItems group cursor-pointer">
     <div class="w-full p-4 flex justify-between items-center hover:bg-gray-100">
       <a href="" class="font-medium">белбогли кураш</a>
-      <svg class="menuItemArrow transition duration-200 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg class="menuItemArrow transition duration-200 rotate-90 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </div>
@@ -120,11 +118,10 @@
       <a href="" class="block border-b border-gray-200 py-3 hover:text-black">антидопинг</a>
     </div>
   </div>
-
   <div class="menuItems group cursor-pointer">
     <div class="w-full p-4 flex justify-between items-center hover:bg-gray-100">
       <a href="" class="font-medium">соревнования</a>
-      <svg class="menuItemArrow transition duration-200 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg class="menuItemArrow transition duration-200 rotate-90 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </div>
@@ -134,11 +131,10 @@
       <a href="" class="block border-b border-gray-200 py-3 hover:text-black">документы о соревнованиях</a>
     </div>
   </div>
-
   <div class="menuItems group cursor-pointer">
     <div class="w-full p-4 flex justify-between items-center hover:bg-gray-100">
       <a href="" class="font-medium">мероприятия</a>
-      <svg class="menuItemArrow transition duration-200 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg class="menuItemArrow transition duration-200 rotate-90 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </div>
@@ -148,11 +144,10 @@
       <a href="" class="block border-b border-gray-200 py-3 hover:text-black">сми о нас</a>
     </div>
   </div>
-
   <div class="menuItems group cursor-pointer">
     <div class="w-full p-4 flex justify-between items-center hover:bg-gray-100">
       <a href="" class="font-medium">галерея</a>
-      <svg class="menuItemArrow transition duration-200 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg class="menuItemArrow transition duration-200 rotate-90 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </div>
@@ -161,11 +156,10 @@
       <a href="" class="block border-b border-gray-200 py-3 hover:text-black">фото</a>
     </div>
   </div>
-
   <div class="menuItems group cursor-pointer">
     <div class="w-full p-4 flex justify-between items-center hover:bg-gray-100">
       <a href="" class="font-medium">контакты</a>
-      <svg class="menuItemArrow transition duration-200 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg class="menuItemArrow transition duration-200 rotate-90 w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </div>
@@ -173,7 +167,6 @@
       <a href="" class="block border-b border-gray-200 py-3 hover:text-black">контактная связь</a>
     </div>
   </div>
-
 </div>
 
 <script>
@@ -192,7 +185,7 @@
     item.addEventListener('click', (event) => {
       event.preventDefault();
       subMenu.classList.toggle('hidden');
-      menuItemArrow.classList.toggle('rotate-180');
+      menuItemArrow.classList.toggle('rotate-90');
     });
   });
 </script>
