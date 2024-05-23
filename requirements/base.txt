@@ -8,3 +8,6 @@ django-tailwind==3.8.0
 django-browser-reload==1.12.1
 
 psycopg2-binary==2.9.9
+
+# ckeditor
+django-ckeditor==6.7.1
