@@ -117,6 +117,8 @@ CKEDITOR_CONFIGS = {
     "default": {
         "toolbar": "full",
         "width": "auto",
-        "height": 500,
+        "height": "auto",
     },
 }
+
+MODELTRANSLATION_LANGUAGES = ("ru", "uz", "en")
