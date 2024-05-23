@@ -28,6 +28,7 @@ THIRD_PARTY_APPS = [
     "tailwind",
     "django_browser_reload",
     "ckeditor",
+    "modeltranslation",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PARTY_APPS
