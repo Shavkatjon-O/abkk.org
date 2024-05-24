@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <header class="h-32 px-8 flex justify-between items-center">
   <!-- logo -->
@@ -70,12 +71,26 @@
     </div>
   </nav>
   <!-- language selector -->
-  <div class="hidden w-52 xl:flex justify-end">
+  <form action="{% url 'set_language' %}" method="post">
+    {% csrf_token %}
+    <select name="language" onchange="this.form.submit()">
+      {% get_current_language as LANGUAGE_CODE %}
+      {% get_available_languages as LANGUAGES %}
+      {% for lang in LANGUAGES %}
+        <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+          {{ lang.1 }}
+        </option>
+      {% endfor %}
+    </select>
+    <input type="hidden" name="next" value="{{ request.path }}">
+  </form>
+
+  <!-- <div class="hidden w-52 xl:flex justify-end">
     <select class="rounded-md appearance-none focus:ring-0 border-none bg-green-500 text-white">
       <option value="">🇷🇺 Russian</option>
       <option value="">🇺🇿 Uzbek</option>
       <option value="">🇬🇧 English</option>
-    </select>
+    </select> -->
   </div>
 
   <div class="xl:hidden">
