@@ -2,9 +2,11 @@
 {% load i18n %}
 
 <header class="h-32 px-8 flex justify-between items-center">
-  <!-- logo -->
-  <div><a href=""><img class="w-52" src="{% static 'img/logo.png' %}"></a></div>
-  <!-- navbar -->
+  <div>
+    <a href="">
+      <img class="w-52" src="{% static 'img/logo.png' %}">
+    </a>
+  </div>
   <nav class="hidden xl:flex uppercase space-x-6">
     <div class="flex items-center justify-center">
       <div class="relative group cursor-pointer">
@@ -70,7 +72,6 @@
       </div>
     </div>
   </nav>
-
   <div class="w-50 hidden xl:flex justify-end items-center">
     <form action="{% url 'set_language' %}" method="post">
       {% csrf_token %}
@@ -89,7 +90,6 @@
       </div>
     </form>
   </div>
-
   <div class="xl:hidden">
     <button id="mobile-menu-button" class="w-8 h-4 flex flex-col justify-between">
       <div class="w-full h-0.5 bg-gray-500 transition-transform transform"></div>
@@ -97,7 +97,6 @@
       <div class="w-full h-0.5 bg-gray-500 transition-transform transform"></div>
     </button>
   </div>
-
 </header>
 
 <div class="hidden xl:hidden absolute uppercase shadow-sm w-full z-50 space-y-1 px-4 py-8 border-t border-t-gray-300 bg-white" id="mobile-menu">
