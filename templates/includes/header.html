@@ -71,17 +71,17 @@
     </div>
   </nav>
 
-  <div class="w-52 hidden xl:flex justify-end items-center">
+  <div class="w-50 hidden xl:flex justify-end items-center">
     <form action="{% url 'set_language' %}" method="post">
       {% csrf_token %}
       <div class="relative inline-block w-full">
         <select name="language" onchange="this.form.submit()"
-                class="block w-36 focus:border-gray-400 border-gray-400 appearance-none focus:ring-0 rounded-md">
+                class="block w-24 cursor-pointer focus:border-gray-400 border-gray-400 appearance-none focus:ring-0 rounded-md">
           {% get_current_language as LANGUAGE_CODE %}
           {% get_available_languages as LANGUAGES %}
           {% for lang in LANGUAGES %}
             <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
-              {{ lang.1 }}
+              {% if lang.0 == 'en' %}🇬🇧 EN{% elif lang.0 == 'ru' %}🇷🇺 RU{% elif lang.0 == 'uz' %}🇺🇿 UZ{% endif %}
             </option>
           {% endfor %}
         </select>
@@ -89,6 +89,8 @@
       </div>
     </form>
   </div>
+
+
 
   <div class="xl:hidden">
     <button id="mobile-menu-button" class="w-12 h-12 space-y-1 flex flex-col justify-center items-center bg-green-500 rounded-full">
