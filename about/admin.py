@@ -1,9 +1,18 @@
 from django.contrib import admin
-from .models import AboutConfederation
 from common.mixins import TabbedTranslationAdmin
+from . import models
 
 
-@admin.register(AboutConfederation)
+@admin.register(models.AboutConfederation)
 class AboutConfederationAdmin(TabbedTranslationAdmin):
-    # exclude = ("content",)
+    pass
+
+
+@admin.register(models.AboutGuides)
+class AboutGuidesAdmin(TabbedTranslationAdmin):
+    pass
+
+
+@admin.register(models.AboutMembership)
+class AboutMembershipAdmin(TabbedTranslationAdmin):
     pass
