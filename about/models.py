@@ -9,3 +9,6 @@ class AboutConfederation(models.Model):
     class Meta:
         verbose_name = "Confederation"
         verbose_name_plural = "Confederation"
+
+    def __str__(self):
+        return str(self.id)
