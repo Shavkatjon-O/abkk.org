@@ -1,4 +1,6 @@
 import environ
+
+from django.utils.translation import gettext_lazy as _
 from pathlib import Path
 
 env = environ.Env()
@@ -92,9 +94,9 @@ USE_TZ = True
 
 LANGUAGE_CODE = "en"
 LANGUAGES = (
-    ("ru", "Russian"),
-    ("uz", "Uzbek"),
-    ("en", "English"),
+    ("ru", _("Russian")),
+    ("uz", _("Uzbek")),
+    ("en", _("English")),
 )
 LOCALE_PATHS = (BASE_DIR / "locale/",)
 
