@@ -90,8 +90,6 @@
     </form>
   </div>
 
-
-
   <div class="xl:hidden">
     <button id="mobile-menu-button" class="w-12 h-12 space-y-1 flex flex-col justify-center items-center bg-green-500 rounded-full">
       <div class="w-6 h-1 rounded-full bg-white"></div>
@@ -102,6 +100,24 @@
 </header>
 
 <div class="hidden xl:hidden absolute uppercase shadow-sm w-full z-50 space-y-1 px-4 py-8 border-t border-t-gray-300 bg-white" id="mobile-menu">
+  <div class="w-full px-2 mb-2 flex justify-end items-center">
+    <form action="{% url 'set_language' %}" class="w-full" method="post">
+      {% csrf_token %}
+      <div class="relative inline-block w-full">
+        <select name="language" onchange="this.form.submit()"
+                class="block px-2 w-full cursor-pointer focus:border-gray-400 border-gray-400 appearance-none focus:ring-0 rounded-md">
+          {% get_current_language as LANGUAGE_CODE %}
+          {% get_available_languages as LANGUAGES %}
+          {% for lang in LANGUAGES %}
+            <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+              {% if lang.0 == 'en' %}🇬🇧{% elif lang.0 == 'ru' %}🇷🇺{% elif lang.0 == 'uz' %}🇺🇿{% endif %} {{ lang.1 }}
+            </option>
+          {% endfor %}
+        </select>
+        <input type="hidden" name="next" value="{{ request.path }}">
+      </div>
+    </form>
+  </div>
   <div class="group cursor-pointer">
     <div class="menuItems w-full p-4 flex justify-between items-center hover:bg-gray-100">
       <span class="font-medium">о нас</span>
