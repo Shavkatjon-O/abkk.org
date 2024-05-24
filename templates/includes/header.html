@@ -77,7 +77,7 @@
       {% csrf_token %}
       <div class="relative inline-block w-full">
         <select name="language" onchange="this.form.submit()"
-                class="block w-24 cursor-pointer focus:border-gray-400 border-gray-400 appearance-none focus:ring-0 rounded-sm">
+                class="block w-28 cursor-pointer focus:border-gray-400 border-gray-400 appearance-none focus:ring-0 rounded-sm">
           {% get_current_language as LANGUAGE_CODE %}
           {% get_available_languages as LANGUAGES %}
           {% for lang in LANGUAGES %}
