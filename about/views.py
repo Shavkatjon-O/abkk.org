@@ -14,6 +14,11 @@ class ConfederationView(TemplateView):
 class GuidesView(TemplateView):
     template_name = "about/guides.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["guides"] = models.AboutGuides.objects.first()
+        return context
+
 
 class DocumentsView(TemplateView):
     template_name = "about/documents.html"
@@ -29,3 +34,8 @@ class SymbolsView(TemplateView):
 
 class MembershipView(TemplateView):
     template_name = "about/membership.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["membership"] = models.AboutMembership.objects.first()
+        return context
