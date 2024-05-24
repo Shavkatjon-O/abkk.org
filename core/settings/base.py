@@ -119,7 +119,7 @@ CKEDITOR_CONFIGS = {
     "default": {
         "toolbar": "full",
         "width": "auto",
-        "height": "auto",
+        "height": 800,
         "stylesSet": [
             {
                 "name": "Image with Space",
