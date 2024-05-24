@@ -3,7 +3,7 @@
 
 <header class="h-32 px-8 flex justify-between items-center">
   <div>
-    <a href="">
+    <a href="{% url 'home_page' %}">
       <img class="w-52" src="{% static 'img/logo.png' %}">
     </a>
   </div>
@@ -100,7 +100,7 @@
 </header>
 
 <div class="hidden xl:hidden absolute uppercase shadow-sm w-full z-50 space-y-1 px-4 py-8 border-t border-t-gray-300 bg-white" id="mobile-menu">
-  <div class="w-full px-2 mb-2 flex justify-end items-center">
+  <div class="w-full px-2 mb-4 flex justify-end items-center">
     <form action="{% url 'set_language' %}" class="w-full" method="post">
       {% csrf_token %}
       <div class="relative inline-block w-full">
