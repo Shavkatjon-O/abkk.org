@@ -4,4 +4,4 @@ from .models import AboutConfederation
 
 @register(AboutConfederation)
 class AboutConfederationTranslationOptions(TranslationOptions):
-    fields = ("content",)
+    fields = ("title", "content")
