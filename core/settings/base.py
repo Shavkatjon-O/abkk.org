@@ -120,6 +120,14 @@ CKEDITOR_CONFIGS = {
         "toolbar": "full",
         "width": "auto",
         "height": "auto",
+        "stylesSet": [
+            {
+                "name": "Image with Space",
+                "element": "img",
+                "attributes": {"class": "image-with-space"},
+            },
+        ],
+        "extraAllowedContent": "img[!src,alt,width,height];",
     },
 }
 

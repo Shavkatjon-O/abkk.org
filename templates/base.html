@@ -15,7 +15,15 @@
 	<body class="h-screen leading-normal tracking-normal">
 		{% block content %}
 		{% endblock content %}
+
+		<!-- IONIC ICONS -->
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<!-- CUSTOM CKEDITOR STYLE -->
+		<script>
+			CKEDITOR.on('instanceReady', function (ev) {
+					ev.editor.addContentsCss('{% static "css/custom_ckeditor.css" %}');
+			});
+	</script>
 	</body>
 </html>
