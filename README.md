@@ -34,7 +34,7 @@ python manage.py tailwind install
 python manage.py tailwind start
 ```
 
-- run gunicorn manually
+- do this if you run gunicorn manually
 
 ```
 gunicorn -c gunicorn_conf.py core.wsgi:application
