@@ -33,7 +33,8 @@ sudo npm install -g cross-env
 python manage.py tailwind install
 python manage.py tailwind start
 ```
-- do this if you run gunicorn manually
+
+- run gunicorn manually
 ```
 gunicorn -c gunicorn_conf.py core.wsgi:application
 ```
