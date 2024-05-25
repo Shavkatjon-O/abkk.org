@@ -1,6 +1,6 @@
 from core.settings.base import *
 
-ALLOWED_HOSTS = ["abkk.org"]
+ALLOWED_HOSTS = ["abkk-org.dev-space.uz"]
 
 DEBUG = False
 
@@ -16,7 +16,7 @@ DATABASES = {
 }
 
 CSRF_COOKIE_SECURE = True
-CSRF_TRUSTED_ORIGINS = ["https://abkk.org"]
+CSRF_TRUSTED_ORIGINS = ["https://abkk-org.dev-space.uz"]
 
 TELEGRAM_CHAT_ID = env.str("TELEGRAM_CHAT_ID")
 TELEGRAM_BOT_TOKEN = env.str("TELEGRAM_BOT_TOKEN")
