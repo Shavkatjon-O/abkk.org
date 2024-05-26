@@ -12,9 +12,12 @@
   <h1 class="text-2xl text-white font-semibold">{{ guides.title|safe }}</h1>
 </div>
 
-<div class="px-8 mt-8">
-  <p>{{ guides.content|safe }}</p>
+<div class="flex justify-center">
+  <div class="xl:w-3/5 xl:px-0 px-8 mt-8">
+    <p>{{ guides.content|safe }}</p>
+  </div>
 </div>
+
 <div class="p-10 text-xl text-gray-500 flex flex-col justify-center items-center">
   <h1 class="uppercase mb-4">{% trans 'Следите за новостями' %}</h1>
   <div class="flex items-center space-x-2 text-white">
