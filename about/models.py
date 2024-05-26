@@ -36,3 +36,14 @@ class AboutMembership(models.Model):
 
     def __str__(self):
         return self.title or str(self.id)
+
+
+class AboutSymbols(models.Model):
+    title = models.CharField(max_length=256)
+
+    class Meta:
+        verbose_name = "Symbols"
+        verbose_name_plural = "Symbols"
+
+    def __str__(self):
+        return self.title or str(self.id)

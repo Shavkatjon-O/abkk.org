@@ -31,6 +31,11 @@ class RegulationsView(TemplateView):
 class SymbolsView(TemplateView):
     template_name = "about/symbols.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["symbols"] = models.AboutSymbols.objects.first()
+        return context
+
 
 class MembershipView(TemplateView):
     template_name = "about/membership.html"

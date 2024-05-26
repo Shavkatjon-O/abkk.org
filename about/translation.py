@@ -15,3 +15,8 @@ class AboutGuidesTranslationOptions(TranslationOptions):
 @register(models.AboutMembership)
 class AboutMembershipTranslationOptions(TranslationOptions):
     fields = ("title", "content")
+
+
+@register(models.AboutSymbols)
+class AboutSymbolsTranslationOptions(TranslationOptions):
+    fields = ("title",)
