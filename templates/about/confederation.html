@@ -8,12 +8,16 @@
 
 {% include 'includes/header.html' %}
 
-<div class="p-8 bg-gradient-to-tr from-custom-blue to-custom-green bg-green-500">
-  <h1 class="text-2xl text-white font-semibold">{{ confederation.title|safe }}</h1>
+<div class="flex justify-center bg-gradient-to-tr from-custom-blue to-custom-green bg-green-500">
+  <div class="xl:w-3/5 w-full xl:px-0 px-8 py-8">
+    <h1 class="text-xl text-white font-semibold">{{ confederation.title|safe }}</h1>
+  </div>
 </div>
 
-<div class="px-8 mt-8">
-  <p>{{ confederation.content|safe }}</p>
+<div class="flex justify-center">
+  <div class="xl:w-3/5 xl:px-0 px-8 mt-8">
+    <p>{{ confederation.content|safe }}</p>
+  </div>
 </div>
 
 <div class="p-10 text-xl text-gray-500 flex flex-col justify-center items-center">
