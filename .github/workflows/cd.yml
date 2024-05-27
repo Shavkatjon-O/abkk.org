@@ -1,55 +1,55 @@
-name: Continuous Deployment
+# name: Continuous Deployment
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
     
-    steps:
-      - name: checkout repository
-        uses: actions/checkout@v4
+#     steps:
+#       - name: checkout repository
+#         uses: actions/checkout@v4
     
-      - name: ssh to server and deploy changes
-        uses: appleboy/ssh-action@master
+#       - name: ssh to server and deploy changes
+#         uses: appleboy/ssh-action@master
 
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USERNAME }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          port: ${{ secrets.SERVER_PORT }}
+#         with:
+#           host: ${{ secrets.SERVER_HOST }}
+#           username: ${{ secrets.SERVER_USERNAME }}
+#           key: ${{ secrets.SERVER_SSH_KEY }}
+#           port: ${{ secrets.SERVER_PORT }}
 
-          script: |
-            cd ${{ secrets.SERVER_PATH }}
+#           script: |
+#             cd ${{ secrets.SERVER_PATH }}
 
-            if [ ! -d "abkk-org" ]; then
-              git clone https://github.com/Shavkatjon-O/abkk-org.git && cd abkk-org
-            else
-              cd abkk-org && git pull origin main
-            fi
+#             if [ ! -d "abkk-org" ]; then
+#               git clone https://github.com/Shavkatjon-O/abkk-org.git && cd abkk-org
+#             else
+#               cd abkk-org && git pull origin main
+#             fi
 
-            > .env
+#             > .env
 
-            echo "DB_USER=postgres" >> .env
-            echo "DB_PASS=postgres" >> .env
-            echo "DB_HOST=db" >> .env
-            echo "DB_NAME=abkk_db" >> .env
-            echo "DB_PORT=5432" >> .env
+#             echo "DB_USER=postgres" >> .env
+#             echo "DB_PASS=postgres" >> .env
+#             echo "DB_HOST=db" >> .env
+#             echo "DB_NAME=abkk_db" >> .env
+#             echo "DB_PORT=5432" >> .env
 
-            echo "DJANGO_SETTINGS_MODULE=core.settings.production" >> .env
-            echo "DJANGO_WEB_PORT=8003" >> .env
+#             echo "DJANGO_SETTINGS_MODULE=core.settings.production" >> .env
+#             echo "DJANGO_WEB_PORT=8003" >> .env
 
-            echo "TELEGRAM_CHAT_ID=-4124140593" >> .env
-            echo "TELEGRAM_BOT_TOKEN=6294802650:AAFenYBdnVhD_ZJpElqNqRndymxk8GhMhFE" >> .env
+#             echo "TELEGRAM_CHAT_ID=-4124140593" >> .env
+#             echo "TELEGRAM_BOT_TOKEN=6294802650:AAFenYBdnVhD_ZJpElqNqRndymxk8GhMhFE" >> .env
 
-            echo "NPM_BIN_PATH=/usr/bin/npm" >> .env
+#             echo "NPM_BIN_PATH=/usr/bin/npm" >> .env
 
-            docker compose down --remove-orphans
-            docker compose up -d --build
-            docker image prune -f
+#             docker compose down --remove-orphans
+#             docker compose up -d --build
+#             docker image prune -f

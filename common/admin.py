@@ -3,7 +3,7 @@ from common.mixins import TabbedTranslationAdmin
 from common import models
 
 
-@admin.register(models.AboutConfederation)
+@admin.register(models.Confederation)
 class ConfederationAdmin(TabbedTranslationAdmin):
     pass
 
