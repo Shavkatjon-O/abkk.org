@@ -2,6 +2,7 @@ from django.urls import path
 from common import views
 
 urlpatterns = [
+    path("", views.HomePageView.as_view(), name="home_page"),
     path(
         "about/confederation/", views.ConfederationView.as_view(), name="confederation"
     ),
