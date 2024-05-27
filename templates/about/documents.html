@@ -17,7 +17,7 @@
 <div class="p-10 bg-green-200">
   {% if documents %}
     {% if documents.pdf %}
-      <a href="{{ documents.pdf.url }}" download="{{ documents.pdf.name }}">Download {{ documents.pdf.name }}</a>
+      <a href="{{ documents.pdf.url }}" download="{{ documents.pdf.name }}">{{ documents.file_name }}</a>
     {% endif %}
   {% endif %}
 </div>
