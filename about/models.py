@@ -1,3 +1,5 @@
+import os
+
 from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
 
@@ -52,10 +54,15 @@ class AboutSymbols(models.Model):
 class AboutDocuments(models.Model):
     title = models.CharField(max_length=256)
     pdf = models.FileField(upload_to="documents/", null=True, blank=True)
+    file_name = models.CharField(max_length=256, null=True, blank=True)
 
     class Meta:
         verbose_name = "Documents"
         verbose_name_plural = "Documents"
+
+    def save(self, *args, **kwargs):
+        self.file_name = os.path.basename(self.pdf.name)
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title or str(self.id)
@@ -64,10 +71,15 @@ class AboutDocuments(models.Model):
 class AboutRegulations(models.Model):
     title = models.CharField(max_length=256)
     pdf = models.FileField(upload_to="documents/", null=True, blank=True)
+    file_name = models.CharField(max_length=256, null=True, blank=True)
 
     class Meta:
         verbose_name = "Regulations"
         verbose_name_plural = "Regulations"
+
+    def save(self, *args, **kwargs):
+        self.file_name = os.path.basename(self.pdf.name)
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title or str(self.id)

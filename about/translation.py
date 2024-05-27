@@ -24,9 +24,9 @@ class AboutSymbolsTranslationOptions(TranslationOptions):
 
 @register(models.AboutDocuments)
 class AboutDocumentsTranslationOptions(TranslationOptions):
-    fields = ("title", "pdf")
+    fields = ("title", "pdf", "file_name")
 
 
 @register(models.AboutRegulations)
 class AboutRegulationsTranslationOptions(TranslationOptions):
-    fields = ("title", "pdf")
+    fields = ("title", "pdf", "file_name")
