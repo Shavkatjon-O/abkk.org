@@ -30,3 +30,13 @@ class DocumentsTranslationOptions(TranslationOptions):
 @register(models.Regulations)
 class RegulationsTranslationOptions(TranslationOptions):
     fields = ("title", "pdf", "file_name")
+
+
+@register(models.History)
+class HistoryTranslationOptions(TranslationOptions):
+    fields = ("title", "content")
+
+
+@register(models.Rules)
+class RulesTranslationOptions(TranslationOptions):
+    fields = ("title", "content")

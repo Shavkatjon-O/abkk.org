@@ -83,3 +83,27 @@ class Regulations(BaseModel):
 
     def __str__(self):
         return self.title or str(self.id)
+
+
+class History(BaseModel):
+    title = models.CharField(max_length=256)
+    content = RichTextUploadingField()
+
+    class Meta:
+        verbose_name = "History"
+        verbose_name_plural = "History"
+
+    def __str__(self):
+        return self.title or str(self.id)
+
+
+class Rules(BaseModel):
+    title = models.CharField(max_length=256)
+    content = RichTextUploadingField()
+
+    class Meta:
+        verbose_name = "Rules"
+        verbose_name_plural = "Rules"
+
+    def __str__(self):
+        return self.title or str(self.id)

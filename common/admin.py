@@ -31,3 +31,13 @@ class DocumentsAdmin(TabbedTranslationAdmin):
 @admin.register(models.Regulations)
 class RegulationsAdmin(TabbedTranslationAdmin):
     pass
+
+
+@admin.register(models.History)
+class HistoryAdmin(TabbedTranslationAdmin):
+    pass
+
+
+@admin.register(models.Rules)
+class RulesAdmin(TabbedTranslationAdmin):
+    pass

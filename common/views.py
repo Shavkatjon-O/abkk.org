@@ -59,3 +59,21 @@ class MembershipView(TemplateView):
         context = super().get_context_data(**kwargs)
         context["membership"] = models.Membership.objects.first()
         return context
+
+
+class HistoryView(TemplateView):
+    template_name = "history.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["history"] = models.History.objects.first()
+        return context
+
+
+class RulesView(TemplateView):
+    template_name = "rules.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["rules"] = models.Rules.objects.first()
+        return context

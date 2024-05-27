@@ -23,12 +23,12 @@
         </div>
       </div>
       <div class="relative group cursor-pointer">
-        <a href="" class="p-4 font-medium transition duration-300 hover:bg-gray-100">белбогли кураш</a>
+        <a href="{% url 'history' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">белбогли кураш</a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2
                     transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100
                     group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
-            <a href="" class="block border-b border-gray-200 py-2 hover:text-black">история белбогли кураш</a>
-            <a href="" class="block border-b border-gray-200 py-2 hover:text-black">правила белбогли кураш</a>
+            <a href="{% url 'history' %}" class="block border-b border-gray-200 py-2 hover:text-black">история белбогли кураш</a>
+            <a href="{% url 'rules' %}" class="block border-b border-gray-200 py-2 hover:text-black">правила белбогли кураш</a>
             <a href="" class="block border-b border-gray-200 py-2 hover:text-black">положения</a>
             <a href="" class="block py-2 hover:text-black">антидопинг</a>
         </div>
@@ -142,8 +142,8 @@
       </svg>
     </div>
     <div class="subMenu hidden px-8 text-sm font-semibold text-gray-500">
-      <a href="" class="block border-b border-gray-200 py-3 hover:text-black">история белбогли кураш</a>
-      <a href="" class="block border-b border-gray-200 py-3 hover:text-black">правила белбогли кураш</a>
+      <a href="{% url 'history' %}" class="block border-b border-gray-200 py-3 hover:text-black">история белбогли кураш</a>
+      <a href="{% url 'rules' %}" class="block border-b border-gray-200 py-3 hover:text-black">правила белбогли кураш</a>
       <a href="" class="block border-b border-gray-200 py-3 hover:text-black">положения</a>
       <a href="" class="block border-b border-gray-200 py-3 hover:text-black">антидопинг</a>
     </div>
