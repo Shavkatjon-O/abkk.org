@@ -14,12 +14,17 @@
   </div>
 </div>
 
-<div class="p-10 bg-green-200">
-  {% if documents %}
-    {% if documents.pdf %}
-      <a href="{{ documents.pdf.url }}" download="{{ documents.pdf.name }}">{{ documents.file_name }}</a>
+<div class="flex justify-center">
+  <div class="xl:w-3/5 w-full xl:px-0 px-8 py-8">
+    {% if documents %}
+      {% if documents.pdf %}
+      <div class="flex items-center underline text-blue-700">
+        <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
+        <a href="{{ documents.pdf.url }}" download="{{ documents.pdf.name }}">{{ documents.file_name }}</a>
+      </div>
+      {% endif %}
     {% endif %}
-  {% endif %}
+  </div>
 </div>
 
 <div class="p-10 text-xl text-gray-500 flex flex-col justify-center items-center">
