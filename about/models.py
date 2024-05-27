@@ -51,7 +51,7 @@ class AboutSymbols(models.Model):
 
 class AboutDocuments(models.Model):
     title = models.CharField(max_length=256)
-    pdf = models.FileField(upload_to="documents/")
+    pdf = models.FileField(upload_to="documents/", null=True, blank=True)
 
     class Meta:
         verbose_name = "Documents"
@@ -63,7 +63,7 @@ class AboutDocuments(models.Model):
 
 class AboutRegulations(models.Model):
     title = models.CharField(max_length=256)
-    pdf = models.FileField(upload_to="documents/")
+    pdf = models.FileField(upload_to="documents/", null=True, blank=True)
 
     class Meta:
         verbose_name = "Regulations"
