@@ -60,10 +60,6 @@ class AboutDocuments(models.Model):
         verbose_name = "Documents"
         verbose_name_plural = "Documents"
 
-    def save(self, *args, **kwargs):
-        self.file_name = os.path.basename(self.pdf.name)
-        super().save(*args, **kwargs)
-
     def __str__(self):
         return self.title or str(self.id)
 
@@ -76,10 +72,6 @@ class AboutRegulations(models.Model):
     class Meta:
         verbose_name = "Regulations"
         verbose_name_plural = "Regulations"
-
-    def save(self, *args, **kwargs):
-        self.file_name = os.path.basename(self.pdf.name)
-        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title or str(self.id)
