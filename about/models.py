@@ -47,3 +47,27 @@ class AboutSymbols(models.Model):
 
     def __str__(self):
         return self.title or str(self.id)
+
+
+class AboutDocuments(models.Model):
+    title = models.CharField(max_length=256)
+    pdf = models.FileField(upload_to="documents/")
+
+    class Meta:
+        verbose_name = "Documents"
+        verbose_name_plural = "Documents"
+
+    def __str__(self):
+        return self.title or str(self.id)
+
+
+class AboutRegulations(models.Model):
+    title = models.CharField(max_length=256)
+    pdf = models.FileField(upload_to="documents/")
+
+    class Meta:
+        verbose_name = "Regulations"
+        verbose_name_plural = "Regulations"
+
+    def __str__(self):
+        return self.title or str(self.id)
