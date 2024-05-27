@@ -4,14 +4,14 @@ from django.conf.urls.static import static
 from django.conf.urls.i18n import set_language
 from django.conf import settings
 
-from common.views import home_page
+from common.views import HomePageView
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("ckeditor/", include("ckeditor_uploader.urls")),
     path("rosetta/", include("rosetta.urls")),
-    path("", home_page, name="home_page"),
+    path("", HomePageView.as_view(), name="home_page"),
     path("set_language/", set_language, name="set_language"),
     path("about/", include("about.urls")),
 ]
