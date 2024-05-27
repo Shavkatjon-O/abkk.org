@@ -23,9 +23,19 @@ class GuidesView(TemplateView):
 class DocumentsView(TemplateView):
     template_name = "about/documents.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["documents"] = models.AboutDocuments.objects.first()
+        return context
+
 
 class RegulationsView(TemplateView):
     template_name = "about/regulations.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["regulations"] = models.AboutRegulations.objects.first()
+        return context
 
 
 class SymbolsView(TemplateView):
