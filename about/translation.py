@@ -20,3 +20,13 @@ class AboutMembershipTranslationOptions(TranslationOptions):
 @register(models.AboutSymbols)
 class AboutSymbolsTranslationOptions(TranslationOptions):
     fields = ("title",)
+
+
+@register(models.AboutDocuments)
+class AboutDocumentsTranslationOptions(TranslationOptions):
+    fields = ("title",)
+
+
+@register(models.AboutRegulations)
+class AboutRegulationsTranslationOptions(TranslationOptions):
+    fields = ("title",)

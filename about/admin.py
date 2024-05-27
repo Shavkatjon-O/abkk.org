@@ -21,3 +21,13 @@ class AboutMembershipAdmin(TabbedTranslationAdmin):
 @admin.register(models.AboutSymbols)
 class AboutSymbolsAdmin(TabbedTranslationAdmin):
     pass
+
+
+@admin.register(models.AboutDocuments)
+class AboutDocumentsAdmin(TabbedTranslationAdmin):
+    pass
+
+
+@admin.register(models.AboutRegulations)
+class AboutRegulationsAdmin(TabbedTranslationAdmin):
+    pass
