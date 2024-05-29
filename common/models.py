@@ -19,6 +19,15 @@ class CarouselImage(BaseModel):
         return self.image.name
 
 
+class GalleryImage(BaseModel):
+    title = models.CharField(max_length=256)
+    image = models.ImageField(upload_to="gallery/")
+    date = models.DateField(null=True, blank=True)
+
+    def __str__(self):
+        return self.title
+
+
 class Confederation(BaseModel):
     title = models.CharField(max_length=256)
     content = RichTextUploadingField()

@@ -44,6 +44,7 @@ class CompetitionDocumentsAdmin(TabbedTranslationAdmin):
 
 
 admin.site.register(models.CarouselImage)
+admin.site.register(models.GalleryImage)
 
 
 # @admin.register(models.History)
