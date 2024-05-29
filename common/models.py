@@ -12,6 +12,13 @@ class BaseModel(models.Model):
         abstract = True
 
 
+class CarouselImage(BaseModel):
+    image = models.ImageField(upload_to="carousel/")
+
+    def __str__(self):
+        return self.image.name
+
+
 class Confederation(BaseModel):
     title = models.CharField(max_length=256)
     content = RichTextUploadingField()

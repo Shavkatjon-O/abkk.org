@@ -43,6 +43,9 @@ class CompetitionDocumentsAdmin(TabbedTranslationAdmin):
     pass
 
 
+admin.site.register(models.CarouselImage)
+
+
 # @admin.register(models.History)
 # class HistoryAdmin(TabbedTranslationAdmin):
 #     pass
