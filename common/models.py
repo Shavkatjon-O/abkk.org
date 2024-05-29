@@ -60,9 +60,8 @@ class Symbols(BaseModel):
 
 
 class Documents(BaseModel):
-    title = models.CharField(max_length=256)
-    pdf = models.FileField(upload_to="documents/", null=True, blank=True)
-    file_name = models.CharField(max_length=256, null=True, blank=True)
+    title = models.CharField(max_length=256, null=True, blank=True)
+    document = models.FileField(upload_to="documents/", null=True, blank=True)
 
     class Meta:
         verbose_name = "Documents"
@@ -73,9 +72,8 @@ class Documents(BaseModel):
 
 
 class Regulations(BaseModel):
-    title = models.CharField(max_length=256)
-    pdf = models.FileField(upload_to="documents/", null=True, blank=True)
-    file_name = models.CharField(max_length=256, null=True, blank=True)
+    title = models.CharField(max_length=256, null=True, blank=True)
+    document = models.FileField(upload_to="documents/", null=True, blank=True)
 
     class Meta:
         verbose_name = "Regulations"

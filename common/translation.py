@@ -24,12 +24,12 @@ class SymbolsTranslationOptions(TranslationOptions):
 
 @register(models.Documents)
 class DocumentsTranslationOptions(TranslationOptions):
-    fields = ("title", "pdf", "file_name")
+    fields = ("title", "document")
 
 
 @register(models.Regulations)
 class RegulationsTranslationOptions(TranslationOptions):
-    fields = ("title", "pdf", "file_name")
+    fields = ("title", "document")
 
 
 @register(models.History)
