@@ -50,7 +50,7 @@
     const indicators = document.querySelectorAll('.indicator');
     const totalItems = carouselInner.children.length;
     const intervalTime = 3000;
-    const pauseTime = 5000;
+    const pauseTime = 4000;
     let index = 0;
     let autoScrollInterval;
 
@@ -77,6 +77,7 @@
     }
 
     function startAutoScroll() {
+      stopAutoScroll();
       autoScrollInterval = setInterval(nextSlide, intervalTime);
     }
 
