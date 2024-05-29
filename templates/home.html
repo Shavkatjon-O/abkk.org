@@ -12,7 +12,7 @@
 <main class="mx-auto">
 
 
-  <div class="container mx-auto">
+  <div class="container mx-auto mb-10">
     <div id="carousel" class="relative overflow-hidden w-full xl:h-[34rem] h-56">
 
       <div class="carousel-inner flex transition-transform duration-500 ease-in-out">
@@ -40,7 +40,7 @@
 
   </div>
 
-  <section class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+  <!-- <section class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
     <div class="lg:col-span-2 bg-gradient-to-tr text-white from-custom-blue to-custom-green bg-green-500 p-6 shadow-md rounded">
       <h2 class="text-xl font-semibold mb-4">Анонс</h2>
       <p>Азиатская конфедерация белбогли кураш была создана инициативной группой на учредительном конгрессе, состоявшемся в городе Коканд Республики Узбекистан 25 мая 2022 года. В том же году конфедерация была зарегистрирована в Министерстве юстиции Узбекистана.</p>
@@ -51,7 +51,6 @@
         <span>Сентябрь</span>
       </div>
       <div class="calendar">
-        <!-- Calendar content here -->
       </div>
     </div>
   </section>
@@ -104,7 +103,7 @@
       <img src="{% static 'img/events.png' %}" alt="Event" class="w-full object-cover rounded">
       <p class="mt-4 text-lg">В Уфе прошло первенство мира по борьбе на поясах среди юношей и девушек до 17 лет</p>
     </div>
-  </section>
+  </section> -->
 </main>
 
 <script>
@@ -115,6 +114,7 @@
     const nextButton = carousel.querySelector('#next');
     const indicators = document.querySelectorAll('.indicator');
     const totalItems = carouselInner.children.length;
+    const intervalTime = 3000;
     let index = 0;
 
     function updateCarousel() {
@@ -130,6 +130,15 @@
       });
     }
 
+    function nextSlide() {
+      if (index < totalItems - 1) {
+        index++;
+      } else {
+        index = 0;
+      }
+      updateCarousel();
+    }
+
     prevButton.addEventListener('click', () => {
       if (index > 0) {
         index--;
@@ -139,14 +148,7 @@
       updateCarousel();
     });
 
-    nextButton.addEventListener('click', () => {
-      if (index < totalItems - 1) {
-        index++;
-      } else {
-        index = 0;
-      }
-      updateCarousel();
-    });
+    nextButton.addEventListener('click', nextSlide);
 
     indicators.forEach((indicator, i) => {
       indicator.addEventListener('click', () => {
@@ -154,6 +156,8 @@
         updateCarousel();
       });
     });
+
+    setInterval(nextSlide, intervalTime);
   });
 </script>
 
