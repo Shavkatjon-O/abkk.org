@@ -13,24 +13,31 @@
 
 
   <div class="container mx-auto mt-10">
-    <div id="carousel" class="relative overflow-hidden w-full h-64">
+    <div id="carousel" class="relative overflow-hidden w-full h-96">
+
       <div class="carousel-inner flex transition-transform duration-500 ease-in-out">
         {% for image in carousel %}
-          <div class="carousel-item flex-none w-full h-64 flex items-center justify-center text-white">
-            <img src="{{ image.image.url }}">
+          <div class="carousel-item flex-none w-full h-96 flex items-center justify-center">
+            <img src="{{ image.image.url }}" alt="{{ image.image.name }}">
           </div>
         {% endfor %}
       </div>
-      <!-- Controls -->
-      <button id="prev" class="absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-800 bg-opacity-50 text-white p-2">Prev</button>
-      <button id="next" class="absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-800 bg-opacity-50 text-white p-2">Next</button>
+
+      <button id="prev" class="absolute w-12 h-12 flex justify-center items-center top-1/2 transform -translate-y-1/2 left-0 bg-gray-700 rounded-full bg-opacity-50 text-2xl text-white">
+        <ion-icon name="chevron-back-outline" class="mr-1"></ion-icon>
+      </button>
+      <button id="next" class="absolute w-12 h-12 flex justify-center items-center top-1/2 transform -translate-y-1/2 right-0 bg-gray-700 rounded-full bg-opacity-50 text-2xl text-white">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+
     </div>
-    <!-- Indicators -->
+
     <div class="flex justify-center mt-4">
       {% for image in carousel %}
         <button class="indicator w-3 h-3 bg-gray-400 rounded-full mx-1"></button>
       {% endfor %}
     </div>
+
   </div>
 
   <section class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
