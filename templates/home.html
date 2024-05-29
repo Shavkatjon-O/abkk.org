@@ -9,15 +9,15 @@
 {% include 'includes/header.html' %}
 
 
-<main class="xl:px-16 px-8 mx-auto py-6">
+<main class="mx-auto">
 
 
-  <div class="container mx-auto mt-10">
-    <div id="carousel" class="relative overflow-hidden w-full xl:h-96 h-56">
+  <div class="container mx-auto">
+    <div id="carousel" class="relative overflow-hidden w-full xl:h-[34rem] h-56">
 
       <div class="carousel-inner flex transition-transform duration-500 ease-in-out">
         {% for image in carousel %}
-          <div class="carousel-item flex-none w-full xl:h-96 h-56 flex items-center justify-center">
+          <div class="carousel-item flex-none w-full xl:h-[34rem] h-56 flex items-center justify-center">
             <img src="{{ image.image.url }}" alt="{{ image.image.name }}" class="h-full w-full object-cover">
           </div>
         {% endfor %}
