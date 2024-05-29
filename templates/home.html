@@ -12,7 +12,7 @@
 
 <main class="px-16 mx-auto py-6">
   <!-- Event Banner -->
-  <section class="relative bg-cover bg-center h-96" style='background-image: url("{% static 'img/body-image.png' %}");'>
+  <section class="mt-4 relative bg-cover bg-center h-96" style='background-image: url("{% static 'img/body-image.png' %}");'>
     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
       <a href="" class="bg-green-500 text-white py-2 px-4 rounded">Подробнее</a>
     </div>
@@ -51,28 +51,25 @@
   <!-- Photo Gallery -->
   <section class="mt-6">
     <h2 class="text-2xl font-semibold mb-4">Фото галерея</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-white p-4 shadow-md rounded">
-        <img src="path-to-your-image.jpg" alt="Photo 1" class="w-full h-40 object-cover rounded">
-        <p class="mt-2 text-sm">Чемпионат мира, Джизак / Узбекистан</p>
+        <img src="{% static 'img/gallery1.png' %}" alt="Photo 1" class="w-full h-40 object-cover rounded">
+        <p class="mt-2 text-lg">Чемпионат мира, Джизак / Узбекистан</p>
       </div>
       <div class="bg-white p-4 shadow-md rounded">
-        <img src="path-to-your-image.jpg" alt="Photo 2" class="w-full h-40 object-cover rounded">
-        <p class="mt-2 text-sm">Чемпионат мира, Намангун / Узбекистан</p>
+        <img src="{% static 'img/gallery2.png' %}" alt="Photo 2" class="w-full h-40 object-cover rounded">
+        <p class="mt-2 text-lg">Чемпионат мира, Намангун / Узбекистан</p>
       </div>
       <div class="bg-white p-4 shadow-md rounded">
-        <img src="path-to-your-image.jpg" alt="Photo 3" class="w-full h-40 object-cover rounded">
-        <p class="mt-2 text-sm">Чемпионат мира, Уфа / Россия</p>
-      </div>
-      <div class="bg-white p-4 shadow-md rounded">
-        <img src="path-to-your-image.jpg" alt="Photo 4" class="w-full h-40 object-cover rounded">
-        <p class="mt-2 text-sm">Чемпионат мира, Ташкент / Узбекистан</p>
+        <img src="{% static 'img/gallery3.png' %}" alt="Photo 3" class="w-full h-40 object-cover rounded">
+        <p class="mt-2 text-lg">Чемпионат мира, Уфа / Россия</p>
       </div>
     </div>
   </section>
 
+
   <!-- Event Info -->
-  <section class="mt-6 bg-white p-6 shadow-md rounded">
+  <section class="mt-6 mb-4 bg-white p-6 shadow-md rounded">
     <h2 class="text-2xl font-semibold mb-4">МЕРОПРИЯТИЯ</h2>
     <div class="flex flex-col">
       <img src="{% static 'img/events.png' %}" alt="Event" class="w-full object-cover rounded">
