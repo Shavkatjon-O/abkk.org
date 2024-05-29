@@ -37,8 +37,22 @@
   </div>
 
   <div class="xl:flex">
-    <div class="xl:w-4/6 p-8 bg-green-500">left</div>
-    <div class="xl:w-2/6 p-8 bg-red-200">right</div>
+    <div class="xl:w-4/6 p-8">left</div>
+
+    <div class="xl:w-2/6 p-8 space-y-6 bg-gray-100">
+      <div class="px-2 text-2xl font-semibold">
+        <span>Фото галерея</span>
+      </div>
+      {% for image in gallery %}
+        <div class="flex flex-col rounded-md shadow-xl bg-white">
+          <div class="p-4 flex justify-between items-center">
+            <span class="text-wrap font-semibold">{{ image.title }}</span>
+            <span class="py-2 w-32 flex justify-center items-center rounded-md font-semibold bg-custom-green text-white">{{ image.date }}</span>
+          </div>
+          <img src="{{ image.image.url }}" alt="{{ image.image.name }}" class="w-full rounded-b-md">
+        </div>
+      {% endfor %}
+    </div>
   </div>
 
 </main>
