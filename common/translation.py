@@ -32,6 +32,16 @@ class RegulationsTranslationOptions(TranslationOptions):
     fields = ("title", "document")
 
 
+@register(models.CompetitionReports)
+class CompetitionReportsTranslationOptions(TranslationOptions):
+    fields = ("title", "document")
+
+
+@register(models.CompetitionDocuments)
+class CompetitionDocumentsTranslationOptions(TranslationOptions):
+    fields = ("title", "document")
+
+
 @register(models.History)
 class HistoryTranslationOptions(TranslationOptions):
     fields = ("title", "content")

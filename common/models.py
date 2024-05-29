@@ -83,6 +83,30 @@ class Regulations(BaseModel):
         return self.title or str(self.id)
 
 
+class CompetitionReports(BaseModel):
+    title = models.CharField(max_length=256, null=True, blank=True)
+    document = models.FileField(upload_to="documents/", null=True, blank=True)
+
+    class Meta:
+        verbose_name = "Competition Reports"
+        verbose_name_plural = "Competition Reports"
+
+    def __str__(self):
+        return self.title or str(self.id)
+
+
+class CompetitionDocuments(BaseModel):
+    title = models.CharField(max_length=256, null=True, blank=True)
+    document = models.FileField(upload_to="documents/", null=True, blank=True)
+
+    class Meta:
+        verbose_name = "Competition Documents"
+        verbose_name_plural = "Competition Documents"
+
+    def __str__(self):
+        return self.title or str(self.id)
+
+
 class History(BaseModel):
     title = models.CharField(max_length=256)
     content = RichTextUploadingField()

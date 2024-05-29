@@ -13,4 +13,14 @@ urlpatterns = [
     path("about/membership/", views.MembershipView.as_view(), name="membership"),
     path("kurash/history/", views.HistoryView.as_view(), name="history"),
     path("kurash/rules/", views.RulesView.as_view(), name="rules"),
+    path(
+        "competition/reports/",
+        views.CompetitionReportsView.as_view(),
+        name="competition_reports",
+    ),
+    path(
+        "competition/documents/",
+        views.CompetitionDocumentsView.as_view(),
+        name="competition_documents",
+    ),
 ]

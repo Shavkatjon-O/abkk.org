@@ -43,6 +43,24 @@ class RegulationsView(TemplateView):
         return context
 
 
+class CompetitionReportsView(TemplateView):
+    template_name = "competition_reports.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["competition_reports"] = models.CompetitionReports.objects.all()
+        return context
+
+
+class CompetitionDocumentsView(TemplateView):
+    template_name = "competition_documents.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["competition_documents"] = models.CompetitionDocuments.objects.all()
+        return context
+
+
 class SymbolsView(TemplateView):
     template_name = "symbols.html"
 

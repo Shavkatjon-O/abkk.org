@@ -33,6 +33,16 @@ class RegulationsAdmin(TabbedTranslationAdmin):
     pass
 
 
+@admin.register(models.CompetitionReports)
+class CompetitionReportsAdmin(TabbedTranslationAdmin):
+    pass
+
+
+@admin.register(models.CompetitionDocuments)
+class CompetitionDocumentsAdmin(TabbedTranslationAdmin):
+    pass
+
+
 # @admin.register(models.History)
 # class HistoryAdmin(TabbedTranslationAdmin):
 #     pass

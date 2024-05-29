@@ -19,10 +19,10 @@
     {% if regulations %}
       {% for regulation in regulations %}
         {% if regulation.document %}
-        <div class="flex items-center text-blue-700">
-          <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
-          <a href="{{ regulation.document.url }}" download="{{ regulation.document.name }}">{{ regulation.title }}</a>
-        </div>
+          <div class="flex items-center text-blue-700">
+            <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
+            <a href="{{ regulation.document.url }}" download="{{ regulation.document.name }}">{{ regulation.title }}</a>
+          </div>
         {% endif %}
       {% endfor %}
     {% endif %}

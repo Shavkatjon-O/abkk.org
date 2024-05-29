@@ -39,8 +39,8 @@
                     transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100
                     group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
             <a href="" class="block border-b border-gray-200 py-2 hover:text-black">календарь соревнований</a>
-            <a href="" class="block border-b border-gray-200 py-2 hover:text-black">протоколы соревнований</a>
-            <a href="" class="block py-2 hover:text-black">документы о соревнованиях</a>
+            <a href="{% url 'competition_reports' %}" class="block border-b border-gray-200 py-2 hover:text-black">протоколы соревнований</a>
+            <a href="{% url 'competition_documents' %}" class="block py-2 hover:text-black">документы о соревнованиях</a>
         </div>
       </div>
       <div class="relative group cursor-pointer">
