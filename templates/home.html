@@ -115,7 +115,9 @@
     const indicators = document.querySelectorAll('.indicator');
     const totalItems = carouselInner.children.length;
     const intervalTime = 3000;
+    const pauseTime = 5000;
     let index = 0;
+    let autoScrollInterval;
 
     function updateCarousel() {
       const offset = -index * 100;
@@ -139,6 +141,19 @@
       updateCarousel();
     }
 
+    function startAutoScroll() {
+      autoScrollInterval = setInterval(nextSlide, intervalTime);
+    }
+
+    function stopAutoScroll() {
+      clearInterval(autoScrollInterval);
+    }
+
+    function manualSwitch() {
+      stopAutoScroll();
+      setTimeout(startAutoScroll, pauseTime);
+    }
+
     prevButton.addEventListener('click', () => {
       if (index > 0) {
         index--;
@@ -146,19 +161,26 @@
         index = totalItems - 1;
       }
       updateCarousel();
+      manualSwitch();
     });
 
-    nextButton.addEventListener('click', nextSlide);
+    nextButton.addEventListener('click', () => {
+      nextSlide();
+      manualSwitch();
+    });
 
     indicators.forEach((indicator, i) => {
       indicator.addEventListener('click', () => {
         index = i;
         updateCarousel();
+        manualSwitch();
       });
     });
 
-    setInterval(nextSlide, intervalTime);
+    startAutoScroll();
   });
+</script>
+
 </script>
 
 
