@@ -8,15 +8,8 @@
 
 {% include 'includes/header.html' %}
 
-<!-- <img class="w-full" src="{% static 'img/body-image.png' %}">-->
 
 <main class="xl:px-16 px-8 mx-auto py-6">
-  <!-- Event Banner -->
-  <!-- <section class="mt-4 relative bg-cover bg-center h-96" style='background-image: url("{% static 'img/body-image.png' %}");'>
-    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <a href="" class="bg-green-500 text-white py-2 px-4 rounded">Подробнее</a>
-    </div>
-  </section> -->
 
   <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -53,58 +46,6 @@
     </button>
   </div>
 
-  <script>
-    const carousel = document.getElementById('default-carousel');
-    const slides = carousel.querySelectorAll('.carousel-container img');
-    const prevButton = carousel.querySelector('[data-carousel-prev]');
-    const nextButton = carousel.querySelector('[data-carousel-next]');
-    const dotButtons = carousel.querySelectorAll('[data-carousel-slide-to]');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        if (i === index) {
-          slide.style.display = 'block';
-        } else {
-          slide.style.display = 'none';
-        }
-      });
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    function goToSlide(index) {
-      currentSlide = index;
-      showSlide(currentSlide);
-    }
-
-    // Initial setup
-    showSlide(currentSlide);
-
-    // Event listeners
-    nextButton.addEventListener('click', nextSlide);
-    prevButton.addEventListener('click', prevSlide);
-
-    dotButtons.forEach((button, index) => {
-      button.addEventListener('click', () => {
-        goToSlide(index);
-      });
-    });
-  </script>
-
-
-
-
-
-  <!-- Calendar and Announcements -->
   <section class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
     <div class="lg:col-span-2 bg-white p-6 shadow-md rounded">
       <h2 class="text-xl font-semibold mb-4">Анонс</h2>
@@ -154,7 +95,6 @@
     </div>
   </section>
 
-
   <section class="mt-6 mb-4 bg-white p-6 shadow-md rounded">
     <h2 class="text-2xl font-semibold mb-4">МЕРОПРИЯТИЯ</h2>
     <div class="flex flex-col">
@@ -164,6 +104,51 @@
   </section>
 </main>
 
+<script>
+  const carousel = document.getElementById('default-carousel');
+  const slides = carousel.querySelectorAll('.carousel-container img');
+  const dotButtons = carousel.querySelectorAll('[data-carousel-slide-to]');
+  const prevButton = carousel.querySelector('[data-carousel-prev]');
+  const nextButton = carousel.querySelector('[data-carousel-next]');
+
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.style.display = 'block';
+      } else {
+        slide.style.display = 'none';
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function goToSlide(index) {
+    currentSlide = index;
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide);
+
+  nextButton.addEventListener('click', nextSlide);
+  prevButton.addEventListener('click', prevSlide);
+
+  dotButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      goToSlide(index);
+    });
+  });
+</script>
 
 {% include 'includes/footer.html' %}
 
