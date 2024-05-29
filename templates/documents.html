@@ -19,7 +19,7 @@
     {% if documents %}
       {% for document in documents %}
         {% if document.pdf %}
-        <div class="flex items-center underline text-blue-700">
+        <div class="flex items-center text-blue-700">
           <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
           <a href="{{ document.pdf.url }}" download="{{ document.pdf.name }}">{{ document.file_name }}</a>
         </div>
