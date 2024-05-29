@@ -64,8 +64,8 @@ class Documents(BaseModel):
     document = models.FileField(upload_to="documents/", null=True, blank=True)
 
     class Meta:
-        verbose_name = "Документы"
-        verbose_name_plural = "Документы"
+        verbose_name = "Documents"
+        verbose_name_plural = "Documents"
 
     def __str__(self):
         return self.title or str(self.id)
@@ -76,8 +76,8 @@ class Regulations(BaseModel):
     document = models.FileField(upload_to="documents/", null=True, blank=True)
 
     class Meta:
-        verbose_name = "Устав"
-        verbose_name_plural = "Устав"
+        verbose_name = "Regulations"
+        verbose_name_plural = "Regulations"
 
     def __str__(self):
         return self.title or str(self.id)
