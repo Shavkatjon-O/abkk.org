@@ -30,7 +30,7 @@ class DocumentsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["documents"] = models.Documents.objects.first()
+        context["documents"] = models.Documents.objects.all()
         return context
 
 
