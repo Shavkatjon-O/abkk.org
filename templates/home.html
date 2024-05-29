@@ -62,7 +62,7 @@
     function updateIndicators() {
       indicators.forEach((indicator, i) => {
         indicator.classList.toggle('bg-gray-700', i !== index);
-        indicator.classList.toggle('bg-gray-200', i === index);
+        indicator.classList.toggle('bg-gray-100', i === index);
         indicator.classList.toggle('opacity-100', i === index);
       });
     }
