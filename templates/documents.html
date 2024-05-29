@@ -3,7 +3,7 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %} {{ documents.title|safe }} {% endblock title %}
+{% block title %} {% trans 'Учредительные документы' %} {% endblock title %}
 {% block content %}
 
 {% include 'includes/header.html' %}
@@ -18,10 +18,10 @@
   <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8 space-y-4">
     {% if documents %}
       {% for document in documents %}
-        {% if document.pdf %}
+        {% if document.document %}
         <div class="flex items-center text-blue-700">
           <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
-          <a href="{{ document.pdf.url }}" download="{{ document.pdf.name }}">{{ document.file_name }}</a>
+          <a href="{{ document.document.url }}" download="{{ document.document.name }}">{{ document.title }}</a>
         </div>
         {% endif %}
       {% endfor %}

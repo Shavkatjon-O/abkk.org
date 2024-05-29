@@ -39,7 +39,7 @@ class RegulationsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["regulations"] = models.Regulations.objects.first()
+        context["regulations"] = models.Regulations.objects.all()
         return context
 
 
