@@ -8,11 +8,9 @@
 
 {% include 'includes/header.html' %}
 
-
 <main class="mx-auto">
 
-
-  <div class="container mx-auto mb-10">
+  <div class="container mx-auto">
     <div id="carousel" class="relative overflow-hidden w-full xl:h-[34rem] h-56">
 
       <div class="carousel-inner flex transition-transform duration-500 ease-in-out">
@@ -36,6 +34,11 @@
         {% endfor %}
       </div>
     </div>
+  </div>
+
+  <div class="xl:flex">
+    <div class="xl:w-4/6 p-8 bg-green-500">left</div>
+    <div class="xl:w-2/6 p-8 bg-red-200">right</div>
   </div>
 
 </main>
