@@ -8,7 +8,79 @@
 
 {% include 'includes/header.html' %}
 
-<img class="w-full" src="{% static 'img/body-image.png' %}">
+<!-- <img class="w-full" src="{% static 'img/body-image.png' %}">-->
+
+<main class="max-w-7xl mx-auto px-4 py-6">
+  <!-- Event Banner -->
+  <section class="relative bg-cover bg-center h-96" style="background-image: url('{% static 'img/body-image.png' %}');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <button class="bg-green-500 text-white py-2 px-4 rounded">Подробнее</button>
+    </div>
+  </section>
+
+  <!-- Calendar and Announcements -->
+  <section class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div class="lg:col-span-2 bg-white p-6 shadow-md rounded">
+      <h2 class="text-xl font-semibold mb-4">Анонс</h2>
+      <p>Активное обсуждение вопросов ведется...</p>
+    </div>
+    <div class="bg-white p-6 shadow-md rounded">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-semibold">19 Сентября</h2>
+        <span>Сентябрь</span>
+      </div>
+      <div class="calendar">
+        <!-- Calendar content here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Results, Membership, Rules -->
+  <section class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+    <div class="bg-white p-6 shadow-md rounded">
+      <h3 class="text-lg font-semibold">РЕЗУЛЬТАТЫ</h3>
+    </div>
+    <div class="bg-white p-6 shadow-md rounded">
+      <h3 class="text-lg font-semibold">ЧЛЕНСТВО</h3>
+    </div>
+    <div class="bg-white p-6 shadow-md rounded">
+      <h3 class="text-lg font-semibold">ПРАВИЛА</h3>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="mt-6">
+    <h2 class="text-2xl font-semibold mb-4">Фото галерея</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white p-4 shadow-md rounded">
+        <img src="path-to-your-image.jpg" alt="Photo 1" class="w-full h-40 object-cover rounded">
+        <p class="mt-2 text-sm">Чемпионат мира, Джизак / Узбекистан</p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounded">
+        <img src="path-to-your-image.jpg" alt="Photo 2" class="w-full h-40 object-cover rounded">
+        <p class="mt-2 text-sm">Чемпионат мира, Намангун / Узбекистан</p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounded">
+        <img src="path-to-your-image.jpg" alt="Photo 3" class="w-full h-40 object-cover rounded">
+        <p class="mt-2 text-sm">Чемпионат мира, Уфа / Россия</p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounded">
+        <img src="path-to-your-image.jpg" alt="Photo 4" class="w-full h-40 object-cover rounded">
+        <p class="mt-2 text-sm">Чемпионат мира, Ташкент / Узбекистан</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Info -->
+  <section class="mt-6 bg-white p-6 shadow-md rounded">
+    <h2 class="text-xl font-semibold mb-4">МЕРОПРИЯТИЯ</h2>
+    <div class="flex flex-wrap items-center">
+      <img src="path-to-your-image.jpg" alt="Event" class="w-full md:w-1/3 object-cover rounded">
+      <p class="mt-4 md:mt-0 md:ml-4">8 тур прошло первенство мира по борьбе...</p>
+    </div>
+  </section>
+</main>
+
 
 {% include 'includes/footer.html' %}
 
