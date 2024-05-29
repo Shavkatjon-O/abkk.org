@@ -18,23 +18,22 @@
     </div>
   </section> -->
 
-
   <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
       <div class="carousel-container">
-        <img src="{% static 'img/slider/slider-image-1.jpg' %}" alt="Slide 1" class="w-full">
-        <img src="{% static 'img/slider/slider-image-2.jpg' %}" alt="Slide 2" class="w-full">
-        <img src="{% static 'img/slider/slider-image-3.jpg' %}" alt="Slide 3" class="w-full">
-        <img src="{% static 'img/slider/slider-image-4.jpg' %}" alt="Slide 4" class="w-full">
-        <img src="{% static 'img/slider/slider-image-5.jpg' %}" alt="Slide 5" class="w-full">
+        <img src="{% static 'img/slider/slider-image-1.jpg' %}" alt="Slide 1" class="w-full object-cover">
+        <img src="{% static 'img/slider/slider-image-2.jpg' %}" alt="Slide 2" class="w-full object-cover">
+        <img src="{% static 'img/slider/slider-image-3.jpg' %}" alt="Slide 3" class="w-full object-cover">
+        <img src="{% static 'img/slider/slider-image-4.jpg' %}" alt="Slide 4" class="w-full object-cover">
+        <img src="{% static 'img/slider/slider-image-5.jpg' %}" alt="Slide 5" class="w-full object-cover">
       </div>
     </div>
     <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-gray-500" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-gray-500" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-gray-500" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-gray-500" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-gray-500" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
     </div>
     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
       <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 focus:ring-4 focus:ring-white group-focus:outline-none">
@@ -87,8 +86,10 @@
       showSlide(currentSlide);
     }
 
+    // Initial setup
     showSlide(currentSlide);
 
+    // Event listeners
     nextButton.addEventListener('click', nextSlide);
     prevButton.addEventListener('click', prevSlide);
 
@@ -98,6 +99,7 @@
       });
     });
   </script>
+
 
 
 
