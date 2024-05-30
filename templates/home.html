@@ -37,7 +37,39 @@
   </div>
 
   <div class="xl:flex">
-    <div class="xl:w-4/6 p-8">left</div>
+    <div class="xl:w-4/6 p-8 flex flex-col">
+
+      <div class="flex flex-wrap -mx-4">
+        <a href="{% url 'competition_documents' %}" class="block w-full md:w-1/3 px-4 mb-8">
+          <div class="p-8 h-40 w-full flex justify-center items-center shadow-md bg-gray-100 hover:bg-gray-200 hover:shadow-xl transition duration-200">
+            <img src="{% static 'img/icon1.png' %}">
+            <div class="flex flex-col ml-4">
+              <span class="text-lg font-bold uppercase">Результаты</span>
+              <span>Список результатов по соревнованиям</span>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'membership' %}" class="block w-full md:w-1/3 px-4 mb-8">
+          <div class="p-8 h-40 w-full flex justify-center items-center shadow-md bg-gray-100 hover:bg-gray-200 hover:shadow-xl transition duration-200">
+            <img src="{% static 'img/icon2.png' %}">
+            <div class="flex flex-col ml-4">
+              <span class="text-lg font-bold uppercase">Членство</span>
+              <span>Членство в конфедерации</span>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'rules' %}" class="block w-full md:w-1/3 px-4 mb-8">
+          <div class="p-8 h-40 w-full flex justify-center items-center shadow-md bg-gray-100 hover:bg-gray-200 hover:shadow-xl transition duration-200">
+            <img src="{% static 'img/icon3.png' %}">
+            <div class="flex flex-col ml-4">
+              <span class="text-lg font-bold uppercase">ПРАВИЛА</span>
+              <span>Правила борьбы  белбогли кураш</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
 
     <div class="xl:w-2/6 p-8 space-y-6 bg-gray-50">
       <div class="px-2 text-2xl font-semibold">
