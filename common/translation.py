@@ -59,4 +59,4 @@ class KurashProvisionsTranslationOptions(TranslationOptions):
 
 @register(models.EventsAnnouncements)
 class EventsAnnouncementsTranslationOptions(TranslationOptions):
-    fields = ("content",)
+    fields = ("title", "content")
