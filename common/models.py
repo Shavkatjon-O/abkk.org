@@ -53,7 +53,7 @@ class AboutGuides(BaseModel):
 
 
 class AboutDocuments(BaseModel):
-    title = models.CharField(max_length=256)
+    title = models.CharField(max_length=256, null=True, blank=True)
     document = models.FileField(upload_to="documents/")
 
     class Meta:
@@ -62,7 +62,7 @@ class AboutDocuments(BaseModel):
 
 
 class AboutRegulations(BaseModel):
-    title = models.CharField(max_length=256)
+    title = models.CharField(max_length=256, null=True, blank=True)
     document = models.FileField(upload_to="documents/")
 
     class Meta:
@@ -79,7 +79,7 @@ class AboutMembership(BaseModel):
 
 
 class CompetitonCalendars(BaseModel):
-    title = models.CharField(max_length=256)
+    title = models.CharField(max_length=256, null=True, blank=True)
     document = models.FileField(upload_to="documents/")
 
     class Meta:
@@ -88,7 +88,7 @@ class CompetitonCalendars(BaseModel):
 
 
 class CompetitionReports(BaseModel):
-    title = models.CharField(max_length=256)
+    title = models.CharField(max_length=256, null=True, blank=True)
     document = models.FileField(upload_to="documents/")
 
     class Meta:
@@ -97,7 +97,7 @@ class CompetitionReports(BaseModel):
 
 
 class CompetitionDocuments(BaseModel):
-    title = models.CharField(max_length=256)
+    title = models.CharField(max_length=256, null=True, blank=True)
     document = models.FileField(upload_to="documents/")
 
     class Meta:
@@ -122,7 +122,7 @@ class KurashRules(BaseModel):
 
 
 class KurashProvisions(BaseModel):
-    title = models.CharField(max_length=256)
+    title = models.CharField(max_length=256, null=True, blank=True)
     document = models.FileField(upload_to="documents/")
 
     class Meta:
