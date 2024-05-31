@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-31 12:49+0500\n"
-"PO-Revision-Date: 2024-05-31 13:19+0500\n"
+"PO-Revision-Date: 2024-05-31 18:08+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -63,7 +63,7 @@ msgstr "Competition reports"
 
 #: templates/includes/header.html:14
 msgid "о нас"
-msgstr "About"
+msgstr "About us"
 
 #: templates/includes/header.html:18 templates/includes/header.html:130
 msgid "о азиатской конфедерации белбогли кураш"
