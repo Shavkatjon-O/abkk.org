@@ -84,8 +84,8 @@ class AboutDocuments(BaseModel):
     document = models.FileField(upload_to="documents/")
 
     class Meta:
-        verbose_name = "Документы"
-        verbose_name_plural = "Документы"
+        verbose_name = "Учредительные документы"
+        verbose_name_plural = "Учредительные документы"
 
     def __str__(self):
         return self.title
@@ -107,8 +107,8 @@ class AboutSymbols(BaseModel):
     title = models.CharField(max_length=256)
 
     class Meta:
-        verbose_name = "Символы"
-        verbose_name_plural = "Символы"
+        verbose_name = "Символы конфедерации"
+        verbose_name_plural = "Символы конфедерации"
 
     def __str__(self):
         return self.title
@@ -119,56 +119,56 @@ class AboutMembership(BaseModel):
     content = RichTextUploadingField()
 
     class Meta:
-        verbose_name = "Членство"
-        verbose_name_plural = "Членство"
+        verbose_name = "Членство в конфедерации"
+        verbose_name_plural = "Членство в конфедерации"
 
     def __str__(self):
         return self.title
 
 
 class CompetitionReports(BaseModel):
-    title = models.CharField(max_length=256, null=True, blank=True)
-    document = models.FileField(upload_to="documents/", null=True, blank=True)
+    title = models.CharField(max_length=256)
+    document = models.FileField(upload_to="documents/")
 
     class Meta:
-        verbose_name = "Competition Reports"
-        verbose_name_plural = "Competition Reports"
+        verbose_name = "Протоколы соревнований"
+        verbose_name_plural = "Документы о соревнованиях"
 
     def __str__(self):
-        return self.title or str(self.id)
+        return self.title
 
 
 class CompetitionDocuments(BaseModel):
-    title = models.CharField(max_length=256, null=True, blank=True)
-    document = models.FileField(upload_to="documents/", null=True, blank=True)
+    title = models.CharField(max_length=256)
+    document = models.FileField(upload_to="documents/")
 
     class Meta:
         verbose_name = "Competition Documents"
         verbose_name_plural = "Competition Documents"
 
     def __str__(self):
-        return self.title or str(self.id)
+        return self.title
 
 
-class History(BaseModel):
+class KurashHistory(BaseModel):
     title = models.CharField(max_length=256)
     content = RichTextUploadingField()
 
     class Meta:
-        verbose_name = "History"
-        verbose_name_plural = "History"
+        verbose_name = "История белбогли кураш"
+        verbose_name_plural = "История белбогли кураш"
 
     def __str__(self):
-        return self.title or str(self.id)
+        return self.title
 
 
-class Rules(BaseModel):
+class KurashRules(BaseModel):
     title = models.CharField(max_length=256)
     content = RichTextUploadingField()
 
     class Meta:
-        verbose_name = "Rules"
-        verbose_name_plural = "Rules"
+        verbose_name = "Правила белбогли кураш"
+        verbose_name_plural = "Правила белбогли кураш"
 
     def __str__(self):
-        return self.title or str(self.id)
+        return self.title
