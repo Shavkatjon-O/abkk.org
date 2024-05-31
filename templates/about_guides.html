@@ -1,22 +1,22 @@
-{% extends 'base.html' %}
+{% extends '_base.html' %}
 
 {% load i18n %}
 {% load static %}
 
-{% block title %} {{ membership.title|safe }} {% endblock title %}
+{% block title %} {{ guides.title|safe }} {% endblock title %}
 {% block content %}
 
 {% include 'includes/header.html' %}
 
 <div class="flex justify-center bg-gradient-to-tr from-custom-blue to-custom-green bg-green-500">
-  <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8">
-    <h1 class="text-xl text-white font-semibold">{{ membership.title|safe }}</h1>
+  <div class="xl:w-3/6 w-full xl:px-0 px-4 py-8">
+    <h1 class="text-xl text-white font-semibold">{{ guides.title|safe }}</h1>
   </div>
 </div>
 
 <div class="flex justify-center">
-  <div class="xl:w-3/6 xl:px-0 px-8 mt-8">
-    <p>{{ membership.content|safe }}</p>
+  <div class="xl:w-3/6 xl:px-0 px-4 mt-8">
+    <p>{{ guides.content|safe }}</p>
   </div>
 </div>
 

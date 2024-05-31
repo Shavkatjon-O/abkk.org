@@ -57,4 +57,4 @@ from common import models
 
 @admin.register(models.Documents)
 class DocumentsAdmin(TabbedTranslationAdmin):
-    list_display = ("id", "title", "document_type")
+    list_display = ("id", "document_type", "title")

@@ -1,31 +1,22 @@
-{% extends 'base.html' %}
+{% extends '_base.html' %}
 
 {% load i18n %}
 {% load static %}
 
-{% block title %} {% trans 'Учредительные документы' %} {% endblock title %}
+{% block title %} {{ membership.title|safe }} {% endblock title %}
 {% block content %}
 
 {% include 'includes/header.html' %}
 
 <div class="flex justify-center bg-gradient-to-tr from-custom-blue to-custom-green bg-green-500">
   <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8">
-    <h1 class="text-xl text-white font-semibold">{% trans 'Учредительные документы' %}</h1>
+    <h1 class="text-xl text-white font-semibold">{{ membership.title|safe }}</h1>
   </div>
 </div>
 
 <div class="flex justify-center">
-  <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8 space-y-4">
-    {% if documents %}
-      {% for document in documents %}
-        {% if document.document %}
-          <div class="flex items-center text-blue-700">
-            <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
-            <a href="{{ document.document.url }}" download="{{ document.document.name }}">{{ document.title }}</a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+  <div class="xl:w-3/6 xl:px-0 px-8 mt-8">
+    <p>{{ membership.content|safe }}</p>
   </div>
 </div>
 
