@@ -10,7 +10,7 @@ class HomePageView(TemplateView):
         context = super().get_context_data(**kwargs)
 
         context["carousel"] = models.Carousel.objects.all()
-        context["gallery"] = models.Gallery.objects.all()[:3]
+        context["gallery"] = models.Gallery.objects.all().order_by("-id")[:3]
         context["announcement"] = models.EventsAnnouncements.objects.first()
 
         return context
