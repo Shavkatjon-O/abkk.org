@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
-RUN apk update && apk add --no-cache nodejs npm postgresql-dev gettext
+RUN apk update && apk add --no-cache nodejs npm postgresql-dev
 
 COPY requirements/base.txt base.txt
 COPY requirements/production.txt production.txt
