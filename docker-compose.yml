@@ -28,6 +28,7 @@ services:
       - ./media:/home/app/web/media
       - ./static:/home/app/web/static
       - ./locale:/home/app/web/locale
+      - ./logs:/home/app/web/logs
     env_file:
       - .env
     environment:
