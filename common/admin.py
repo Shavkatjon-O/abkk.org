@@ -53,5 +53,5 @@ class KurashRulesAdmin(TabbedTranslationAdmin):
     pass
 
 
-admin.site.register(models.CarouselImage)
+admin.site.register(models.Carousel)
 admin.site.register(models.Gallery)

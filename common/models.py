@@ -39,7 +39,7 @@ class BaseModel(models.Model):
 ########################################################################
 
 
-class CarouselImage(BaseModel):
+class Carousel(BaseModel):
     image = models.ImageField(upload_to="carousel/")
 
     class Meta:
