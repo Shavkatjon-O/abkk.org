@@ -5,7 +5,7 @@
   <div>
     <a href="{% url 'home_page' %}">
       {% get_current_language as LANGUAGE_CODE %}
-      <img class="w-52" src="{% static 'img/logo/logo_'|add:LANGUAGE_CODE|add:'.png' %}" alt="Logo">
+      <img class="w-56" src="{% static 'img/logo/logo_'|add:LANGUAGE_CODE|add:'.png' %}" alt="Logo">
     </a>
   </div>
   <nav class="hidden xl:flex uppercase space-x-6">
@@ -73,7 +73,7 @@
       </div>
     </div>
   </nav>
-  <div class="w-52 hidden xl:flex justify-end items-center">
+  <div class="w-56 hidden xl:flex justify-end items-center">
     <form action="{% url 'set_language' %}" method="post">
       {% csrf_token %}
       <div class="w-full">
