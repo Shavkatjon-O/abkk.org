@@ -70,7 +70,7 @@ class AboutMembershipView(TemplateView):
         return context
 
 
-class CompetitonCalendasrView(TemplateView):
+class CompetitonCalendarsView(TemplateView):
     template_name = "competition_calendars.html"
 
     def get_context_data(self, **kwargs):
