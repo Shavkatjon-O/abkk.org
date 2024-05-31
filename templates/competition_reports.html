@@ -16,12 +16,12 @@
 
 <div class="flex justify-center">
   <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8 space-y-4">
-    {% if competition_reports %}
-      {% for competition_report in competition_reports %}
-        {% if competition_report.document %}
+    {% if reports %}
+      {% for report in reports %}
+        {% if report.document %}
           <div class="flex items-center text-blue-700">
             <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
-            <a href="{{ competition_report.document.url }}" download="{{ competition_report.document.name }}">{{ competition_report.title }}</a>
+            <a href="{{ report.document.url }}" download="{{ report.document.name }}">{{ report.title }}</a>
           </div>
         {% endif %}
       {% endfor %}

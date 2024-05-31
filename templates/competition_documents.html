@@ -16,12 +16,12 @@
 
 <div class="flex justify-center">
   <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8 space-y-4">
-    {% if competition_documents %}
-      {% for competition_document in competition_documents %}
-        {% if competition_document.document %}
+    {% if documents %}
+      {% for document in documents %}
+        {% if document.document %}
           <div class="flex items-center text-blue-700">
             <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
-            <a href="{{ competition_document.document.url }}" download="{{ competition_document.document.name }}">{{ competition_document.title }}</a>
+            <a href="{{ document.document.url }}" download="{{ document.document.name }}">{{ document.title }}</a>
           </div>
         {% endif %}
       {% endfor %}
