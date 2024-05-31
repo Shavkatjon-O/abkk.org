@@ -14,12 +14,12 @@ class AboutGuidesTranslationOptions(TranslationOptions):
 
 @register(models.AboutDocuments)
 class AboutDocumentsTranslationOptions(TranslationOptions):
-    fields = ("document",)
+    fields = ("title", "document")
 
 
 @register(models.AboutRegulations)
 class AboutRegulationsTranslationOptions(TranslationOptions):
-    fields = ("document",)
+    fields = ("title", "document")
 
 
 @register(models.AboutMembership)
@@ -29,17 +29,17 @@ class AboutMembershipTranslationOptions(TranslationOptions):
 
 @register(models.CompetitonCalendars)
 class CompetitonCalendarsTranslationOptions(TranslationOptions):
-    fields = ("document",)
+    fields = ("title", "document")
 
 
 @register(models.CompetitionReports)
 class CompetitionReportsTranslationOptions(TranslationOptions):
-    fields = ("document",)
+    fields = ("title", "document")
 
 
 @register(models.CompetitionDocuments)
 class CompetitionDocumentsTranslationOptions(TranslationOptions):
-    fields = ("document",)
+    fields = ("title", "document")
 
 
 @register(models.KurashHistory)
@@ -54,7 +54,7 @@ class KurashRulesTranslationOptions(TranslationOptions):
 
 @register(models.KurashProvisions)
 class KurashProvisionsTranslationOptions(TranslationOptions):
-    fields = ("document",)
+    fields = ("title", "document")
 
 
 @register(models.EventsAnnouncements)

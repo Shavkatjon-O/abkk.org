@@ -16,12 +16,12 @@
 
 <div class="flex justify-center">
   <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8 space-y-4">
-    {% if calendars %}
-      {% for calendar in calendars %}
-        {% if calendar.document %}
+    {% if documents %}
+      {% for document in documents %}
+        {% if document.document %}
           <div class="flex items-center text-blue-700">
             <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
-            <a href="{{ calendar.document.url }}" download="{{ calendar.document.name }}">{{ calendar.title }}</a>
+            <a href="{{ document.document.url }}" download="{{ document.document.name }}">{{ document.title }}</a>
           </div>
         {% endif %}
       {% endfor %}

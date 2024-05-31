@@ -9,9 +9,9 @@ class HomePageView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
+        context["announcement"] = models.EventsAnnouncements.objects.first()
         context["carousel"] = models.Carousel.objects.all()
         context["gallery"] = models.Gallery.objects.all().order_by("-id")[:3]
-        context["announcement"] = models.EventsAnnouncements.objects.first()
 
         return context
 
@@ -22,6 +22,7 @@ class AboutConfederationView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["confederation"] = models.AboutConfederation.objects.first()
+
         return context
 
 
@@ -31,6 +32,7 @@ class AboutGuidesView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["guides"] = models.AboutGuides.objects.first()
+
         return context
 
 
@@ -40,6 +42,7 @@ class AboutDocumentsView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["documents"] = models.AboutDocuments.objects.all()
+
         return context
 
 
@@ -48,7 +51,8 @@ class AboutRegulationsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["regulations"] = models.AboutRegulations.objects.all()
+        context["documents"] = models.AboutRegulations.objects.all()
+
         return context
 
 
@@ -62,6 +66,7 @@ class AboutMembershipView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["membership"] = models.AboutMembership.objects.first()
+
         return context
 
 
@@ -70,7 +75,8 @@ class CompetitonCalendarsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["calendars"] = models.CompetitonCalendars.objects.all()
+        context["documents"] = models.CompetitonCalendars.objects.all()
+
         return context
 
 
@@ -79,7 +85,8 @@ class CompetitionReportsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["reports"] = models.CompetitionReports.objects.all()
+        context["documents"] = models.CompetitionReports.objects.all()
+
         return context
 
 
@@ -89,6 +96,7 @@ class CompetitionDocumentsView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["documents"] = models.CompetitionDocuments.objects.all()
+
         return context
 
 
@@ -115,7 +123,8 @@ class KurashProvisionsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["provisions"] = models.KurashProvisions.objects.all()
+        context["documents"] = models.KurashProvisions.objects.all()
+
         return context
 
 
