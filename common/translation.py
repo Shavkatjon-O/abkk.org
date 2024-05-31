@@ -32,6 +32,11 @@ class AboutMembershipTranslationOptions(TranslationOptions):
     fields = ("title", "content")
 
 
+@register(models.CompetitonCalendar)
+class CompetitonCalendarTranslationOptions(TranslationOptions):
+    fields = ("title", "document")
+
+
 @register(models.CompetitionReports)
 class CompetitionReportsTranslationOptions(TranslationOptions):
     fields = ("title", "document")

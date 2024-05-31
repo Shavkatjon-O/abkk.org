@@ -107,6 +107,18 @@ class AboutMembership(BaseModel):
         return self.title
 
 
+class CompetitonCalendar(BaseModel):
+    title = models.CharField(max_length=256)
+    document = models.FileField(upload_to="documents/")
+
+    class Meta:
+        verbose_name = "Календарь соревнований"
+        verbose_name_plural = "Календарь соревнований"
+
+    def __str__(self):
+        return self.title
+
+
 class CompetitionReports(BaseModel):
     title = models.CharField(max_length=256)
     document = models.FileField(upload_to="documents/")

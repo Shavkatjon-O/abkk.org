@@ -33,6 +33,11 @@ class AboutMembershipAdmin(TabbedTranslationAdmin):
     pass
 
 
+@admin.register(models.CompetitonCalendar)
+class CompetitonCalendarAdmin(TabbedTranslationAdmin):
+    pass
+
+
 @admin.register(models.CompetitionReports)
 class CompetitionReportsAdmin(TabbedTranslationAdmin):
     pass

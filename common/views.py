@@ -70,6 +70,15 @@ class AboutMembershipView(TemplateView):
         return context
 
 
+class CompetitonCalendarView(TemplateView):
+    template_name = "competition_calendars.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["calendars"] = models.CompetitonCalendar.objects.all()
+        return context
+
+
 class CompetitionReportsView(TemplateView):
     template_name = "competition_reports.html"
 
