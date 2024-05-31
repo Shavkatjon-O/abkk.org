@@ -1,7 +1,7 @@
 {% load static i18n tailwind_tags %}
 
 <!DOCTYPE html>
-<html lang="{% get_current_language %}">
+<html lang="{% get_current_language as LANGUAGE_CODE %}">
 	<head>
 		<title>
 			{% block title %}
