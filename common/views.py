@@ -18,7 +18,7 @@ class AboutConfederationView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["confederation"] = models.Confederation.objects.first()
+        context["confederation"] = models.AboutConfederation.objects.first()
         return context
 
 
@@ -27,7 +27,7 @@ class AboutGuidesView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["guides"] = models.Guides.objects.first()
+        context["guides"] = models.AboutGuides.objects.first()
         return context
 
 
@@ -36,7 +36,7 @@ class AboutDocumentsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["documents"] = models.Documents.objects.all()
+        context["documents"] = models.AboutDocuments.objects.all()
         return context
 
 
@@ -45,7 +45,7 @@ class AboutRegulationsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["regulations"] = models.Regulations.objects.all()
+        context["regulations"] = models.AboutRegulations.objects.all()
         return context
 
 
@@ -54,7 +54,7 @@ class AboutSymbolsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["symbols"] = models.Symbols.objects.first()
+        context["symbols"] = models.AboutSymbols.objects.first()
         return context
 
 
@@ -63,7 +63,7 @@ class AboutMembershipView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["membership"] = models.Membership.objects.first()
+        context["membership"] = models.AboutMembership.objects.first()
         return context
 
 
@@ -90,7 +90,7 @@ class KurashHistoryView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["history"] = models.History.objects.first()
+        context["history"] = models.KurashHistory.objects.first()
         return context
 
 
@@ -99,5 +99,5 @@ class KurashRulesView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["rules"] = models.Rules.objects.first()
+        context["rules"] = models.KurashRules.objects.first()
         return context
