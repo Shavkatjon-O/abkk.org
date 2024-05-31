@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-25 00:49+0500\n"
+"POT-Creation-Date: 2024-05-31 12:50+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,18 +21,137 @@ msgstr ""
 msgid "General "
 msgstr ""
 
-#: core/settings/base.py:97
+#: core/settings/base.py:93
 msgid "Russian"
 msgstr ""
 
-#: core/settings/base.py:98
+#: core/settings/base.py:94
 msgid "Uzbek"
 msgstr ""
 
-#: core/settings/base.py:99
+#: core/settings/base.py:95
 msgid "English"
 msgstr ""
 
-#: templates/about/confederation.html:20
+#: templates/about_confederation.html:24 templates/about_documents.html:33
+#: templates/about_guides.html:24 templates/about_membership.html:24
+#: templates/about_regulations.html:33 templates/about_symbols.html:22
+#: templates/competition_documents.html:33
+#: templates/competition_reports.html:33 templates/kurash_history.html:24
+#: templates/kurash_rules.html:24
 msgid "Следите за новостями"
+msgstr ""
+
+#: templates/about_documents.html:6 templates/about_documents.html:13
+msgid "Учредительные документы"
+msgstr ""
+
+#: templates/about_regulations.html:6 templates/about_regulations.html:13
+msgid "Устав"
+msgstr ""
+
+#: templates/competition_documents.html:6
+#: templates/competition_documents.html:13
+msgid "Документы о соревнованиях"
+msgstr ""
+
+#: templates/competition_reports.html:6 templates/competition_reports.html:13
+msgid "Протоколы соревнований"
+msgstr ""
+
+#: templates/includes/header.html:14
+msgid "о нас"
+msgstr ""
+
+#: templates/includes/header.html:18 templates/includes/header.html:130
+msgid "о азиатской конфедерации белбогли кураш"
+msgstr ""
+
+#: templates/includes/header.html:19 templates/includes/header.html:131
+msgid "руководства"
+msgstr ""
+
+#: templates/includes/header.html:20 templates/includes/header.html:132
+msgid "учредительные документы"
+msgstr ""
+
+#: templates/includes/header.html:21 templates/includes/header.html:133
+msgid "устав"
+msgstr ""
+
+#: templates/includes/header.html:22 templates/includes/header.html:134
+msgid "символы азиатской конфедерации белбогли кураш"
+msgstr ""
+
+#: templates/includes/header.html:23 templates/includes/header.html:135
+msgid "членство в конфедерации"
+msgstr ""
+
+#: templates/includes/header.html:27 templates/includes/header.html:140
+msgid "белбогли кураш"
+msgstr ""
+
+#: templates/includes/header.html:31 templates/includes/header.html:146
+msgid "история белбогли кураш"
+msgstr ""
+
+#: templates/includes/header.html:32 templates/includes/header.html:147
+msgid "правила белбогли кураш"
+msgstr ""
+
+#: templates/includes/header.html:33 templates/includes/header.html:148
+msgid "положения"
+msgstr ""
+
+#: templates/includes/header.html:34 templates/includes/header.html:149
+msgid "антидопинг"
+msgstr ""
+
+#: templates/includes/header.html:38 templates/includes/header.html:154
+msgid "соревнования"
+msgstr ""
+
+#: templates/includes/header.html:42 templates/includes/header.html:160
+msgid "календарь соревнований"
+msgstr ""
+
+#: templates/includes/header.html:43 templates/includes/header.html:161
+msgid "протоколы соревнований"
+msgstr ""
+
+#: templates/includes/header.html:44 templates/includes/header.html:162
+msgid "документы о соревнованиях"
+msgstr ""
+
+#: templates/includes/header.html:48 templates/includes/header.html:53
+#: templates/includes/header.html:167 templates/includes/header.html:174
+msgid "мероприятия"
+msgstr ""
+
+#: templates/includes/header.html:52 templates/includes/header.html:173
+msgid "анонс"
+msgstr ""
+
+#: templates/includes/header.html:54 templates/includes/header.html:175
+msgid "сми о нас"
+msgstr ""
+
+#: templates/includes/header.html:58 templates/includes/header.html:180
+msgid "галерея"
+msgstr ""
+
+#: templates/includes/header.html:62 templates/includes/header.html:186
+msgid "видео"
+msgstr ""
+
+#: templates/includes/header.html:63 templates/includes/header.html:187
+msgid "фото"
+msgstr ""
+
+#: templates/includes/header.html:67 templates/includes/header.html:192
+msgid "контакты"
+msgstr ""
+
+#: templates/includes/header.html:71 templates/includes/header.html:198
+msgid "контактная связь"
 msgstr ""
