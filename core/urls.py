@@ -1,10 +1,11 @@
 from django.contrib import admin
+from django.utils.translation import gettext_lazy as _
 from django.urls import path, include
+
+from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.i18n import set_language
-from django.utils.translation import gettext_lazy as _
 from django.conf.urls.i18n import i18n_patterns
-from django.conf import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -13,9 +14,7 @@ urlpatterns = [
     path("rosetta/", include("rosetta.urls")),
 ]
 
-urlpatterns += i18n_patterns(
-    path("", include("common.urls")),
-)
+urlpatterns += i18n_patterns(path("", include("common.urls")))
 
 if settings.DEBUG:
     urlpatterns += [path("__reload__/", include("django_browser_reload.urls"))]
