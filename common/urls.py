@@ -40,12 +40,12 @@ urlpatterns = [
     path(
         "kurash/history/",
         views.KurashHistoryView.as_view(),
-        name="history",
+        name="kurash_history",
     ),
     path(
         "kurash/rules/",
         views.KurashRulesView.as_view(),
-        name="rules",
+        name="kurash_rules",
     ),
     path(
         "competition/reports/",
