@@ -90,27 +90,8 @@
             transform: translateX(-50%);
           }
         }
-
         .animate-slide {
-          animation: slide 20s linear infinite; /* Increase duration for smoother sliding */
-        }
-
-        .fade-left, .fade-right {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          width: 10%; /* Adjust as needed */
-          pointer-events: none;
-        }
-
-        .fade-left {
-          left: 0;
-          background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-        }
-
-        .fade-right {
-          right: 0;
-          background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+          animation: slide 20s linear infinite;
         }
       </style>
 
@@ -126,14 +107,13 @@
           <img src="{% static 'img/sponsors/sponsors-3.png' %}" class="h-20">
           <img src="{% static 'img/sponsors/sponsors-4.png' %}" class="h-20">
         </div>
-        <div class="fade-left"></div>
-        <div class="fade-right"></div>
+        <div class="absolute top-0 bottom-0 left-0 w-1/6 bg-gradient-to-r from-white to-transparent opacity-100"></div>
+        <div class="absolute top-0 bottom-0 right-0 w-1/6 bg-gradient-to-l from-white to-transparent opacity-100"></div>
       </div>
-
 
     </div>
 
-    <div class="xl:w-2/6 p-8 space-y-6 bg-gray-50">
+    <div class="xl:w-2/6 p-8 space-y-6 bg-gray-100">
       <div class="px-2 text-2xl font-semibold">
         <span>Фото галерея</span>
       </div>
