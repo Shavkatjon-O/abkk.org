@@ -50,7 +50,7 @@ class KurashHistoryAdmin(TabbedTranslationAdmin):
 
 @admin.register(models.KurashRules)
 class KurashRulesAdmin(TabbedTranslationAdmin):
-    passs
+    pass
 
 
 admin.site.register(models.CarouselImage)
