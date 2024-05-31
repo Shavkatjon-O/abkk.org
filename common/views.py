@@ -14,7 +14,7 @@ class HomePageView(TemplateView):
 
 
 class ConfederationView(TemplateView):
-    template_name = "confederation.html"
+    template_name = "about_confederation.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -23,7 +23,7 @@ class ConfederationView(TemplateView):
 
 
 class GuidesView(TemplateView):
-    template_name = "guides.html"
+    template_name = "about_guides.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -32,7 +32,7 @@ class GuidesView(TemplateView):
 
 
 class DocumentsView(TemplateView):
-    template_name = "documents.html"
+    template_name = "about_documents.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -41,7 +41,7 @@ class DocumentsView(TemplateView):
 
 
 class RegulationsView(TemplateView):
-    template_name = "regulations.html"
+    template_name = "about_regulations.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -68,7 +68,7 @@ class CompetitionDocumentsView(TemplateView):
 
 
 class SymbolsView(TemplateView):
-    template_name = "symbols.html"
+    template_name = "about_symbols.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -77,7 +77,7 @@ class SymbolsView(TemplateView):
 
 
 class MembershipView(TemplateView):
-    template_name = "membership.html"
+    template_name = "about_membership.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -86,7 +86,7 @@ class MembershipView(TemplateView):
 
 
 class HistoryView(TemplateView):
-    template_name = "history.html"
+    template_name = "kurash_history.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -95,7 +95,7 @@ class HistoryView(TemplateView):
 
 
 class RulesView(TemplateView):
-    template_name = "rules.html"
+    template_name = "kurash_rules.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
