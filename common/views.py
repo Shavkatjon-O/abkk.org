@@ -8,7 +8,7 @@ class HomePageView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["carousel"] = models.CarouselImage.objects.all()
+        context["carousel"] = models.Carousel.objects.all()
         context["gallery"] = models.Gallery.objects.all()
         return context
 
