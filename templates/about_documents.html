@@ -21,7 +21,7 @@
         {% if document.document %}
           <div class="flex items-center text-blue-700">
             <ion-icon name="download-outline" class="text-lg mr-1"></ion-icon>
-            <a href="{{ document.document.url }}" download="{{ document.document.name }}">title</a>
+            <a href="{{ document.document.url }}" download="{{ document.document.name }}">{{ document.title }}</a>
           </div>
         {% endif %}
       {% endfor %}
