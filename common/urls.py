@@ -2,17 +2,51 @@ from django.urls import path
 from common import views
 
 urlpatterns = [
-    path("", views.HomePageView.as_view(), name="home_page"),
     path(
-        "about/confederation/", views.ConfederationView.as_view(), name="confederation"
+        "",
+        views.HomePageView.as_view(),
+        name="home_page",
     ),
-    path("about/guides/", views.GuidesView.as_view(), name="guides"),
-    path("about/documents/", views.DocumentsView.as_view(), name="documents"),
-    path("about/regulations/", views.RegulationsView.as_view(), name="regulations"),
-    path("about/symbols/", views.SymbolsView.as_view(), name="symbols"),
-    path("about/membership/", views.MembershipView.as_view(), name="membership"),
-    path("kurash/history/", views.HistoryView.as_view(), name="history"),
-    path("kurash/rules/", views.RulesView.as_view(), name="rules"),
+    path(
+        "about/confederation/",
+        views.AboutConfederationView.as_view(),
+        name="about_confederation",
+    ),
+    path(
+        "about/guides/",
+        views.AboutGuidesView.as_view(),
+        name="about_guides",
+    ),
+    path(
+        "about/documents/",
+        views.AboutDocumentsView.as_view(),
+        name="about_documents",
+    ),
+    path(
+        "about/regulations/",
+        views.AboutRegulationsView.as_view(),
+        name="about_regulations",
+    ),
+    path(
+        "about/symbols/",
+        views.AboutSymbolsView.as_view(),
+        name="about_symbols",
+    ),
+    path(
+        "about/membership/",
+        views.AboutMembershipView.as_view(),
+        name="about_membership",
+    ),
+    path(
+        "kurash/history/",
+        views.KurashHistoryView.as_view(),
+        name="history",
+    ),
+    path(
+        "kurash/rules/",
+        views.KurashRulesView.as_view(),
+        name="rules",
+    ),
     path(
         "competition/reports/",
         views.CompetitionReportsView.as_view(),
