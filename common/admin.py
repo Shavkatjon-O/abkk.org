@@ -43,5 +43,15 @@ class CompetitionDocumentsAdmin(TabbedTranslationAdmin):
     pass
 
 
+@admin.register(models.KurashHistory)
+class KurashHistoryAdmin(TabbedTranslationAdmin):
+    pass
+
+
+@admin.register(models.KurashRules)
+class KurashRulesAdmin(TabbedTranslationAdmin):
+    passs
+
+
 admin.site.register(models.CarouselImage)
 admin.site.register(models.Gallery)

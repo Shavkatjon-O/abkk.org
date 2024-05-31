@@ -13,7 +13,7 @@ class HomePageView(TemplateView):
         return context
 
 
-class ConfederationView(TemplateView):
+class AboutConfederationView(TemplateView):
     template_name = "about_confederation.html"
 
     def get_context_data(self, **kwargs):
@@ -22,7 +22,7 @@ class ConfederationView(TemplateView):
         return context
 
 
-class GuidesView(TemplateView):
+class AboutGuidesView(TemplateView):
     template_name = "about_guides.html"
 
     def get_context_data(self, **kwargs):
@@ -31,7 +31,7 @@ class GuidesView(TemplateView):
         return context
 
 
-class DocumentsView(TemplateView):
+class AboutDocumentsView(TemplateView):
     template_name = "about_documents.html"
 
     def get_context_data(self, **kwargs):
@@ -40,7 +40,7 @@ class DocumentsView(TemplateView):
         return context
 
 
-class RegulationsView(TemplateView):
+class AboutRegulationsView(TemplateView):
     template_name = "about_regulations.html"
 
     def get_context_data(self, **kwargs):
@@ -49,25 +49,7 @@ class RegulationsView(TemplateView):
         return context
 
 
-class CompetitionReportsView(TemplateView):
-    template_name = "competition_reports.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["competition_reports"] = models.CompetitionReports.objects.all()
-        return context
-
-
-class CompetitionDocumentsView(TemplateView):
-    template_name = "competition_documents.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["competition_documents"] = models.CompetitionDocuments.objects.all()
-        return context
-
-
-class SymbolsView(TemplateView):
+class AboutSymbolsView(TemplateView):
     template_name = "about_symbols.html"
 
     def get_context_data(self, **kwargs):
@@ -76,7 +58,7 @@ class SymbolsView(TemplateView):
         return context
 
 
-class MembershipView(TemplateView):
+class AboutMembershipView(TemplateView):
     template_name = "about_membership.html"
 
     def get_context_data(self, **kwargs):
@@ -85,7 +67,25 @@ class MembershipView(TemplateView):
         return context
 
 
-class HistoryView(TemplateView):
+class CompetitionReportsView(TemplateView):
+    template_name = "competition_reports.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["reports"] = models.CompetitionReports.objects.all()
+        return context
+
+
+class CompetitionDocumentsView(TemplateView):
+    template_name = "competition_documents.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["documents"] = models.CompetitionDocuments.objects.all()
+        return context
+
+
+class KurashHistoryView(TemplateView):
     template_name = "kurash_history.html"
 
     def get_context_data(self, **kwargs):
@@ -94,7 +94,7 @@ class HistoryView(TemplateView):
         return context
 
 
-class RulesView(TemplateView):
+class KurashRulesView(TemplateView):
     template_name = "kurash_rules.html"
 
     def get_context_data(self, **kwargs):
