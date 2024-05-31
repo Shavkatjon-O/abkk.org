@@ -42,14 +42,22 @@ class BaseModel(models.Model):
 class CarouselImage(BaseModel):
     image = models.ImageField(upload_to="carousel/")
 
+    class Meta:
+        verbose_name = "Изображение"
+        verbose_name_plural = "Изображения"
+
     def __str__(self):
         return self.image.name
 
 
-class GalleryImage(BaseModel):
+class Gallery(BaseModel):
     title = models.CharField(max_length=256)
     image = models.ImageField(upload_to="gallery/")
-    date = models.DateField(null=True, blank=True)
+    date = models.CharField(max_length=54)
+
+    class Meta:
+        verbose_name = "Галерея"
+        verbose_name_plural = "Галерея"
 
     def __str__(self):
         return self.title
