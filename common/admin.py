@@ -33,5 +33,15 @@ class AboutMembershipAdmin(TabbedTranslationAdmin):
     pass
 
 
-# admin.site.register(models.CarouselImage)
-# admin.site.register(models.GalleryImage)
+@admin.register(models.CompetitionReports)
+class CompetitionReportsAdmin(TabbedTranslationAdmin):
+    pass
+
+
+@admin.register(models.CompetitionDocuments)
+class CompetitionDocumentsAdmin(TabbedTranslationAdmin):
+    pass
+
+
+admin.site.register(models.CarouselImage)
+admin.site.register(models.Gallery)
