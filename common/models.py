@@ -12,28 +12,28 @@ class BaseModel(models.Model):
         abstract = True
 
 
-class DocumentsChoices(models.TextChoices):
-    CONSTITUENT = "CONSTITUENT", "Учредительные"
-    REGULATIONS = "REGULATIONS", "Устав"
-    PROVISIONS = "PROVISIONS", "Положения"
-    REPORTS = "REPORTS", "Протоколы"
-    DOCUMENTS = "DOCUMENTS", "Документы"
+# class DocumentsChoices(models.TextChoices):
+#     CONSTITUENT = "CONSTITUENT", "Учредительные"
+#     REGULATIONS = "REGULATIONS", "Устав"
+#     PROVISIONS = "PROVISIONS", "Положения"
+#     REPORTS = "REPORTS", "Протоколы"
+#     DOCUMENTS = "DOCUMENTS", "Документы"
 
 
-class Documents(BaseModel):
-    title = models.CharField(max_length=256, verbose_name="Название файла")
+# class Documents(BaseModel):
+#     title = models.CharField(max_length=256, verbose_name="Название файла")
 
-    document_type = models.CharField(
-        max_length=256, choices=DocumentsChoices.choices, verbose_name="Тип документа"
-    )
-    document = models.FileField(upload_to="documents/", verbose_name="Документ")
+#     document_type = models.CharField(
+#         max_length=256, choices=DocumentsChoices.choices, verbose_name="Тип документа"
+#     )
+#     document = models.FileField(upload_to="documents/", verbose_name="Документ")
 
-    class Meta:
-        verbose_name = "Документ"
-        verbose_name_plural = "Документы"
+#     class Meta:
+#         verbose_name = "Документ"
+#         verbose_name_plural = "Документы"
 
-    def __str__(self):
-        return self.title
+#     def __str__(self):
+#         return self.title
 
 
 ########################################################################
@@ -55,75 +55,75 @@ class GalleryImage(BaseModel):
         return self.title
 
 
-class Confederation(BaseModel):
+class AboutConfederation(BaseModel):
     title = models.CharField(max_length=256)
     content = RichTextUploadingField()
 
     class Meta:
-        verbose_name = "Confederation"
-        verbose_name_plural = "Confederation"
+        verbose_name = "Конфедерация"
+        verbose_name_plural = "Конфедерация"
 
     def __str__(self):
-        return self.title or str(self.id)
+        return self.title
 
 
-class Guides(BaseModel):
+class AboutGuides(BaseModel):
     title = models.CharField(max_length=256)
     content = RichTextUploadingField()
 
     class Meta:
-        verbose_name = "Guides"
-        verbose_name_plural = "Guides"
+        verbose_name = "Руководство"
+        verbose_name_plural = "Руководство"
 
     def __str__(self):
-        return self.title or str(self.id)
+        return self.title
 
 
-class Membership(BaseModel):
+class AboutDocuments(BaseModel):
+    title = models.CharField(max_length=256)
+    document = models.FileField(upload_to="documents/")
+
+    class Meta:
+        verbose_name = "Документы"
+        verbose_name_plural = "Документы"
+
+    def __str__(self):
+        return self.title
+
+
+class AboutRegulations(BaseModel):
+    title = models.CharField(max_length=256)
+    document = models.FileField(upload_to="documents/")
+
+    class Meta:
+        verbose_name = "Устав"
+        verbose_name_plural = "Устав"
+
+    def __str__(self):
+        return self.title
+
+
+class AboutSymbols(BaseModel):
+    title = models.CharField(max_length=256)
+
+    class Meta:
+        verbose_name = "Символы"
+        verbose_name_plural = "Символы"
+
+    def __str__(self):
+        return self.title
+
+
+class AboutMembership(BaseModel):
     title = models.CharField(max_length=256)
     content = RichTextUploadingField()
 
     class Meta:
-        verbose_name = "Membership"
-        verbose_name_plural = "Membership"
+        verbose_name = "Членство"
+        verbose_name_plural = "Членство"
 
     def __str__(self):
-        return self.title or str(self.id)
-
-
-class Symbols(BaseModel):
-    title = models.CharField(max_length=256)
-
-    class Meta:
-        verbose_name = "Symbols"
-        verbose_name_plural = "Symbols"
-
-    def __str__(self):
-        return self.title or str(self.id)
-
-
-class Temp(BaseModel):
-    title = models.CharField(max_length=256, null=True, blank=True)
-    document = models.FileField(upload_to="documents/", null=True, blank=True)
-
-    class Meta:
-        verbose_name = "Documents"
-        verbose_name_plural = "Documents"
-
-    def __str__(self):
-        return self.title or str(self.id)
-
-
-class Regulations(BaseModel):
-    title = models.CharField(max_length=256, null=True, blank=True)
-    document = models.FileField(upload_to="documents/", null=True, blank=True)
-
-    class Meta:
-        verbose_name = "Regulations"
-        verbose_name_plural = "Regulations"
-
-    def __str__(self):
-        return self.title or str(self.id)
+        return self.title
 
 
 class CompetitionReports(BaseModel):
