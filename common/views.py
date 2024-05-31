@@ -101,3 +101,12 @@ class KurashRulesView(TemplateView):
         context = super().get_context_data(**kwargs)
         context["rules"] = models.KurashRules.objects.first()
         return context
+
+
+class KurashProvisionsView(TemplateView):
+    template_name = "kurash_provisions.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["provisions"] = models.KurashProvisions.objects.all()
+        return context

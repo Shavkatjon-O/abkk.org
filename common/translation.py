@@ -50,3 +50,8 @@ class KurashHistoryTranslationOptions(TranslationOptions):
 @register(models.KurashRules)
 class KurashRulesTranslationOptions(TranslationOptions):
     fields = ("title", "content")
+
+
+@register(models.KurashProvisions)
+class KurashProvisionsTranslationOptions(TranslationOptions):
+    fields = ("title", "document")

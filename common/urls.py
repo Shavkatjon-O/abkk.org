@@ -48,6 +48,11 @@ urlpatterns = [
         name="kurash_rules",
     ),
     path(
+        "kurash/provisions/",
+        views.KurashProvisionsView.as_view(),
+        name="kurash_provisions",
+    ),
+    path(
         "competition/reports/",
         views.CompetitionReportsView.as_view(),
         name="competition_reports",

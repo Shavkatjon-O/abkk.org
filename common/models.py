@@ -12,33 +12,6 @@ class BaseModel(models.Model):
         abstract = True
 
 
-# class DocumentsChoices(models.TextChoices):
-#     CONSTITUENT = "CONSTITUENT", "Учредительные"
-#     REGULATIONS = "REGULATIONS", "Устав"
-#     PROVISIONS = "PROVISIONS", "Положения"
-#     REPORTS = "REPORTS", "Протоколы"
-#     DOCUMENTS = "DOCUMENTS", "Документы"
-
-
-# class Documents(BaseModel):
-#     title = models.CharField(max_length=256, verbose_name="Название файла")
-
-#     document_type = models.CharField(
-#         max_length=256, choices=DocumentsChoices.choices, verbose_name="Тип документа"
-#     )
-#     document = models.FileField(upload_to="documents/", verbose_name="Документ")
-
-#     class Meta:
-#         verbose_name = "Документ"
-#         verbose_name_plural = "Документы"
-
-#     def __str__(self):
-#         return self.title
-
-
-########################################################################
-
-
 class Carousel(BaseModel):
     image = models.ImageField(upload_to="carousel/")
 
@@ -177,6 +150,18 @@ class KurashRules(BaseModel):
     class Meta:
         verbose_name = "Правила белбогли кураш"
         verbose_name_plural = "Правила белбогли кураш"
+
+    def __str__(self):
+        return self.title
+
+
+class KurashProvisions(BaseModel):
+    title = models.CharField(max_length=256)
+    document = models.FileField(upload_to="documents/")
+
+    class Meta:
+        verbose_name = "Положения"
+        verbose_name_plural = "Положения"
 
     def __str__(self):
         return self.title

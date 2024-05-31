@@ -30,7 +30,7 @@
                     group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
             <a href="{% url 'kurash_history' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'история белбогли кураш' %}</a>
             <a href="{% url 'kurash_rules' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'правила белбогли кураш' %}</a>
-            <a href="" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'положения' %}</a>
+            <a href="{% url 'kurash_provisions' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'положения' %}</a>
             <a href="" class="block py-2 hover:text-custom-green">{% trans 'антидопинг' %}</a>
         </div>
       </div>
@@ -145,7 +145,7 @@
     <div class="subMenu hidden px-8 text-sm font-semibold text-gray-500">
       <a href="{% url 'kurash_history' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'история белбогли кураш' %}</a>
       <a href="{% url 'kurash_rules' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'правила белбогли кураш' %}</a>
-      <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'положения' %}</a>
+      <a href="{% url 'kurash_provisions' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'положения' %}</a>
       <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'антидопинг' %}</a>
     </div>
   </div>
