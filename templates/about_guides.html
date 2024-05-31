@@ -3,14 +3,14 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %} {{ guides.title|safe }} {% endblock title %}
+{% block title %} {% trans 'руководства' %} {% endblock title %}
 {% block content %}
 
 {% include 'includes/header.html' %}
 
 <div class="flex justify-center bg-gradient-to-tr from-custom-blue to-custom-green bg-green-500">
   <div class="xl:w-3/6 w-full xl:px-0 px-4 py-8">
-    <h1 class="text-xl text-white font-semibold">{{ guides.title|safe }}</h1>
+    <h1 class="text-xl text-white font-semibold">{% trans 'руководства' %}</h1>
   </div>
 </div>
 
@@ -20,26 +20,7 @@
   </div>
 </div>
 
-<div class="p-10 text-xl text-gray-500 flex flex-col justify-center items-center">
-  <h1 class="uppercase mb-4">{% trans 'Следите за новостями' %}</h1>
-  <div class="flex items-center space-x-2 text-white">
-    <a class="w-12 h-12 flex justify-center items-center bg-custom-green" href="">
-      <ion-icon name="logo-instagram"></ion-icon>
-    </a>
-    <a class="w-12 h-12 flex justify-center items-center bg-custom-green" href="">
-      <ion-icon name="logo-instagram"></ion-icon>
-    </a>
-    <a class="w-12 h-12 flex justify-center items-center bg-custom-green" href="">
-      <ion-icon name="logo-instagram"></ion-icon>
-    </a>
-    <a class="w-12 h-12 flex justify-center items-center bg-custom-green" href="">
-      <ion-icon name="logo-instagram"></ion-icon>
-    </a>
-    <a class="w-12 h-12 flex justify-center items-center bg-custom-green" href="">
-      <ion-icon name="logo-instagram"></ion-icon>
-    </a>
-  </div>
-</div>
+{% include 'includes/socials.html' %}
 
 {% include 'includes/footer.html' %}
 
