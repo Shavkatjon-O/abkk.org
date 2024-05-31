@@ -10,25 +10,25 @@
   <nav class="hidden xl:flex uppercase space-x-6">
     <div class="flex items-center justify-center">
       <div class="relative group cursor-pointer">
-        <a href="{% url 'confederation' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">о нас</a>
+        <a href="{% url 'about_confederation' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">о нас</a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2 transition-all
                     w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
                     flex flex-col bg-white text-gray-500">
-            <a href="{% url 'confederation' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">о азиатской конфедерации белбогли кураш</a>
-            <a href="{% url 'guides' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">руководства</a>
-            <a href="{% url 'documents' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">учредительные документы</a>
-            <a href="{% url 'regulations' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">устав</a>
-            <a href="{% url 'symbols' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">символы азиатской конфедерации белбогли кураш</a>
-            <a href="{% url 'membership' %}" class="block py-2 hover:text-custom-green">членство в конфедерации</a>
+            <a href="{% url 'about_confederation' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">о азиатской конфедерации белбогли кураш</a>
+            <a href="{% url 'about_guides' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">руководства</a>
+            <a href="{% url 'about_documents' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">учредительные документы</a>
+            <a href="{% url 'about_regulations' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">устав</a>
+            <a href="{% url 'about_symbols' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">символы азиатской конфедерации белбогли кураш</a>
+            <a href="{% url 'about_membership' %}" class="block py-2 hover:text-custom-green">членство в конфедерации</a>
         </div>
       </div>
       <div class="relative group cursor-pointer">
-        <a href="{% url 'history' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">белбогли кураш</a>
+        <a href="{% url 'kurash_history' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">белбогли кураш</a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2
                     transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100
                     group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
-            <a href="{% url 'history' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">история белбогли кураш</a>
-            <a href="{% url 'rules' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">правила белбогли кураш</a>
+            <a href="{% url 'kurash_history' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">история белбогли кураш</a>
+            <a href="{% url 'kurash_rules' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">правила белбогли кураш</a>
             <a href="" class="block border-b border-gray-200 py-2 hover:text-custom-green">положения</a>
             <a href="" class="block py-2 hover:text-custom-green">антидопинг</a>
         </div>
@@ -126,12 +126,12 @@
       </svg>
     </div>
     <div class="subMenu hidden px-8 text-sm font-semibold text-gray-500">
-      <a href="{% url 'confederation' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">о азиатской конфедерации белбогли кураш</a>
-      <a href="{% url 'guides' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">руководства</a>
-      <a href="{% url 'documents' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">учредительные документы</a>
-      <a href="{% url 'regulations' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">устав</a>
-      <a href="{% url 'symbols' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">символы азиатской конфедерации белбогли кураш</a>
-      <a href="{% url 'membership' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">членство в конфедерации</a>
+      <a href="{% url 'about_confederation' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">о азиатской конфедерации белбогли кураш</a>
+      <a href="{% url 'about_guides' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">руководства</a>
+      <a href="{% url 'about_documents' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">учредительные документы</a>
+      <a href="{% url 'about_regulations' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">устав</a>
+      <a href="{% url 'about_symbols' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">символы азиатской конфедерации белбогли кураш</a>
+      <a href="{% url 'about_membership' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">членство в конфедерации</a>
     </div>
   </div>
   <div class="group cursor-pointer">
@@ -142,8 +142,8 @@
       </svg>
     </div>
     <div class="subMenu hidden px-8 text-sm font-semibold text-gray-500">
-      <a href="{% url 'history' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">история белбогли кураш</a>
-      <a href="{% url 'rules' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">правила белбогли кураш</a>
+      <a href="{% url 'kurash_history' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">история белбогли кураш</a>
+      <a href="{% url 'kurash_rules' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">правила белбогли кураш</a>
       <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">положения</a>
       <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">антидопинг</a>
     </div>
@@ -157,8 +157,8 @@
     </div>
     <div class="subMenu hidden px-8 text-sm font-semibold text-gray-500">
       <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">календарь соревнований</a>
-      <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">протоколы соревнований</a>
-      <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">документы о соревнованиях</a>
+      <a href="{% url 'competition_reports' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">протоколы соревнований</a>
+      <a href="{% url 'competition_documents' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">документы о соревнованиях</a>
     </div>
   </div>
   <div class="group cursor-pointer">
