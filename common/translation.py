@@ -55,3 +55,8 @@ class KurashRulesTranslationOptions(TranslationOptions):
 @register(models.KurashProvisions)
 class KurashProvisionsTranslationOptions(TranslationOptions):
     fields = ("title", "document")
+
+
+@register(models.EventsAnnouncements)
+class EventsAnnouncementsTranslationOptions(TranslationOptions):
+    fields = ("title", "content")

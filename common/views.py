@@ -8,8 +8,11 @@ class HomePageView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
         context["carousel"] = models.Carousel.objects.all()
         context["gallery"] = models.Gallery.objects.all()
+        context["announcement"] = models.EventsAnnouncements.objects.first()
+
         return context
 
 
@@ -109,4 +112,13 @@ class KurashProvisionsView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["provisions"] = models.KurashProvisions.objects.all()
+        return context
+
+
+class EventsAnnouncementsView(TemplateView):
+    template_name = "events_announcements.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["announcements"] = models.EventsAnnouncements.objects.first()
         return context

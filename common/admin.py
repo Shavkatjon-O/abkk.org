@@ -58,5 +58,10 @@ class KurashProvisionsAdmin(TabbedTranslationAdmin):
     pass
 
 
+@admin.register(models.EventsAnnouncements)
+class EventsAnnouncementsAdmin(TabbedTranslationAdmin):
+    pass
+
+
 admin.site.register(models.Carousel)
 admin.site.register(models.Gallery)

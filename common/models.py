@@ -165,3 +165,15 @@ class KurashProvisions(BaseModel):
 
     def __str__(self):
         return self.title
+
+
+class EventsAnnouncements(BaseModel):
+    title = models.CharField(max_length=256)
+    content = RichTextUploadingField()
+
+    class Meta:
+        verbose_name = "Анонс"
+        verbose_name_plural = "Анонс"
+
+    def __str__(self):
+        return self.title

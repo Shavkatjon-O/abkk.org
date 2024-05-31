@@ -62,4 +62,9 @@ urlpatterns = [
         views.CompetitionDocumentsView.as_view(),
         name="competition_documents",
     ),
+    path(
+        "events/announcements/",
+        views.EventsAnnouncementsView.as_view(),
+        name="events_announcements",
+    ),
 ]
