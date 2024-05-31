@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-31 12:50+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-05-31 14:13+0500\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
 #: common/mixins.py:24
 msgid "General "
 msgstr ""
@@ -46,114 +46,114 @@ msgstr ""
 
 #: templates/about_documents.html:6 templates/about_documents.html:13
 msgid "Учредительные документы"
-msgstr ""
+msgstr "Учредительные документы"
 
 #: templates/about_regulations.html:6 templates/about_regulations.html:13
 msgid "Устав"
-msgstr ""
+msgstr "Устав"
 
 #: templates/competition_documents.html:6
 #: templates/competition_documents.html:13
 msgid "Документы о соревнованиях"
-msgstr ""
+msgstr "Документы о соревнованиях"
 
 #: templates/competition_reports.html:6 templates/competition_reports.html:13
 msgid "Протоколы соревнований"
-msgstr ""
+msgstr "Протоколы соревнований"
 
 #: templates/includes/header.html:14
 msgid "о нас"
-msgstr ""
+msgstr "о нас"
 
 #: templates/includes/header.html:18 templates/includes/header.html:130
 msgid "о азиатской конфедерации белбогли кураш"
-msgstr ""
+msgstr "о азиатской конфедерации белбогли кураш"
 
 #: templates/includes/header.html:19 templates/includes/header.html:131
 msgid "руководства"
-msgstr ""
+msgstr "руководства"
 
 #: templates/includes/header.html:20 templates/includes/header.html:132
 msgid "учредительные документы"
-msgstr ""
+msgstr "учредительные документы"
 
 #: templates/includes/header.html:21 templates/includes/header.html:133
 msgid "устав"
-msgstr ""
+msgstr "устав"
 
 #: templates/includes/header.html:22 templates/includes/header.html:134
 msgid "символы азиатской конфедерации белбогли кураш"
-msgstr ""
+msgstr "символы азиатской конфедерации белбогли кураш"
 
 #: templates/includes/header.html:23 templates/includes/header.html:135
 msgid "членство в конфедерации"
-msgstr ""
+msgstr "членство в конфедерации"
 
 #: templates/includes/header.html:27 templates/includes/header.html:140
 msgid "белбогли кураш"
-msgstr ""
+msgstr "белбогли кураш"
 
 #: templates/includes/header.html:31 templates/includes/header.html:146
 msgid "история белбогли кураш"
-msgstr ""
+msgstr "история белбогли кураш"
 
 #: templates/includes/header.html:32 templates/includes/header.html:147
 msgid "правила белбогли кураш"
-msgstr ""
+msgstr "правила белбогли кураш"
 
 #: templates/includes/header.html:33 templates/includes/header.html:148
 msgid "положения"
-msgstr ""
+msgstr "положения"
 
 #: templates/includes/header.html:34 templates/includes/header.html:149
 msgid "антидопинг"
-msgstr ""
+msgstr "антидопинг"
 
 #: templates/includes/header.html:38 templates/includes/header.html:154
 msgid "соревнования"
-msgstr ""
+msgstr "соревнования"
 
 #: templates/includes/header.html:42 templates/includes/header.html:160
 msgid "календарь соревнований"
-msgstr ""
+msgstr "календарь соревнований"
 
 #: templates/includes/header.html:43 templates/includes/header.html:161
 msgid "протоколы соревнований"
-msgstr ""
+msgstr "протоколы соревнований"
 
 #: templates/includes/header.html:44 templates/includes/header.html:162
 msgid "документы о соревнованиях"
-msgstr ""
+msgstr "документы о соревнованиях"
 
 #: templates/includes/header.html:48 templates/includes/header.html:53
 #: templates/includes/header.html:167 templates/includes/header.html:174
 msgid "мероприятия"
-msgstr ""
+msgstr "мероприятия"
 
 #: templates/includes/header.html:52 templates/includes/header.html:173
 msgid "анонс"
-msgstr ""
+msgstr "анонс"
 
 #: templates/includes/header.html:54 templates/includes/header.html:175
 msgid "сми о нас"
-msgstr ""
+msgstr "сми о нас"
 
 #: templates/includes/header.html:58 templates/includes/header.html:180
 msgid "галерея"
-msgstr ""
+msgstr "галерея"
 
 #: templates/includes/header.html:62 templates/includes/header.html:186
 msgid "видео"
-msgstr ""
+msgstr "видео"
 
 #: templates/includes/header.html:63 templates/includes/header.html:187
 msgid "фото"
-msgstr ""
+msgstr "фото"
 
 #: templates/includes/header.html:67 templates/includes/header.html:192
 msgid "контакты"
-msgstr ""
+msgstr "контакты"
 
 #: templates/includes/header.html:71 templates/includes/header.html:198
 msgid "контактная связь"
-msgstr ""
+msgstr "контактная связь"
