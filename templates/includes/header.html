@@ -4,7 +4,8 @@
 <header class="h-32 px-8 flex justify-between items-center">
   <div>
     <a href="{% url 'home_page' %}">
-      <img class="w-52" src="{% static 'img/logo.png' %}">
+      {% get_current_language as LANGUAGE_CODE %}
+      <img class="w-52" src="{% static 'img/logo/logo_'|add:LANGUAGE_CODE|add:'.png' %}" alt="Logo">
     </a>
   </div>
   <nav class="hidden xl:flex uppercase space-x-6">
