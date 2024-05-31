@@ -140,7 +140,7 @@ class CompetitionReports(BaseModel):
 
     class Meta:
         verbose_name = "Протоколы соревнований"
-        verbose_name_plural = "Документы о соревнованиях"
+        verbose_name_plural = "Протоколы соревнований"
 
     def __str__(self):
         return self.title
@@ -151,8 +151,8 @@ class CompetitionDocuments(BaseModel):
     document = models.FileField(upload_to="documents/")
 
     class Meta:
-        verbose_name = "Competition Documents"
-        verbose_name_plural = "Competition Documents"
+        verbose_name = "Документы о соревнованиях"
+        verbose_name_plural = "Документы о соревнованиях"
 
     def __str__(self):
         return self.title
