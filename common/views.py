@@ -55,11 +55,6 @@ class AboutRegulationsView(TemplateView):
 class AboutSymbolsView(TemplateView):
     template_name = "about_symbols.html"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["symbols"] = models.AboutSymbols.objects.first()
-        return context
-
 
 class AboutMembershipView(TemplateView):
     template_name = "about_membership.html"

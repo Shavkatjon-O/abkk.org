@@ -23,11 +23,6 @@ class AboutRegulationsAdmin(TabbedTranslationAdmin):
     pass
 
 
-@admin.register(models.AboutSymbols)
-class AboutSymbolsAdmin(TabbedTranslationAdmin):
-    pass
-
-
 @admin.register(models.AboutMembership)
 class AboutMembershipAdmin(TabbedTranslationAdmin):
     pass
