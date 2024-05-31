@@ -12,6 +12,33 @@ class BaseModel(models.Model):
         abstract = True
 
 
+class DocumentsChoices(models.TextChoices):
+    CONSTITUENT = "CONSTITUENT", "Учредительные"
+    REGULATIONS = "REGULATIONS", "Устав"
+    PROVISIONS = "PROVISIONS", "Положения"
+    REPORTS = "REPORTS", "Протоколы"
+    DOCUMENTS = "DOCUMENTS", "Документы"
+
+
+class Documents(BaseModel):
+    title = models.CharField(max_length=256, verbose_name="Название файла")
+
+    document_type = models.CharField(
+        max_length=256, choices=DocumentsChoices.choices, verbose_name="Тип документа"
+    )
+    document = models.FileField(upload_to="documents/", verbose_name="Документ")
+
+    class Meta:
+        verbose_name = "Документ"
+        verbose_name_plural = "Документы"
+
+    def __str__(self):
+        return self.title
+
+
+########################################################################
+
+
 class CarouselImage(BaseModel):
     image = models.ImageField(upload_to="carousel/")
 
@@ -75,7 +102,7 @@ class Symbols(BaseModel):
         return self.title or str(self.id)
 
 
-class Documents(BaseModel):
+class Temp(BaseModel):
     title = models.CharField(max_length=256, null=True, blank=True)
     document = models.FileField(upload_to="documents/", null=True, blank=True)
 
