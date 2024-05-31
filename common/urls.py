@@ -53,6 +53,11 @@ urlpatterns = [
         name="kurash_provisions",
     ),
     path(
+        "competition/calendars/",
+        views.CompetitonCalendarsView.as_view(),
+        name="competition_calendars",
+    ),
+    path(
         "competition/reports/",
         views.CompetitionReportsView.as_view(),
         name="competition_reports",

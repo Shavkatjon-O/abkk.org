@@ -35,11 +35,11 @@
         </div>
       </div>
       <div class="relative group cursor-pointer">
-        <a href="" class="p-4 font-medium transition duration-300 hover:bg-gray-100">{% trans 'соревнования' %}</a>
+        <a href="{% url 'competition_calendars' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">{% trans 'соревнования' %}</a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2
                     transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100
                     group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
-            <a href="" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'календарь соревнований' %}</a>
+            <a href="{% url 'competition_calendars' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'календарь соревнований' %}</a>
             <a href="{% url 'competition_reports' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'протоколы соревнований' %}</a>
             <a href="{% url 'competition_documents' %}" class="block py-2 hover:text-custom-green">{% trans 'документы о соревнованиях' %}</a>
         </div>
@@ -157,7 +157,7 @@
       </svg>
     </div>
     <div class="subMenu hidden px-8 text-sm font-semibold text-gray-500">
-      <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'календарь соревнований' %}</a>
+      <a href="{% url 'competition_calendars' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'календарь соревнований' %}</a>
       <a href="{% url 'competition_reports' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'протоколы соревнований' %}</a>
       <a href="{% url 'competition_documents' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'документы о соревнованиях' %}</a>
     </div>

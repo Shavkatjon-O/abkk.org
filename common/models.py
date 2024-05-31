@@ -107,7 +107,7 @@ class AboutMembership(BaseModel):
         return self.title
 
 
-class CompetitonCalendar(BaseModel):
+class CompetitonCalendars(BaseModel):
     title = models.CharField(max_length=256)
     document = models.FileField(upload_to="documents/")
 
