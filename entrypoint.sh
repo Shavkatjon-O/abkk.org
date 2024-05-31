@@ -6,10 +6,10 @@ if [ "$DB_USER" = "postgres" ]; then
     done
 fi
 
-python manage.py migrate --no-input
+python manage.py migrate
 python manage.py tailwind install --no-input
 python manage.py tailwind build --no-input
 python manage.py collectstatic --no-input
-python manage.py compilemessages --no-input
+python manage.py compilemessages
 
 exec "$@"
