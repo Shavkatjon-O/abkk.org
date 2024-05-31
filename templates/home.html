@@ -81,34 +81,11 @@
         </div>
       </div>
 
-      <style>
-        @keyframes slide {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-slide {
-          animation: slide 20s linear infinite;
-        }
-      </style>
-
-      <div class="overflow-hidden relative mt-16 mb-10">
-        <div class="flex animate-slide space-x-8">
-          <img src="{% static 'img/sponsors/sponsors-1.png' %}" class="h-24">
-          <img src="{% static 'img/sponsors/sponsors-2.png' %}" class="h-24">
-          <img src="{% static 'img/sponsors/sponsors-3.png' %}" class="h-24">
-          <img src="{% static 'img/sponsors/sponsors-4.png' %}" class="h-24">
-
-          <img src="{% static 'img/sponsors/sponsors-1.png' %}" class="h-24">
-          <img src="{% static 'img/sponsors/sponsors-2.png' %}" class="h-24">
-          <img src="{% static 'img/sponsors/sponsors-3.png' %}" class="h-24">
-          <img src="{% static 'img/sponsors/sponsors-4.png' %}" class="h-24">
-        </div>
-        <div class="absolute top-0 bottom-0 left-0 w-1/6 bg-gradient-to-r from-white to-transparent opacity-100"></div>
-        <div class="absolute top-0 bottom-0 right-0 w-1/6 bg-gradient-to-l from-white to-transparent opacity-100"></div>
+      <div class="flex mt-16 mb-10 space-x-8">
+        <img src="{% static 'img/sponsors/sponsors-1.png' %}" class="h-24">
+        <img src="{% static 'img/sponsors/sponsors-2.png' %}" class="h-24">
+        <img src="{% static 'img/sponsors/sponsors-3.png' %}" class="h-24">
+        <img src="{% static 'img/sponsors/sponsors-4.png' %}" class="h-24">
       </div>
 
     </div>
