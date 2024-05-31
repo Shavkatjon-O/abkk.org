@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-31 12:50+0500\n"
-"PO-Revision-Date: 2024-05-31 18:10+0500\n"
+"POT-Creation-Date: 2024-06-01 01:03+0500\n"
+"PO-Revision-Date: 2024-06-01 01:05+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -35,17 +35,37 @@ msgstr ""
 msgid "English"
 msgstr ""
 
-#: templates/about_confederation.html:24 templates/about_documents.html:33
+#: templates/about_confederation.html:18 templates/about_documents.html:18
+msgid "Главная"
+msgstr ""
+
+#: templates/about_confederation.html:18 templates/about_documents.html:18
+#: templates/includes/header.html:14 templates/includes/header.html:124
+msgid "о нас"
+msgstr "БИЗ ҲАҚИМИЗДА"
+
+#: templates/about_confederation.html:18 templates/includes/header.html:18
+#: templates/includes/header.html:130
+msgid "о азиатской конфедерации белбогли кураш"
+msgstr "Осиё беғболи кураш конфедерацияси тўғрисида"
+
+#: templates/about_confederation.html:28 templates/about_documents.html:37
 #: templates/about_guides.html:24 templates/about_membership.html:24
 #: templates/about_regulations.html:33 templates/about_symbols.html:22
 #: templates/competition_documents.html:33
-#: templates/competition_reports.html:33 templates/kurash_history.html:24
-#: templates/kurash_rules.html:24
+#: templates/competition_reports.html:33
+#: templates/events_announcements.html:24 templates/kurash_history.html:24
+#: templates/kurash_provisions.html:33 templates/kurash_rules.html:24
 msgid "Следите за новостями"
 msgstr ""
 
 #: templates/about_documents.html:6 templates/about_documents.html:13
 msgid "Учредительные документы"
+msgstr "Таъсис ҳужжатлар"
+
+#: templates/about_documents.html:18 templates/includes/header.html:20
+#: templates/includes/header.html:132
+msgid "учредительные документы"
 msgstr "Таъсис ҳужжатлар"
 
 #: templates/about_regulations.html:6 templates/about_regulations.html:13
@@ -61,21 +81,13 @@ msgstr "Мусобақалар ҳужжатлари"
 msgid "Протоколы соревнований"
 msgstr "Мусобақалар баённомалари"
 
-#: templates/includes/header.html:14
-msgid "о нас"
-msgstr "БИЗ ҲАҚИМИЗДА"
-
-#: templates/includes/header.html:18 templates/includes/header.html:130
-msgid "о азиатской конфедерации белбогли кураш"
-msgstr "Осиё беғболи кураш конфедерацияси тўғрисида"
+#: templates/home.html:86
+msgid "НАШИ ПАРТНЕРЫ"
+msgstr "БИЗНИНГ ХАМКОРЛАР"
 
 #: templates/includes/header.html:19 templates/includes/header.html:131
 msgid "руководства"
 msgstr "Раҳбарият"
-
-#: templates/includes/header.html:20 templates/includes/header.html:132
-msgid "учредительные документы"
-msgstr "Таъсис ҳужжатлар"
 
 #: templates/includes/header.html:21 templates/includes/header.html:133
 msgid "устав"
@@ -159,3 +171,9 @@ msgstr "КонтактЛАР"
 #: templates/includes/header.html:71 templates/includes/header.html:198
 msgid "контактная связь"
 msgstr "Аълоқа учун"
+
+#: templates/kurash_provisions.html:6 templates/kurash_provisions.html:13
+#, fuzzy
+#| msgid "положения"
+msgid "Положения"
+msgstr "Низоми"
