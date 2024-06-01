@@ -51,7 +51,7 @@
                     group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
             <a href="{% url 'events_announcements' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'анонс' %}</a>
             <a href="" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'мероприятия' %}</a>
-            <a href="" class="block py-2 hover:text-custom-green">{% trans 'сми о нас' %}</a>
+            <a href="{% url 'events_about_us' %}" class="block py-2 hover:text-custom-green">{% trans 'сми о нас' %}</a>
         </div>
       </div>
       <div class="relative group cursor-pointer">
@@ -172,7 +172,7 @@
     <div class="subMenu hidden px-8 text-sm font-semibold text-gray-500">
       <a href="{% url 'events_announcements' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'анонс' %}</a>
       <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'мероприятия' %}</a>
-      <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'сми о нас' %}</a>
+      <a href="{% url 'events_about_us' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'сми о нас' %}</a>
     </div>
   </div>
   <div class="group cursor-pointer">

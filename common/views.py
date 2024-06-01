@@ -136,3 +136,7 @@ class EventsAnnouncementsView(TemplateView):
         context["announcements"] = models.EventsAnnouncements.objects.all()
 
         return context
+
+
+class EventsAboutUsView(TemplateView):
+    template_name = "events_about_us.html"
