@@ -88,8 +88,13 @@ urlpatterns = [
         name="contacts",
     ),
     path(
-        "gallery/",
+        "gallery/photo/",
         views.GalleryPhotoListView.as_view(),
         name="gallery_photo",
+    ),
+    path(
+        "gallery/video/",
+        views.GalleryVideoView.as_view(),
+        name="gallery_video",
     ),
 ]

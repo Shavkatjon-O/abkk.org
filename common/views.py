@@ -174,3 +174,7 @@ class GalleryPhotoListView(ListView):
 
         context["gallery_photo"] = gallery_photo
         return context
+
+
+class GalleryVideoView(TemplateView):
+    template_name = "gallery_video.html"

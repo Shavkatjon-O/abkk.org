@@ -1,0 +1,27 @@
+{% extends '_base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block title %} {% trans 'о азиатской конфедерации белбогли кураш' %} {% endblock title %}
+{% block content %}
+
+{% include 'includes/header.html' %}
+
+<div class="flex justify-center bg-gradient-to-tr from-custom-blue to-custom-green bg-green-500">
+  <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8">
+    <h1 class="text-xl text-white font-semibold">{% trans 'о азиатской конфедерации белбогли кураш' %}</h1>
+  </div>
+</div>
+
+<div class="flex justify-center">
+  <div class="xl:w-3/6 xl:px-0 px-8 mt-8">
+    <iframe width="560" height="315" class="w-full" src="https://www.youtube.com/embed/eX8wQ5ryy-o?si=ZnunBI9IYHLBpuGW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
+{% include 'includes/socials.html' %}
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
