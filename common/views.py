@@ -142,3 +142,7 @@ class EventsAnnouncementsDetailView(DetailView):
 
 class EventsAboutUsView(TemplateView):
     template_name = "events_about_us.html"
+
+
+class ContactsView(TemplateView):
+    template_name = "contacts.html"

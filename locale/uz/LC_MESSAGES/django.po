@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 09:56+0500\n"
-"PO-Revision-Date: 2024-06-01 09:58+0500\n"
+"POT-Creation-Date: 2024-06-01 10:26+0500\n"
+"PO-Revision-Date: 2024-06-01 10:28+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -90,6 +90,25 @@ msgstr "Мусобақалар ҳужжатлари"
 msgid "протоколы соревнований"
 msgstr "Мусобақалар баённомалари"
 
+#: templates/contacts.html:6 templates/contacts.html:13
+#: templates/includes/footer.html:66 templates/includes/footer.html:90
+#: templates/includes/header.html:67 templates/includes/header.html:192
+msgid "контакты"
+msgstr "КонтактЛАР"
+
+#: templates/contacts.html:20
+#| msgid "о азиатской конфедерации белбогли кураш"
+msgid "Азиатская конфедерация белбогли кураш"
+msgstr "Осиё белбоғли кураш конфедерацияси"
+
+#: templates/contacts.html:21
+msgid ""
+"Юридический адрес:<br>индекс: 111703, Республика Узбекистан, Ташкентская "
+"область, город Чирчик, ул. Х.Максудова, д. №3."
+msgstr ""
+"Юридик манзили: <br>индекс: 111703, Ўзбекистон Республикаси Тошкент вилояти "
+"Чирчиқ шаҳри, Х.Мақсудов маҳалласи, 3-уй."
+
 #: templates/events_about_us.html:6 templates/events_about_us.html:13
 #: templates/includes/footer.html:53 templates/includes/header.html:54
 #: templates/includes/header.html:175
@@ -97,8 +116,11 @@ msgid "сми о нас"
 msgstr "ОАВ биз ҳақимизда"
 
 #: templates/events_announcements.html:6
-#: templates/events_announcements.html:13 templates/includes/footer.html:51
-#: templates/includes/header.html:52 templates/includes/header.html:173
+#: templates/events_announcements.html:13
+#: templates/events_announcements_detail.html:6
+#: templates/events_announcements_detail.html:13
+#: templates/includes/footer.html:51 templates/includes/header.html:52
+#: templates/includes/header.html:173
 msgid "анонс"
 msgstr "Анонс"
 
@@ -117,7 +139,6 @@ msgid "Членство"
 msgstr "АЪЗО БЎЛИШ"
 
 #: templates/home.html:63
-#| msgid "членство в конфедерации"
 msgid "Членство в конфедерации"
 msgstr "Конфедерациясига аъзо бўлиш"
 
@@ -126,7 +147,6 @@ msgid "ПРАВИЛА"
 msgstr "ҚОИДАЛАР"
 
 #: templates/home.html:72
-#| msgid "правила белбогли кураш"
 msgid "Правила борьбы белбогли кураш"
 msgstr "Белбоғли кураш қоидалари"
 
@@ -199,11 +219,6 @@ msgstr "Мусобақалар ҳужжатлари"
 msgid "мероприятия"
 msgstr "Тадбирлар"
 
-#: templates/includes/footer.html:66 templates/includes/footer.html:90
-#: templates/includes/header.html:67 templates/includes/header.html:192
-msgid "контакты"
-msgstr "КонтактЛАР"
-
 #: templates/includes/header.html:71 templates/includes/header.html:198
 msgid "контактная связь"
 msgstr "Аълоқа учун"
@@ -211,6 +226,9 @@ msgstr "Аълоқа учун"
 #: templates/includes/socials.html:4
 msgid "Следите за новостями"
 msgstr ""
+
+#~ msgid "Осиё белбоғли кураш конфедерацияси"
+#~ msgstr "Конфедерациясига аъзо бўлиш"
 
 #~ msgid "Учредительные документы"
 #~ msgstr "Таъсис ҳужжатлар"

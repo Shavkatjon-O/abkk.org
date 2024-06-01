@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 09:56+0500\n"
-"PO-Revision-Date: 2024-06-01 09:58+0500\n"
+"POT-Creation-Date: 2024-06-01 10:26+0500\n"
+"PO-Revision-Date: 2024-06-01 10:28+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -88,6 +88,28 @@ msgstr "Документы о соревнованиях"
 msgid "протоколы соревнований"
 msgstr "протоколы соревнований"
 
+#: templates/contacts.html:6 templates/contacts.html:13
+#: templates/includes/footer.html:66 templates/includes/footer.html:90
+#: templates/includes/header.html:67 templates/includes/header.html:192
+msgid "контакты"
+msgstr "контакты"
+
+#: templates/contacts.html:20
+#| msgid "о азиатской конфедерации белбогли кураш"
+msgid "Азиатская конфедерация белбогли кураш"
+msgstr "Азиатская конфедерация белбогли кураш"
+
+#: templates/contacts.html:21
+#| msgid ""
+#| "Юридик манзили:<br>индекс: 111703, Ўзбекистон Республикаси Тошкент вилояти "
+#| "Чирчиқ шаҳри, Х.Мақсудов маҳалласи, 3-уй."
+msgid ""
+"Юридический адрес:<br>индекс: 111703, Республика Узбекистан, Ташкентская "
+"область, город Чирчик, ул. Х.Максудова, д. №3."
+msgstr ""
+"Юридический адрес:<br>индекс: 111703, Республика Узбекистан, Ташкентская "
+"область, город Чирчик, ул. Х.Максудова, д. №3."
+
 #: templates/events_about_us.html:6 templates/events_about_us.html:13
 #: templates/includes/footer.html:53 templates/includes/header.html:54
 #: templates/includes/header.html:175
@@ -95,8 +117,11 @@ msgid "сми о нас"
 msgstr "сми о нас"
 
 #: templates/events_announcements.html:6
-#: templates/events_announcements.html:13 templates/includes/footer.html:51
-#: templates/includes/header.html:52 templates/includes/header.html:173
+#: templates/events_announcements.html:13
+#: templates/events_announcements_detail.html:6
+#: templates/events_announcements_detail.html:13
+#: templates/includes/footer.html:51 templates/includes/header.html:52
+#: templates/includes/header.html:173
 msgid "анонс"
 msgstr "анонс"
 
@@ -113,7 +138,6 @@ msgid "Членство"
 msgstr "Членство"
 
 #: templates/home.html:63
-#| msgid "членство в конфедерации"
 msgid "Членство в конфедерации"
 msgstr "членство в конфедерации"
 
@@ -122,7 +146,6 @@ msgid "ПРАВИЛА"
 msgstr "ПРАВИЛА"
 
 #: templates/home.html:72
-#| msgid "Правила борьбы  белбогли кураш"
 msgid "Правила борьбы белбогли кураш"
 msgstr "правила белбогли кураш"
 
@@ -195,11 +218,6 @@ msgstr "документы о соревнованиях"
 msgid "мероприятия"
 msgstr "мероприятия"
 
-#: templates/includes/footer.html:66 templates/includes/footer.html:90
-#: templates/includes/header.html:67 templates/includes/header.html:192
-msgid "контакты"
-msgstr "контакты"
-
 #: templates/includes/header.html:71 templates/includes/header.html:198
 msgid "контактная связь"
 msgstr "контактная связь"
@@ -207,6 +225,9 @@ msgstr "контактная связь"
 #: templates/includes/socials.html:4
 msgid "Следите за новостями"
 msgstr ""
+
+#~ msgid "Осиё белбоғли кураш конфедерацияси"
+#~ msgstr "членство в конфедерации"
 
 #~ msgid "Учредительные документы"
 #~ msgstr "Учредительные документы"

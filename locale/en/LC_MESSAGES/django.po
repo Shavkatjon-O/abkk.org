@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 09:56+0500\n"
-"PO-Revision-Date: 2024-06-01 09:58+0500\n"
+"POT-Creation-Date: 2024-06-01 10:26+0500\n"
+"PO-Revision-Date: 2024-06-01 10:29+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -90,6 +90,25 @@ msgstr "Competition documents"
 msgid "протоколы соревнований"
 msgstr "Competition reports"
 
+#: templates/contacts.html:6 templates/contacts.html:13
+#: templates/includes/footer.html:66 templates/includes/footer.html:90
+#: templates/includes/header.html:67 templates/includes/header.html:192
+msgid "контакты"
+msgstr "Contacts"
+
+#: templates/contacts.html:20
+#| msgid "о азиатской конфедерации белбогли кураш"
+msgid "Азиатская конфедерация белбогли кураш"
+msgstr "Asian Belbogli Kurash Confederation"
+
+#: templates/contacts.html:21
+msgid ""
+"Юридический адрес:<br>индекс: 111703, Республика Узбекистан, Ташкентская "
+"область, город Чирчик, ул. Х.Максудова, д. №3."
+msgstr ""
+"Legal address:<br>index: 111703, Republic of Uzbekistan, Tashkent region, "
+"Chirchik city, st. Kh. Maksudova, no. 3."
+
 #: templates/events_about_us.html:6 templates/events_about_us.html:13
 #: templates/includes/footer.html:53 templates/includes/header.html:54
 #: templates/includes/header.html:175
@@ -97,8 +116,11 @@ msgid "сми о нас"
 msgstr "Mass Media about us"
 
 #: templates/events_announcements.html:6
-#: templates/events_announcements.html:13 templates/includes/footer.html:51
-#: templates/includes/header.html:52 templates/includes/header.html:173
+#: templates/events_announcements.html:13
+#: templates/events_announcements_detail.html:6
+#: templates/events_announcements_detail.html:13
+#: templates/includes/footer.html:51 templates/includes/header.html:52
+#: templates/includes/header.html:173
 msgid "анонс"
 msgstr "Announcement"
 
@@ -115,7 +137,6 @@ msgid "Членство"
 msgstr "membership"
 
 #: templates/home.html:63
-#| msgid "членство в конфедерации"
 msgid "Членство в конфедерации"
 msgstr "Membership in the confederation"
 
@@ -124,7 +145,6 @@ msgid "ПРАВИЛА"
 msgstr "RULES"
 
 #: templates/home.html:72
-#| msgid "правила белбогли кураш"
 msgid "Правила борьбы белбогли кураш"
 msgstr "Belbogli Kurash rules"
 
@@ -197,11 +217,6 @@ msgstr "Competition documents"
 msgid "мероприятия"
 msgstr "Events"
 
-#: templates/includes/footer.html:66 templates/includes/footer.html:90
-#: templates/includes/header.html:67 templates/includes/header.html:192
-msgid "контакты"
-msgstr "Contacts"
-
 #: templates/includes/header.html:71 templates/includes/header.html:198
 msgid "контактная связь"
 msgstr "For communication"
@@ -209,6 +224,9 @@ msgstr "For communication"
 #: templates/includes/socials.html:4
 msgid "Следите за новостями"
 msgstr ""
+
+#~ msgid "Осиё белбоғли кураш конфедерацияси"
+#~ msgstr "Membership in the confederation"
 
 #~ msgid "Учредительные документы"
 #~ msgstr "Constituent documents"
