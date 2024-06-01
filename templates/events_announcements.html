@@ -19,8 +19,7 @@
     {% if announcements %}
       {% for announcment in announcements %}
         <div class="my-8 space-y-4">
-          <p class="font-semibold">{{ announcment.title }}</p>
-          <p class="text-gray-700">{{ announcment.content|safe }}</p>
+          <a href="" class="font-semibold">{{ announcment.title }}</a>
         </div>
       {% endfor %}
     {% endif %}
