@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView, DetailView
 from common import models
 
 
@@ -128,14 +128,16 @@ class KurashProvisionsView(TemplateView):
         return context
 
 
-class EventsAnnouncementsView(TemplateView):
+class EventsAnnouncementsListView(ListView):
+    model = models.EventsAnnouncements
     template_name = "events_announcements.html"
+    context_object_name = "announcements"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["announcements"] = models.EventsAnnouncements.objects.all()
 
-        return context
+class EventsAnnouncementsDetailView(DetailView):
+    model = models.EventsAnnouncements
+    template_name = "events_announcements_detail.html"
+    context_object_name = "events_announcements_detail"
 
 
 class EventsAboutUsView(TemplateView):

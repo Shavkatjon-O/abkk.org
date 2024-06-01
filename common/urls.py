@@ -69,8 +69,13 @@ urlpatterns = [
     ),
     path(
         "events/announcements/",
-        views.EventsAnnouncementsView.as_view(),
+        views.EventsAnnouncementsListView.as_view(),
         name="events_announcements",
+    ),
+    path(
+        "events/announcements/<int:pk>/",
+        views.EventsAnnouncementsDetailView.as_view(),
+        name="events_announcements_detail",
     ),
     path(
         "events/about_us/",

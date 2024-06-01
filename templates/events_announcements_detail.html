@@ -16,13 +16,7 @@
 
 <div class="flex justify-center">
   <div class="xl:w-3/6 xl:px-0 px-8 mt-8">
-    {% if announcements %}
-      {% for announcement in announcements %}
-        <div class="my-8 space-y-4">
-          <a href="{% url 'events_announcements_detail' announcement.id %}" class="font-semibold hover:underline">{{ announcement.title }}</a>
-        </div>
-      {% endfor %}
-    {% endif %}
+    {{ events_announcements_detail.content|safe }}
   </div>
 </div>
 
