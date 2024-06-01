@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 10:26+0500\n"
-"PO-Revision-Date: 2024-06-01 10:29+0500\n"
+"PO-Revision-Date: 2024-06-01 11:02+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -126,7 +126,7 @@ msgstr "Announcement"
 
 #: templates/home.html:53
 msgid "Результаты"
-msgstr "results"
+msgstr "Results"
 
 #: templates/home.html:54
 msgid "Список результатов по соревнованиям"
@@ -134,7 +134,7 @@ msgstr "List of results by competition"
 
 #: templates/home.html:62
 msgid "Членство"
-msgstr "membership"
+msgstr "Membership"
 
 #: templates/home.html:63
 msgid "Членство в конфедерации"
@@ -142,7 +142,7 @@ msgstr "Membership in the confederation"
 
 #: templates/home.html:71
 msgid "ПРАВИЛА"
-msgstr "RULES"
+msgstr "Rules"
 
 #: templates/home.html:72
 msgid "Правила борьбы белбогли кураш"
@@ -150,7 +150,7 @@ msgstr "Belbogli Kurash rules"
 
 #: templates/home.html:86 templates/home.html:113
 msgid "НАШИ ПАРТНЕРЫ"
-msgstr "OUR PARTNERS"
+msgstr "Our Partners"
 
 #: templates/includes/footer.html:9 templates/includes/footer.html:85
 #: templates/includes/header.html:14 templates/includes/header.html:124

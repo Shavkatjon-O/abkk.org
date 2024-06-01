@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 10:26+0500\n"
-"PO-Revision-Date: 2024-06-01 10:28+0500\n"
+"PO-Revision-Date: 2024-06-01 10:55+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -39,43 +39,43 @@ msgstr ""
 #: templates/includes/footer.html:11 templates/includes/header.html:18
 #: templates/includes/header.html:130
 msgid "о азиатской конфедерации белбогли кураш"
-msgstr "о азиатской конфедерации белбогли кураш"
+msgstr "Об Азиатской конфедерации бельбогли кураш."
 
 #: templates/about_documents.html:6 templates/about_documents.html:13
 #: templates/includes/footer.html:13 templates/includes/header.html:20
 #: templates/includes/header.html:132
 msgid "учредительные документы"
-msgstr "учредительные документы"
+msgstr "Учредительные документы"
 
 #: templates/about_guides.html:6 templates/about_guides.html:13
 #: templates/includes/footer.html:12 templates/includes/header.html:19
 #: templates/includes/header.html:131
 msgid "руководства"
-msgstr "руководства"
+msgstr "Руководства"
 
 #: templates/about_membership.html:6 templates/about_membership.html:13
 #: templates/includes/footer.html:16 templates/includes/header.html:23
 #: templates/includes/header.html:135
 msgid "членство в конфедерации"
-msgstr "членство в конфедерации"
+msgstr "Членство в конфедерации"
 
 #: templates/about_regulations.html:6 templates/about_regulations.html:13
 #: templates/includes/footer.html:14 templates/includes/header.html:21
 #: templates/includes/header.html:133
 msgid "устав"
-msgstr "устав"
+msgstr "Устав"
 
 #: templates/about_symbols.html:6 templates/about_symbols.html:13
 #: templates/includes/footer.html:15 templates/includes/header.html:22
 #: templates/includes/header.html:134
 msgid "символы азиатской конфедерации белбогли кураш"
-msgstr "символы азиатской конфедерации белбогли кураш"
+msgstr "Символы Азиатской Конфедерации Белбогли Кураш"
 
 #: templates/competition_calendars.html:6
 #: templates/competition_calendars.html:13 templates/includes/footer.html:43
 #: templates/includes/header.html:42 templates/includes/header.html:160
 msgid "календарь соревнований"
-msgstr "календарь соревнований"
+msgstr "Календарь соревнований"
 
 #: templates/competition_documents.html:6
 #: templates/competition_documents.html:13
@@ -86,18 +86,18 @@ msgstr "Документы о соревнованиях"
 #: templates/includes/footer.html:44 templates/includes/header.html:43
 #: templates/includes/header.html:161
 msgid "протоколы соревнований"
-msgstr "протоколы соревнований"
+msgstr "Протоколы соревнований"
 
 #: templates/contacts.html:6 templates/contacts.html:13
 #: templates/includes/footer.html:66 templates/includes/footer.html:90
 #: templates/includes/header.html:67 templates/includes/header.html:192
 msgid "контакты"
-msgstr "контакты"
+msgstr "Контакты"
 
 #: templates/contacts.html:20
 #| msgid "о азиатской конфедерации белбогли кураш"
 msgid "Азиатская конфедерация белбогли кураш"
-msgstr "Азиатская конфедерация белбогли кураш"
+msgstr "Азиатская Конфедерация Белбогли Кураш"
 
 #: templates/contacts.html:21
 #| msgid ""
@@ -114,7 +114,7 @@ msgstr ""
 #: templates/includes/footer.html:53 templates/includes/header.html:54
 #: templates/includes/header.html:175
 msgid "сми о нас"
-msgstr "сми о нас"
+msgstr "СМИ о нас"
 
 #: templates/events_announcements.html:6
 #: templates/events_announcements.html:13
@@ -123,7 +123,7 @@ msgstr "сми о нас"
 #: templates/includes/footer.html:51 templates/includes/header.html:52
 #: templates/includes/header.html:173
 msgid "анонс"
-msgstr "анонс"
+msgstr "Анонс"
 
 #: templates/home.html:53
 msgid "Результаты"
@@ -139,92 +139,92 @@ msgstr "Членство"
 
 #: templates/home.html:63
 msgid "Членство в конфедерации"
-msgstr "членство в конфедерации"
+msgstr "Членство в конфедерации"
 
 #: templates/home.html:71
 msgid "ПРАВИЛА"
-msgstr "ПРАВИЛА"
+msgstr "Правила"
 
 #: templates/home.html:72
 msgid "Правила борьбы белбогли кураш"
-msgstr "правила белбогли кураш"
+msgstr "Правила белбогли кураш"
 
 #: templates/home.html:86 templates/home.html:113
 msgid "НАШИ ПАРТНЕРЫ"
-msgstr "НАШИ ПАРТНЕРЫ"
+msgstr "Наши партнеры"
 
 #: templates/includes/footer.html:9 templates/includes/footer.html:85
 #: templates/includes/header.html:14 templates/includes/header.html:124
 msgid "о нас"
-msgstr "о нас"
+msgstr "О нас"
 
 #: templates/includes/footer.html:22 templates/includes/footer.html:86
 #: templates/includes/header.html:27 templates/includes/header.html:140
 msgid "белбогли кураш"
-msgstr "белбогли кураш"
+msgstr "Белбогли кураш"
 
 #: templates/includes/footer.html:24 templates/includes/header.html:31
 #: templates/includes/header.html:146 templates/kurash_history.html:6
 #: templates/kurash_history.html:13
 msgid "история белбогли кураш"
-msgstr "история белбогли кураш"
+msgstr "История белбогли кураш"
 
 #: templates/includes/footer.html:25 templates/includes/header.html:32
 #: templates/includes/header.html:147 templates/kurash_rules.html:6
 #: templates/kurash_rules.html:13
 msgid "правила белбогли кураш"
-msgstr "правила белбогли кураш"
+msgstr "Правила Белбогли Кураш"
 
 #: templates/includes/footer.html:26 templates/includes/header.html:33
 #: templates/includes/header.html:148 templates/kurash_provisions.html:6
 #: templates/kurash_provisions.html:13
 msgid "положения"
-msgstr "положения"
+msgstr "Положения"
 
 #: templates/includes/footer.html:27 templates/includes/header.html:34
 #: templates/includes/header.html:149
 msgid "антидопинг"
-msgstr "антидопинг"
+msgstr "Антидопинг"
 
 #: templates/includes/footer.html:31 templates/includes/footer.html:87
 #: templates/includes/header.html:58 templates/includes/header.html:180
 msgid "галерея"
-msgstr "галерея"
+msgstr "Галерея"
 
 #: templates/includes/footer.html:33 templates/includes/header.html:62
 #: templates/includes/header.html:186
 msgid "видео"
-msgstr "видео"
+msgstr "Видео"
 
 #: templates/includes/footer.html:34 templates/includes/header.html:63
 #: templates/includes/header.html:187
 msgid "фото"
-msgstr "фото"
+msgstr "Фото"
 
 #: templates/includes/footer.html:41 templates/includes/footer.html:88
 #: templates/includes/header.html:38 templates/includes/header.html:154
 msgid "соревнования"
-msgstr "соревнования"
+msgstr "Соревнования"
 
 #: templates/includes/footer.html:45 templates/includes/header.html:44
 #: templates/includes/header.html:162
 msgid "документы о соревнованиях"
-msgstr "документы о соревнованиях"
+msgstr "Документы о соревнованиях"
 
 #: templates/includes/footer.html:49 templates/includes/footer.html:52
 #: templates/includes/footer.html:89 templates/includes/header.html:48
 #: templates/includes/header.html:53 templates/includes/header.html:167
 #: templates/includes/header.html:174
 msgid "мероприятия"
-msgstr "мероприятия"
+msgstr "Мероприятия"
 
 #: templates/includes/header.html:71 templates/includes/header.html:198
 msgid "контактная связь"
-msgstr "контактная связь"
+msgstr "Контактная связь"
 
 #: templates/includes/socials.html:4
 msgid "Следите за новостями"
-msgstr ""
+msgstr "Следите за новостями"
 
 #~ msgid "Осиё белбоғли кураш конфедерацияси"
 #~ msgstr "членство в конфедерации"

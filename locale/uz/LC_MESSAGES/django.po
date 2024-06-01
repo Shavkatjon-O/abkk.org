@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 10:26+0500\n"
-"PO-Revision-Date: 2024-06-01 10:28+0500\n"
+"PO-Revision-Date: 2024-06-01 11:01+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -94,7 +94,7 @@ msgstr "Мусобақалар баённомалари"
 #: templates/includes/footer.html:66 templates/includes/footer.html:90
 #: templates/includes/header.html:67 templates/includes/header.html:192
 msgid "контакты"
-msgstr "КонтактЛАР"
+msgstr "Контактлар"
 
 #: templates/contacts.html:20
 #| msgid "о азиатской конфедерации белбогли кураш"
@@ -126,7 +126,7 @@ msgstr "Анонс"
 
 #: templates/home.html:53
 msgid "Результаты"
-msgstr "НАТИЖАЛАР"
+msgstr "Натижалар"
 
 #: templates/home.html:54
 msgid "Список результатов по соревнованиям"
@@ -136,7 +136,7 @@ msgstr ""
 
 #: templates/home.html:62
 msgid "Членство"
-msgstr "АЪЗО БЎЛИШ"
+msgstr "Аъзо бўлиш"
 
 #: templates/home.html:63
 msgid "Членство в конфедерации"
@@ -144,7 +144,7 @@ msgstr "Конфедерациясига аъзо бўлиш"
 
 #: templates/home.html:71
 msgid "ПРАВИЛА"
-msgstr "ҚОИДАЛАР"
+msgstr "Қоидалар"
 
 #: templates/home.html:72
 msgid "Правила борьбы белбогли кураш"
@@ -152,17 +152,17 @@ msgstr "Белбоғли кураш қоидалари"
 
 #: templates/home.html:86 templates/home.html:113
 msgid "НАШИ ПАРТНЕРЫ"
-msgstr "БИЗНИНГ ХАМКОРЛАР"
+msgstr "Бизнинг ҳамкорлар"
 
 #: templates/includes/footer.html:9 templates/includes/footer.html:85
 #: templates/includes/header.html:14 templates/includes/header.html:124
 msgid "о нас"
-msgstr "БИЗ ҲАҚИМИЗДА"
+msgstr "Биз ҳақимизда"
 
 #: templates/includes/footer.html:22 templates/includes/footer.html:86
 #: templates/includes/header.html:27 templates/includes/header.html:140
 msgid "белбогли кураш"
-msgstr "БелбоҒли кураш"
+msgstr "Белбоғли кураш"
 
 #: templates/includes/footer.html:24 templates/includes/header.html:31
 #: templates/includes/header.html:146 templates/kurash_history.html:6
