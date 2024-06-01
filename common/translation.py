@@ -60,3 +60,8 @@ class KurashProvisionsTranslationOptions(TranslationOptions):
 @register(models.EventsAnnouncements)
 class EventsAnnouncementsTranslationOptions(TranslationOptions):
     fields = ("title", "content")
+
+
+@register(models.Gallery)
+class GalleryTranslationOptions(TranslationOptions):
+    fields = ("title",)

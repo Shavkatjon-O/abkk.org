@@ -63,5 +63,9 @@ class EventsAnnouncementsAdmin(TabbedTranslationAdmin):
     pass
 
 
+@admin.register(models.Gallery)
+class GalleryAdmin(TabbedTranslationAdmin):
+    pass
+
+
 admin.site.register(models.Carousel)
-admin.site.register(models.Gallery)
