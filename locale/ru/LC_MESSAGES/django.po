@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 10:26+0500\n"
+"POT-Creation-Date: 2024-06-02 00:26+0500\n"
 "PO-Revision-Date: 2024-06-01 10:55+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,22 +16,24 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: common/mixins.py:24
 msgid "General "
 msgstr ""
 
-#: core/settings/base.py:93
+#: core/settings/base.py:94
 msgid "Russian"
 msgstr ""
 
-#: core/settings/base.py:94
+#: core/settings/base.py:95
 msgid "Uzbek"
 msgstr ""
 
-#: core/settings/base.py:95
+#: core/settings/base.py:96
 msgid "English"
 msgstr ""
 
@@ -94,15 +96,11 @@ msgstr "Протоколы соревнований"
 msgid "контакты"
 msgstr "Контакты"
 
-#: templates/contacts.html:20
-#| msgid "о азиатской конфедерации белбогли кураш"
+#: templates/contacts.html:20 templates/includes/footer.html:60
 msgid "Азиатская конфедерация белбогли кураш"
 msgstr "Азиатская Конфедерация Белбогли Кураш"
 
-#: templates/contacts.html:21
-#| msgid ""
-#| "Юридик манзили:<br>индекс: 111703, Ўзбекистон Республикаси Тошкент вилояти "
-#| "Чирчиқ шаҳри, Х.Мақсудов маҳалласи, 3-уй."
+#: templates/contacts.html:21 templates/includes/footer.html:62
 msgid ""
 "Юридический адрес:<br>индекс: 111703, Республика Узбекистан, Ташкентская "
 "область, город Чирчик, ул. Х.Максудова, д. №3."
@@ -116,14 +114,29 @@ msgstr ""
 msgid "сми о нас"
 msgstr "СМИ о нас"
 
-#: templates/events_announcements.html:6
-#: templates/events_announcements.html:13
+#: templates/events_announcements.html:6 templates/events_announcements.html:13
 #: templates/events_announcements_detail.html:6
 #: templates/events_announcements_detail.html:13
 #: templates/includes/footer.html:51 templates/includes/header.html:52
 #: templates/includes/header.html:173
 msgid "анонс"
 msgstr "Анонс"
+
+#: templates/gallery_photo.html:7 templates/gallery_photo.html:14
+#: templates/includes/footer.html:31 templates/includes/footer.html:87
+#: templates/includes/header.html:58 templates/includes/header.html:180
+msgid "галерея"
+msgstr "Галерея"
+
+#: templates/gallery_photo.html:27 templates/gallery_video.html:24
+msgid "Нажмите, чтобы просмотреть"
+msgstr ""
+
+#: templates/gallery_video.html:6 templates/gallery_video.html:13
+#: templates/includes/footer.html:33 templates/includes/header.html:62
+#: templates/includes/header.html:186
+msgid "видео"
+msgstr "Видео"
 
 #: templates/home.html:53
 msgid "Результаты"
@@ -149,7 +162,7 @@ msgstr "Правила"
 msgid "Правила борьбы белбогли кураш"
 msgstr "Правила белбогли кураш"
 
-#: templates/home.html:86 templates/home.html:113
+#: templates/home.html:86 templates/home.html:115
 msgid "НАШИ ПАРТНЕРЫ"
 msgstr "Наши партнеры"
 
@@ -185,16 +198,6 @@ msgstr "Положения"
 #: templates/includes/header.html:149
 msgid "антидопинг"
 msgstr "Антидопинг"
-
-#: templates/includes/footer.html:31 templates/includes/footer.html:87
-#: templates/includes/header.html:58 templates/includes/header.html:180
-msgid "галерея"
-msgstr "Галерея"
-
-#: templates/includes/footer.html:33 templates/includes/header.html:62
-#: templates/includes/header.html:186
-msgid "видео"
-msgstr "Видео"
 
 #: templates/includes/footer.html:34 templates/includes/header.html:63
 #: templates/includes/header.html:187
