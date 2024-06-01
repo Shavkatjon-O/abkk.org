@@ -9,16 +9,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 09:44+0500\n"
-"PO-Revision-Date: 2024-06-01 01:04+0500\n"
+"PO-Revision-Date: 2024-06-01 09:51+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: common/mixins.py:24
@@ -96,25 +94,24 @@ msgstr "протоколы соревнований"
 msgid "сми о нас"
 msgstr "сми о нас"
 
-#: templates/events_announcements.html:6 templates/events_announcements.html:13
-#: templates/includes/footer.html:51 templates/includes/header.html:52
-#: templates/includes/header.html:173
+#: templates/events_announcements.html:6
+#: templates/events_announcements.html:13 templates/includes/footer.html:51
+#: templates/includes/header.html:52 templates/includes/header.html:173
 msgid "анонс"
 msgstr "анонс"
 
 #: templates/home.html:53
 msgid "Результаты"
-msgstr ""
+msgstr "Результаты"
 
 #: templates/home.html:54
-#, fuzzy
 #| msgid "Документы о соревнованиях"
 msgid "Список результатов по соревнованиям"
-msgstr "Документы о соревнованиях"
+msgstr "Список результатов по соревнованиям"
 
 #: templates/home.html:62
 msgid "Членство"
-msgstr ""
+msgstr "Членство"
 
 #: templates/home.html:63
 #, fuzzy
@@ -124,10 +121,9 @@ msgstr "членство в конфедерации"
 
 #: templates/home.html:71
 msgid "ПРАВИЛА"
-msgstr ""
+msgstr "ПРАВИЛА"
 
 #: templates/home.html:72
-#, fuzzy
 #| msgid "правила белбогли кураш"
 msgid "Правила борьбы  белбогли кураш"
 msgstr "правила белбогли кураш"
@@ -224,6 +220,5 @@ msgstr ""
 #~ msgstr "Протоколы соревнований"
 
 #, fuzzy
-#~| msgid "положения"
 #~ msgid "Положения"
 #~ msgstr "положения"
