@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 09:21+0500\n"
-"PO-Revision-Date: 2024-06-01 01:05+0500\n"
+"POT-Creation-Date: 2024-06-01 09:44+0500\n"
+"PO-Revision-Date: 2024-06-01 09:48+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -90,11 +90,48 @@ msgstr "Мусобақалар ҳужжатлари"
 msgid "протоколы соревнований"
 msgstr "Мусобақалар баённомалари"
 
-#: templates/events_announcements.html:6 templates/events_announcements.html:13
-#: templates/includes/footer.html:51 templates/includes/header.html:52
-#: templates/includes/header.html:173
+#: templates/events_about_us.html:6 templates/events_about_us.html:13
+#: templates/includes/footer.html:53 templates/includes/header.html:54
+#: templates/includes/header.html:175
+msgid "сми о нас"
+msgstr "ОАВ биз ҳақимизда"
+
+#: templates/events_announcements.html:6
+#: templates/events_announcements.html:13 templates/includes/footer.html:51
+#: templates/includes/header.html:52 templates/includes/header.html:173
 msgid "анонс"
 msgstr "Анонс"
+
+#: templates/home.html:53
+msgid "Результаты"
+msgstr "НАТИЖАЛАР"
+
+#: templates/home.html:54
+#| msgid "Документы о соревнованиях"
+msgid "Список результатов по соревнованиям"
+msgstr ""
+"Мусобақалардаги\n"
+"натижалар рўйхати"
+
+#: templates/home.html:62
+msgid "Членство"
+msgstr "АЪЗО БЎЛИШ"
+
+#: templates/home.html:63
+#, fuzzy
+#| msgid "членство в конфедерации"
+msgid "Членство в конфедерации"
+msgstr "Конфедерациясига аъзо бўлиш"
+
+#: templates/home.html:71
+msgid "ПРАВИЛА"
+msgstr "ҚОИДАЛАР"
+
+#: templates/home.html:72
+#, fuzzy
+#| msgid "правила белбогли кураш"
+msgid "Правила борьбы  белбогли кураш"
+msgstr "Белбоғли кураш қоидалари"
 
 #: templates/home.html:86 templates/home.html:113
 msgid "НАШИ ПАРТНЕРЫ"
@@ -165,11 +202,6 @@ msgstr "Мусобақалар ҳужжатлари"
 msgid "мероприятия"
 msgstr "Тадбирлар"
 
-#: templates/includes/footer.html:53 templates/includes/header.html:54
-#: templates/includes/header.html:175
-msgid "сми о нас"
-msgstr "ОАВ биз ҳақимизда"
-
 #: templates/includes/footer.html:66 templates/includes/footer.html:90
 #: templates/includes/header.html:67 templates/includes/header.html:192
 msgid "контакты"
@@ -193,6 +225,5 @@ msgstr ""
 #~ msgstr "Мусобақалар баённомалари"
 
 #, fuzzy
-#~| msgid "положения"
 #~ msgid "Положения"
 #~ msgstr "Низоми"
