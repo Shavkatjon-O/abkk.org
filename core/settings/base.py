@@ -27,6 +27,7 @@ THIRD_PARTY_APPS = [
     "django_browser_reload",
     "ckeditor",
     "modeltranslation",
+    "sorl.thumbnail",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PARTY_APPS

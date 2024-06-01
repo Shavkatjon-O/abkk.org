@@ -9,9 +9,10 @@ django-browser-reload==1.12.1
 
 psycopg2-binary==2.9.9
 
-# ckeditor
 django-ckeditor==6.6.1
 
 django-modeltranslation==0.18.13
 
 pillow==10.3.0
+
+sorl-thumbnail==12.10.0
