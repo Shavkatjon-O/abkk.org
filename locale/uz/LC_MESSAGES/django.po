@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 09:44+0500\n"
-"PO-Revision-Date: 2024-06-01 09:52+0500\n"
+"POT-Creation-Date: 2024-06-01 09:56+0500\n"
+"PO-Revision-Date: 2024-06-01 09:58+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -107,7 +107,6 @@ msgid "Результаты"
 msgstr "НАТИЖАЛАР"
 
 #: templates/home.html:54
-#| msgid "Документы о соревнованиях"
 msgid "Список результатов по соревнованиям"
 msgstr ""
 "Мусобақалардаги\n"
@@ -118,7 +117,6 @@ msgid "Членство"
 msgstr "АЪЗО БЎЛИШ"
 
 #: templates/home.html:63
-#, fuzzy
 #| msgid "членство в конфедерации"
 msgid "Членство в конфедерации"
 msgstr "Конфедерациясига аъзо бўлиш"
@@ -128,9 +126,8 @@ msgid "ПРАВИЛА"
 msgstr "ҚОИДАЛАР"
 
 #: templates/home.html:72
-#, fuzzy
 #| msgid "правила белбогли кураш"
-msgid "Правила борьбы  белбогли кураш"
+msgid "Правила борьбы белбогли кураш"
 msgstr "Белбоғли кураш қоидалари"
 
 #: templates/home.html:86 templates/home.html:113
