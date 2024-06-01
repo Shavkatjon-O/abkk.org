@@ -140,6 +140,7 @@ class EventsAnnouncements(BaseModel):
 
 
 class EventsAboutUs(BaseModel):
+    title = models.CharField(max_length=256, null=True, blank=True)
     url = models.CharField(max_length=256)
 
     class Meta:

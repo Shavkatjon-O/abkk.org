@@ -17,9 +17,9 @@
 <div class="flex justify-center">
   <div class="xl:w-3/6 xl:px-0 px-8 mt-8">
 
-    <div class="flex flex-col items-center space-y-4">
+    <div class="flex flex-col space-y-4">
       {% for event in events_about_us %}
-        <a href="{{ event.url }}">{{ event.url }}</a>
+        <a href="{{ event.url }}" class="hover:underline">{{ event.title }}</a>
       {% endfor %}
     </div>
 
