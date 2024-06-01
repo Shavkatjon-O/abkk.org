@@ -63,6 +63,9 @@ class EventsAnnouncementsAdmin(TabbedTranslationAdmin):
     pass
 
 
+admin.site.register(models.EventsAboutUs)
+
+
 ##########################
 
 

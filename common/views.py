@@ -140,7 +140,9 @@ class EventsAnnouncementsDetailView(DetailView):
     context_object_name = "events_announcements_detail"
 
 
-class EventsAboutUsView(TemplateView):
+class EventsAboutUsView(ListView):
+    model = models.EventsAboutUs
+    context_object_name = "events_about_us"
     template_name = "events_about_us.html"
 
 

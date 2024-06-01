@@ -139,6 +139,14 @@ class EventsAnnouncements(BaseModel):
         verbose_name_plural = "Анонс"
 
 
+class EventsAboutUs(BaseModel):
+    url = models.CharField(max_length=256)
+
+    class Meta:
+        verbose_name = "СМИ о нас"
+        verbose_name_plural = "СМИ о нас"
+
+
 class GalleryPhoto(BaseModel):
     title = models.CharField(max_length=256)
     image = models.ImageField(upload_to="gallery/")
