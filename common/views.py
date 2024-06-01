@@ -155,7 +155,7 @@ class GalleryPhotoListView(ListView):
     model = models.GalleryPhoto
     context_object_name = "gallery_photo"
     template_name = "gallery_photo.html"
-    paginate_by = 5
+    paginate_by = 10
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
