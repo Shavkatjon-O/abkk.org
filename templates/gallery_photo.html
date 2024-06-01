@@ -18,18 +18,16 @@
 <div class="flex justify-center">
   <div class="xl:w-3/6 xl:px-0 px-8 mt-8">
     <div class="grid grid-cols-2 gap-4">
-
       {% for image in gallery_photo %}
-      <div class="relative overflow-hidden cursor-pointer group" onclick="showModal('{{ image.image.url }}')">
-        {% thumbnail image.image "400x300" crop="center" as croped_image %}
-          <img class="w-full h-auto transition-transform duration-300 transform-gpu group-hover:scale-110" src="{{ croped_image.url }}">
-        {% endthumbnail %}
-        <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          <span class="overlay-content font-medium">{% trans 'Нажмите, чтобы просмотреть' %}</span>
+        <div class="relative overflow-hidden cursor-pointer group" onclick="showModal('{{ image.image.url }}')">
+          {% thumbnail image.image "400x300" crop="center" as croped_image %}
+            <img class="w-full h-auto transition-transform duration-300 transform-gpu group-hover:scale-110" src="{{ croped_image.url }}">
+          {% endthumbnail %}
+          <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <span class="overlay-content font-medium">{% trans 'Нажмите, чтобы просмотреть' %}</span>
+          </div>
         </div>
-      </div>
       {% endfor %}
-
     </div>
   </div>
 </div>
@@ -38,7 +36,6 @@
   <button class="fixed z-50 top-10 right-10" onclick="closeModal()">
     <ion-icon name="close-outline" class="w-12 h-12 text-white"></ion-icon>
   </button>
-
   <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" />
 </div>
 
