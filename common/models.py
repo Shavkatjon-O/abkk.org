@@ -137,3 +137,16 @@ class EventsAnnouncements(BaseModel):
     class Meta:
         verbose_name = "Анонс"
         verbose_name_plural = "Анонс"
+
+
+class GalleryPhoto(BaseModel):
+    title = models.CharField(max_length=256)
+    image = models.ImageField(upload_to="gallery/")
+    date = models.CharField(max_length=32)
+
+    class Meta:
+        verbose_name = "Галерея Фото"
+        verbose_name_plural = "Галерея Фото"
+
+    def __str__(self):
+        return self.title

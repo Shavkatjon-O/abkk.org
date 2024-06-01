@@ -60,7 +60,7 @@
                     transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100
                     group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
             <a href="" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'видео' %}</a>
-            <a href="{% url 'gallery' %}" class="block py-2 hover:text-custom-green">{% trans 'фото' %}</a>
+            <a href="{% url 'gallery_photo' %}" class="block py-2 hover:text-custom-green">{% trans 'фото' %}</a>
         </div>
       </div>
       <div class="relative group cursor-pointer">
@@ -184,7 +184,7 @@
     </div>
     <div class="subMenu hidden px-8 text-sm font-semibold text-gray-500">
       <a href="" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'видео' %}</a>
-      <a href="{% url 'gallery' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'фото' %}</a>
+      <a href="{% url 'gallery_photo' %}" class="block border-b border-gray-200 py-3 hover:text-custom-green">{% trans 'фото' %}</a>
     </div>
   </div>
   <div class="group cursor-pointer">

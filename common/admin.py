@@ -63,8 +63,16 @@ class EventsAnnouncementsAdmin(TabbedTranslationAdmin):
     pass
 
 
+##########################
+
+
 @admin.register(models.Gallery)
 class GalleryAdmin(TabbedTranslationAdmin):
+    pass
+
+
+@admin.register(models.GalleryPhoto)
+class GalleryPhotoAdmin(TabbedTranslationAdmin):
     pass
 
 

@@ -62,6 +62,14 @@ class EventsAnnouncementsTranslationOptions(TranslationOptions):
     fields = ("title", "content")
 
 
+###################
+
+
 @register(models.Gallery)
 class GalleryTranslationOptions(TranslationOptions):
+    fields = ("title",)
+
+
+@register(models.GalleryPhoto)
+class GalleryPhotoTranslationOptions(TranslationOptions):
     fields = ("title",)

@@ -148,7 +148,7 @@ class ContactsView(TemplateView):
     template_name = "contacts.html"
 
 
-class GalleryPhoto(ListView):
-    model = models.Gallery
-    template_name = "gallery.html"
-    context_object_name = "gallery"
+class GalleryPhotoListView(ListView):
+    model = models.GalleryPhoto
+    context_object_name = "gallery_photo"
+    template_name = "gallery_photo.html"

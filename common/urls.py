@@ -89,7 +89,7 @@ urlpatterns = [
     ),
     path(
         "gallery/",
-        views.GalleryPhoto.as_view(),
-        name="gallery",
+        views.GalleryPhotoListView.as_view(),
+        name="gallery_photo",
     ),
 ]
