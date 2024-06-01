@@ -2,51 +2,29 @@ from django.urls import path
 from common import views
 
 urlpatterns = [
-    path(
-        "",
-        views.HomePageView.as_view(),
-        name="home_page",
-    ),
+    path("", views.HomePageView.as_view(), name="home_page"),
     path(
         "about/confederation/",
         views.AboutConfederationView.as_view(),
         name="about_confederation",
     ),
+    path("about/guides/", views.AboutGuidesView.as_view(), name="about_guides"),
     path(
-        "about/guides/",
-        views.AboutGuidesView.as_view(),
-        name="about_guides",
-    ),
-    path(
-        "about/documents/",
-        views.AboutDocumentsView.as_view(),
-        name="about_documents",
+        "about/documents/", views.AboutDocumentsView.as_view(), name="about_documents"
     ),
     path(
         "about/regulations/",
         views.AboutRegulationsView.as_view(),
         name="about_regulations",
     ),
-    path(
-        "about/symbols/",
-        views.AboutSymbolsView.as_view(),
-        name="about_symbols",
-    ),
+    path("about/symbols/", views.AboutSymbolsView.as_view(), name="about_symbols"),
     path(
         "about/membership/",
         views.AboutMembershipView.as_view(),
         name="about_membership",
     ),
-    path(
-        "kurash/history/",
-        views.KurashHistoryView.as_view(),
-        name="kurash_history",
-    ),
-    path(
-        "kurash/rules/",
-        views.KurashRulesView.as_view(),
-        name="kurash_rules",
-    ),
+    path("kurash/history/", views.KurashHistoryView.as_view(), name="kurash_history"),
+    path("kurash/rules/", views.KurashRulesView.as_view(), name="kurash_rules"),
     path(
         "kurash/provisions/",
         views.KurashProvisionsView.as_view(),
@@ -77,24 +55,8 @@ urlpatterns = [
         views.EventsAnnouncementsDetailView.as_view(),
         name="events_announcements_detail",
     ),
-    path(
-        "events/about_us/",
-        views.EventsAboutUsView.as_view(),
-        name="events_about_us",
-    ),
-    path(
-        "contacts/",
-        views.ContactsView.as_view(),
-        name="contacts",
-    ),
-    path(
-        "gallery/photo/",
-        views.GalleryPhotoListView.as_view(),
-        name="gallery_photo",
-    ),
-    path(
-        "gallery/video/",
-        views.GalleryVideoView.as_view(),
-        name="gallery_video",
-    ),
+    path("events/about_us/", views.EventsAboutUsView.as_view(), name="events_about_us"),
+    path("contacts/", views.ContactsView.as_view(), name="contacts"),
+    path("gallery/photo/", views.GalleryPhotoListView.as_view(), name="gallery_photo"),
+    path("gallery/video/", views.GalleryVideoListView.as_view(), name="gallery_video"),
 ]

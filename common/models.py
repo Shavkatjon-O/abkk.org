@@ -158,3 +158,11 @@ class GalleryPhoto(BaseModel):
 
     def __str__(self):
         return self.title
+
+
+class GalleryVideo(BaseModel):
+    url = models.CharField(max_length=256)
+
+    class Meta:
+        verbose_name = "Галерея Видео"
+        verbose_name_plural = "Галерея Видео"

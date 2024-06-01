@@ -3,25 +3,73 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %} {% trans 'о азиатской конфедерации белбогли кураш' %} {% endblock title %}
+{% block title %} {% trans 'видео' %} {% endblock title %}
 {% block content %}
 
 {% include 'includes/header.html' %}
 
 <div class="flex justify-center bg-gradient-to-tr from-custom-blue to-custom-green bg-green-500">
   <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8">
-    <h1 class="text-xl text-white font-semibold">{% trans 'о азиатской конфедерации белбогли кураш' %}</h1>
+    <h1 class="text-xl text-white font-semibold">{% trans 'видео' %}</h1>
   </div>
 </div>
 
 <div class="flex justify-center">
   <div class="xl:w-3/6 xl:px-0 px-8 mt-8">
-    <iframe width="560" height="315" class="w-full" src="https://www.youtube.com/embed/eX8wQ5ryy-o?si=ZnunBI9IYHLBpuGW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="grid grid-cols-2 gap-4">
+      {% for video in gallery_video %}
+        <div class="relative overflow-hidden cursor-pointer group" onclick="showModal('{{ video.url }}')">
+          <iframe class="w-full h-40" src="https://www.youtube.com/embed/{{ video.url|slice:'-11' }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <span class="overlay-content font-medium">{% trans 'Нажмите, чтобы просмотреть' %}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
-{% include 'includes/socials.html' %}
+<div class="flex justify-center mt-8">
+  <nav class="inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+    {% if gallery_video.has_previous %}
+      <a href="?page={{ gallery_video.previous_page_number }}" class="pagination-link inline-flex justify-center items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </a>
+    {% endif %}
 
+    <span class="pagination-link inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">{{ gallery_video.number }} / {{ gallery_video.paginator.num_pages }}</span>
+
+    {% if gallery_video.has_next %}
+      <a href="?page={{ gallery_video.next_page_number }}" class="pagination-link inline-flex justify-center items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </a>
+    {% endif %}
+  </nav>
+</div>
+
+<div id="modal" class="hidden fixed top-0 left-0 z-40 w-screen h-screen bg-black bg-opacity-60 justify-center items-center">
+  <button class="fixed z-50 top-10 right-10" onclick="closeModal()">
+    <ion-icon name="close-outline" class="w-12 h-12 text-white"></ion-icon>
+  </button>
+  <iframe id="modal-video" width="560" height="315" class="w-full max-w-[800px] max-h-[600px] object-cover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<script>
+  var modal = document.getElementById("modal");
+  var modalVideo = document.getElementById("modal-video");
+  function showModal(url) {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    modalVideo.src = url.replace('watch?v=', 'embed/') + '?autoplay=1';
+  }
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    modalVideo.src = '';
+  }
+</script>
+
+{% include 'includes/socials.html' %}
 {% include 'includes/footer.html' %}
 
 {% endblock content %}

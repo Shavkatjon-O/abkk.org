@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import TemplateView, ListView, DetailView
 from common import models
 
@@ -150,9 +151,6 @@ class ContactsView(TemplateView):
     template_name = "contacts.html"
 
 
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-
-
 class GalleryPhotoListView(ListView):
     model = models.GalleryPhoto
     context_object_name = "gallery_photo"
@@ -176,5 +174,24 @@ class GalleryPhotoListView(ListView):
         return context
 
 
-class GalleryVideoView(TemplateView):
+class GalleryVideoListView(ListView):
+    model = models.GalleryVideo
+    context_object_name = "gallery_video"
     template_name = "gallery_video.html"
+    paginate_by = 6
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        gallery_video = self.get_queryset()
+        paginator = Paginator(gallery_video, self.paginate_by)
+
+        page = self.request.GET.get("page")
+        try:
+            gallery_video = paginator.page(page)
+        except PageNotAnInteger:
+            gallery_video = paginator.page(1)
+        except EmptyPage:
+            gallery_video = paginator.page(paginator.num_pages)
+
+        context["gallery_video"] = gallery_video
+        return context

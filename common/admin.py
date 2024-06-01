@@ -79,4 +79,7 @@ class GalleryPhotoAdmin(TabbedTranslationAdmin):
     pass
 
 
+admin.site.register(models.GalleryVideo)
+
+
 admin.site.register(models.Carousel)
