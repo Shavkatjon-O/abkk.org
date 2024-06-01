@@ -87,4 +87,9 @@ urlpatterns = [
         views.ContactsView.as_view(),
         name="contacts",
     ),
+    path(
+        "gallery/",
+        views.GalleryPhoto.as_view(),
+        name="gallery",
+    ),
 ]

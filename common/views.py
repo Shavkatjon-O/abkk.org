@@ -146,3 +146,9 @@ class EventsAboutUsView(TemplateView):
 
 class ContactsView(TemplateView):
     template_name = "contacts.html"
+
+
+class GalleryPhoto(ListView):
+    model = models.Gallery
+    template_name = "gallery.html"
+    context_object_name = "gallery"

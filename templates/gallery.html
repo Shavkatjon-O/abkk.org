@@ -1,0 +1,54 @@
+{% extends '_base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block title %} {% trans 'галерея' %} {% endblock title %}
+{% block content %}
+
+{% include 'includes/header.html' %}
+
+<div class="flex justify-center bg-gradient-to-tr from-custom-blue to-custom-green bg-green-500">
+  <div class="xl:w-3/6 w-full xl:px-0 px-8 py-8">
+    <h1 class="text-xl text-white font-semibold">{% trans 'галерея' %}</h1>
+  </div>
+</div>
+
+<style>
+  .image-container img {
+    transition: transform 0.3s ease;
+  }
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  .overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .overlay:hover {
+    opacity: 1;
+  }
+</style>
+
+<div class="flex justify-center">
+  <div class="xl:w-3/6 xl:px-0 px-8 mt-8">
+
+    <div class="grid grid-cols-2 gap-4">
+      {% for image in gallery %}
+        <div class="relative overflow-hidden cursor-pointer">
+          <img class="w-full h-auto" src="{{ image.image.url }}" alt="Gallery Image">
+          <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white overlay transition-opacity duration-300">
+            <span class="overlay-content">Click to View</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+{% include 'includes/socials.html' %}
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
