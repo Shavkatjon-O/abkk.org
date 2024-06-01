@@ -148,7 +148,27 @@ class ContactsView(TemplateView):
     template_name = "contacts.html"
 
 
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
+
 class GalleryPhotoListView(ListView):
     model = models.GalleryPhoto
     context_object_name = "gallery_photo"
     template_name = "gallery_photo.html"
+    paginate_by = 5
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        gallery_photo = self.get_queryset()
+        paginator = Paginator(gallery_photo, self.paginate_by)
+
+        page = self.request.GET.get("page")
+        try:
+            gallery_photo = paginator.page(page)
+        except PageNotAnInteger:
+            gallery_photo = paginator.page(1)
+        except EmptyPage:
+            gallery_photo = paginator.page(paginator.num_pages)
+
+        context["gallery_photo"] = gallery_photo
+        return context

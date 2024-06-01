@@ -20,8 +20,8 @@
     <div class="grid grid-cols-2 gap-4">
       {% for image in gallery_photo %}
         <div class="relative overflow-hidden cursor-pointer group" onclick="showModal('{{ image.image.url }}')">
-          {% thumbnail image.image "400x300" crop="center" as croped_image %}
-            <img class="w-full h-auto transition-transform duration-300 transform-gpu group-hover:scale-110" src="{{ croped_image.url }}">
+          {% thumbnail image.image "400x300" crop="center" as cropped_image %}
+            <img class="w-full h-auto transition-transform duration-300 transform-gpu group-hover:scale-110" src="{{ cropped_image.url }}">
           {% endthumbnail %}
           <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <span class="overlay-content font-medium">{% trans 'Нажмите, чтобы просмотреть' %}</span>
@@ -29,6 +29,26 @@
         </div>
       {% endfor %}
     </div>
+  </div>
+</div>
+
+<div class="flex justify-center mt-8">
+  <div class="pagination">
+    <span class="step-links">
+      {% if gallery_photo.has_previous %}
+        <a href="?page=1">{% trans 'First' %}</a>
+        <a href="?page={{ gallery_photo.previous_page_number }}">{{ gallery_photo.previous_page_number }}</a>
+      {% endif %}
+
+      <span class="current">
+        {% trans 'Page' %} {{ gallery_photo.number }} {% trans 'of' %} {{ gallery_photo.paginator.num_pages }}.
+      </span>
+
+      {% if gallery_photo.has_next %}
+        <a href="?page={{ gallery_photo.next_page_number }}">{{ gallery_photo.next_page_number }}</a>
+        <a href="?page={{ gallery_photo.paginator.num_pages }}">{% trans 'Last' %}</a>
+      {% endif %}
+    </span>
   </div>
 </div>
 
@@ -52,7 +72,6 @@
     modal.classList.remove('flex')
   }
 </script>
-
 
 {% include 'includes/socials.html' %}
 
