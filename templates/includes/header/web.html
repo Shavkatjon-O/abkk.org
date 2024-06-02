@@ -2,87 +2,152 @@
 {% load i18n %}
 
 <header class="h-32 px-8 flex justify-between items-center">
+  <!-- LOGO START -->
   <div>
     <a href="{% url 'home_page' %}">
       {% get_current_language as LANGUAGE_CODE %}
       <img class="w-60" src="{% static 'img/logo/logo_'|add:LANGUAGE_CODE|add:'.png' %}" alt="Logo">
     </a>
   </div>
+  <!-- LOGO END -->
+
+  <!-- NAVBAR START -->
   <nav class="hidden xl:flex uppercase space-x-6">
     <div class="flex items-center justify-center">
+
       <div class="relative group cursor-pointer">
-        <a href="{% url 'about_confederation' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">{% trans 'о нас' %}</a>
+        <a href="{% url 'about_confederation' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">
+          <span>{% trans 'о нас' %}</span>
+        </a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2 transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
-          <a href="{% url 'about_confederation' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'о азиатской конфедерации белбогли кураш' %}</a>
-          <a href="{% url 'about_guides' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'руководства' %}</a>
-          <a href="{% url 'about_documents' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'учредительные документы' %}</a>
-          <a href="{% url 'about_regulations' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'устав' %}</a>
-          <a href="{% url 'about_symbols' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'символы азиатской конфедерации белбогли кураш' %}</a>
-          <a href="{% url 'about_membership' %}" class="block py-2 hover:text-custom-green">{% trans 'членство в конфедерации' %}</a>
+          <a href="{% url 'about_confederation' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'о азиатской конфедерации белбогли кураш' %}</span>
+          </a>
+          <a href="{% url 'about_guides' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'руководства' %}</span>
+          </a>
+          <a href="{% url 'about_documents' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'учредительные документы' %}</span>
+          </a>
+          <a href="{% url 'about_regulations' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'устав' %}</span>
+          </a>
+          <a href="{% url 'about_symbols' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'символы азиатской конфедерации белбогли кураш' %}</span>
+          </a>
+          <a href="{% url 'about_membership' %}" class="block py-2 hover:text-custom-green">
+            <span>{% trans 'членство в конфедерации' %}</span>
+          </a>
         </div>
       </div>
+
       <div class="relative group cursor-pointer">
-        <a href="{% url 'kurash_history' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">{% trans 'белбогли кураш' %}</a>
+        <a href="{% url 'kurash_history' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">
+          <span>{% trans 'белбогли кураш' %}</span>
+        </a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2 transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
-          <a href="{% url 'kurash_history' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'история белбогли кураш' %}</a>
-          <a href="{% url 'kurash_rules' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'правила белбогли кураш' %}</a>
-          <a href="{% url 'kurash_provisions' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'положения' %}</a>
-          <a href="" class="block py-2 hover:text-custom-green">{% trans 'антидопинг' %}</a>
+          <a href="{% url 'kurash_history' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'история белбогли кураш' %}</span>
+          </a>
+          <a href="{% url 'kurash_rules' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'правила белбогли кураш' %}</span>
+          </a>
+          <a href="{% url 'kurash_provisions' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'положения' %}</span>
+          </a>
+          <a href="" class="block py-2 hover:text-custom-green">
+            <span>{% trans 'антидопинг' %}</span>
+          </a>
         </div>
       </div>
+
       <div class="relative group cursor-pointer">
-        <a href="{% url 'competition_calendars' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">{% trans 'соревнования' %}</a>
+        <a href="{% url 'competition_calendars' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">
+          <span>{% trans 'соревнования' %}</span>
+        </a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2 transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
-          <a href="{% url 'competition_calendars' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'календарь соревнований' %}</a>
-          <a href="{% url 'competition_reports' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'протоколы соревнований' %}</a>
-          <a href="{% url 'competition_documents' %}" class="block py-2 hover:text-custom-green">{% trans 'документы о соревнованиях' %}</a>
+          <a href="{% url 'competition_calendars' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'календарь соревнований' %}</span>
+          </a>
+          <a href="{% url 'competition_reports' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'протоколы соревнований' %}</span>
+          </a>
+          <a href="{% url 'competition_documents' %}" class="block py-2 hover:text-custom-green">
+            <span>{% trans 'документы о соревнованиях' %}</span>
+          </a>
         </div>
       </div>
+
       <div class="relative group cursor-pointer">
-        <a href="{% url 'events_announcements' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">{% trans 'мероприятия' %}</a>
+        <a href="{% url 'events_announcements' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">
+          {% trans 'мероприятия' %}
+        </a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2 transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100 roup-hover:translate-y-0 flex flex-col bg-white text-gray-500">
-          <a href="{% url 'events_announcements' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'анонс' %}</a>
-          <a href="" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'мероприятия' %}</a>
-          <a href="{% url 'events_about_us' %}" class="block py-2 hover:text-custom-green">{% trans 'сми о нас' %}</a>
+          <a href="{% url 'events_announcements' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'анонс' %}</span>
+          </a>
+          <a href="" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'мероприятия' %}</span>
+          </a>
+          <a href="{% url 'events_about_us' %}" class="block py-2 hover:text-custom-green">
+            <span>{% trans 'сми о нас' %}</span>
+          </a>
         </div>
       </div>
+
       <div class="relative group cursor-pointer">
-        <a href="" class="p-4 font-medium transition duration-300 hover:bg-gray-100">{% trans 'галерея' %}</a>
+        <a href="" class="p-4 font-medium transition duration-300 hover:bg-gray-100">
+          <span>{% trans 'галерея' %}</span>
+        </a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2 transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
-          <a href="{% url 'gallery_video' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">{% trans 'видео' %}</a>
-          <a href="{% url 'gallery_photo' %}" class="block py-2 hover:text-custom-green">{% trans 'фото' %}</a>
+          <a href="{% url 'gallery_video' %}" class="block border-b border-gray-200 py-2 hover:text-custom-green">
+            <span>{% trans 'видео' %}</span>
+          </a>
+          <a href="{% url 'gallery_photo' %}" class="block py-2 hover:text-custom-green">
+            <span>{% trans 'фото' %}</span>
+          </a>
         </div>
       </div>
+
       <div class="relative group cursor-pointer">
-        <a href="{% url 'contacts' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">{% trans 'контакты' %}</a>
+        <a href="{% url 'contacts' %}" class="p-4 font-medium transition duration-300 hover:bg-gray-100">
+          <span>{% trans 'контакты' %}</span>
+        </a>
         <div class="space-y-2 absolute z-50 p-4 mt-4 text-sm font-semibold shadow-xl opacity-0 translate-y-2 transition-all w-max duration-300 ease-in-out invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 flex flex-col bg-white text-gray-500">
-          <a href="{% url 'contacts' %}" class="block py-2 hover:text-custom-green">{% trans 'контактная связь' %}</a>
+          <a href="{% url 'contacts' %}" class="block py-2 hover:text-custom-green">
+            <span>{% trans 'контактная связь' %}</span>
+          </a>
         </div>
       </div>
+
     </div>
   </nav>
+  <!-- NAVBAR END -->
 
-
+  <!-- LANGUAGE START -->
   <div class="w-50 hidden xl:flex justify-end items-center">
     <form action="{% url 'set_language' %}" method="post">
       {% csrf_token %}
+
       <div class="w-full">
-        <select name="language" onchange="this.form.submit()"
-                class="block w-32 cursor-pointer focus:border-gray-400 border-gray-400 appearance-none focus:ring-0 rounded-sm">
+        <select name="language" onchange="this.form.submit()" class="block w-32 cursor-pointer focus:border-gray-400 border-gray-400 appearance-none focus:ring-0 rounded-sm">
           {% get_current_language as LANGUAGE_CODE %}
           {% get_available_languages as LANGUAGES %}
+
           {% for lang in LANGUAGES %}
             <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
               {{ lang.1 }}
             </option>
           {% endfor %}
         </select>
+
         <input type="hidden" name="next" value="{{ request.path }}">
       </div>
     </form>
   </div>
+  <!-- LANGUAGE END -->
 
-
+  <!-- MENU START -->
   <div class="xl:hidden">
     <button id="mobile-menu-button" class="w-8 h-4 flex flex-col justify-between">
       <div class="w-full h-0.5 bg-gray-500 transition-transform transform"></div>
@@ -90,9 +155,7 @@
       <div class="w-full h-0.5 bg-gray-500 transition-transform transform"></div>
     </button>
   </div>
-
-
+  <!-- MENU END -->
 </header>
-
 
 {% include 'includes/header/mobile.html' %}
