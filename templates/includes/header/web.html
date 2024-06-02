@@ -3,16 +3,16 @@
 
 <header class="h-32 px-8 flex justify-between items-center">
   <!-- LOGO START -->
-  <div>
+  <div class="w-2/3 xl:w-1/6">
     <a href="{% url 'home_page' %}">
       {% get_current_language as LANGUAGE_CODE %}
-      <img class="w-60" src="{% static 'img/logo/logo_'|add:LANGUAGE_CODE|add:'.png' %}" alt="Logo">
+      <img class="w-56" src="{% static 'img/logo/logo_'|add:LANGUAGE_CODE|add:'.png' %}" alt="Logo">
     </a>
   </div>
   <!-- LOGO END -->
 
   <!-- NAVBAR START -->
-  <nav class="hidden xl:flex uppercase space-x-6">
+  <nav class="hidden xl:flex justify-center w-4/6 uppercase space-x-6">
     <div class="flex items-center justify-center">
 
       <div class="relative group cursor-pointer">
@@ -125,7 +125,7 @@
   <!-- NAVBAR END -->
 
   <!-- LANGUAGE START -->
-  <div class="w-50 hidden xl:flex justify-end items-center">
+  <div class="w-1/3 xl:w-1/6 hidden xl:flex justify-end items-center">
     <form action="{% url 'set_language' %}" method="post">
       {% csrf_token %}
 
