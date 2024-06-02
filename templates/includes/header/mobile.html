@@ -2,7 +2,7 @@
 {% load i18n %}
 
 <!-- MENU START -->
-<div class="hidden xl:hidden absolute uppercase shadow-sm w-full z-50 space-y-1 px-2 py-8 border-t border-t-gray-300 bg-white" id="mobile-menu">
+<div class="hidden xl:hidden absolute uppercase shadow-sm w-full z-50 space-y-1 px-2 py-8 shadow-lg border-y border-y-gray-300 bg-white" id="mobile-menu">
   <div class="w-full px-2 mb-4 flex justify-end items-center">
     <form action="{% url 'set_language' %}" class="w-full" method="post">
       {% csrf_token %}
