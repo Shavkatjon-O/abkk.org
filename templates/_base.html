@@ -14,8 +14,13 @@
 		{% tailwind_css %}
 	</head>
 	<body class="h-screen leading-normal tracking-normal">
-		{% block content %}
-		{% endblock content %}
+		{% include 'includes/header/header.html' %}
+		<div class="mt-32">
+			{% block content %}
+			{% endblock content %}
+		</div>
+
+		{% include 'includes/footer.html' %}
 
 		<!-- IONIC ICONS -->
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
