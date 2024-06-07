@@ -13,12 +13,12 @@ class Confederation(BaseModel):
         verbose_name_plural = _("confederation")
 
 
-class Leadership(BaseModel):
+class Management(BaseModel):
     content = RichTextUploadingField()
 
     class Meta:
-        verbose_name = _("leadership")
-        verbose_name_plural = _("leadership")
+        verbose_name = _("management")
+        verbose_name_plural = _("management")
 
 
 class ConstituentDocuments(BaseModel):
