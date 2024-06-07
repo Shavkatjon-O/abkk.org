@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import TemplateView, ListView, DetailView
-from common import models
+from apps.common import models
 
 
 class HomePageView(TemplateView):

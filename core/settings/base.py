@@ -19,7 +19,7 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-CUSTOM_APPS = ["theme", "common"]
+CUSTOM_APPS = ["theme", "apps.common"]
 
 THIRD_PARTY_APPS = [
     "rosetta",

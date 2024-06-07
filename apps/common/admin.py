@@ -1,6 +1,6 @@
 from django.contrib import admin
-from common.mixins import TabbedTranslationAdmin
-from common import models
+from apps.common.mixins import TabbedTranslationAdmin
+from apps.common import models
 
 
 @admin.register(models.AboutConfederation)

@@ -14,7 +14,7 @@ urlpatterns = [
     path("rosetta/", include("rosetta.urls")),
 ]
 
-urlpatterns += i18n_patterns(path("", include("common.urls")))
+urlpatterns += i18n_patterns(path("", include("apps.common.urls")))
 
 if settings.DEBUG:
     urlpatterns += [path("__reload__/", include("django_browser_reload.urls"))]

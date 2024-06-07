@@ -1,5 +1,5 @@
 from modeltranslation.translator import TranslationOptions, register
-from common import models
+from apps.common import models
 
 
 @register(models.AboutConfederation)
