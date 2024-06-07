@@ -20,13 +20,13 @@ DJANGO_APPS = [
 ]
 
 CUSTOM_APPS = [
-    "theme",
     "apps.common",
     "apps.about",
     "apps.kurash",
     "apps.competitions",
     "apps.events",
     "apps.gallery",
+    "apps.theme",
 ]
 
 THIRD_PARTY_APPS = [
@@ -112,7 +112,7 @@ STATIC_ROOT = BASE_DIR / "static"
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
-TAILWIND_APP_NAME = "theme"
+TAILWIND_APP_NAME = "apps.theme"
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
