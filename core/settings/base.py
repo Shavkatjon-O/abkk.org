@@ -21,11 +21,6 @@ DJANGO_APPS = [
 
 CUSTOM_APPS = [
     "apps.common",
-    "apps.about",
-    "apps.kurash",
-    "apps.competitions",
-    "apps.events",
-    "apps.gallery",
     "apps.theme",
 ]
 
