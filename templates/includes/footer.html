@@ -49,8 +49,8 @@
           <h2 class="text-lg font-bold uppercase">{% trans 'мероприятия' %}</h2>
           <ul class="space-y-1">
             <li><a href="{% url 'events_announcements' %}" class="hover:underline">{% trans 'анонс' %}</a></li>
-            <li><a href="" class="hover:underline">{% trans 'мероприятия' %}</a></li>
-            <li><a href="" class="hover:underline">{% trans 'сми о нас' %}</a></li>
+            <li><a href="{% url 'events_events' %}" class="hover:underline">{% trans 'мероприятия' %}</a></li>
+            <li><a href="{% url 'events_about_us' %}" class="hover:underline">{% trans 'сми о нас' %}</a></li>
           </ul>
         </div>
       </div>
@@ -84,10 +84,10 @@
         <ul class="space-y-2 uppercase text-md font-semibold">
           <li><a href="{% url 'about_confederation' %}" class="hover:underline">{% trans 'о нас' %}</a></li>
           <li><a href="{% url 'kurash_history' %}"hover:underline">{% trans 'белбогли кураш' %}</a></li>
-          <li><a href="" class="hover:underline">{% trans 'галерея' %}</a></li>
+          <li><a href="{% url 'gallery_photo' %}" class="hover:underline">{% trans 'галерея' %}</a></li>
           <li><a href="{% url 'competition_calendars' %}" class="hover:underline">{% trans 'соревнования' %}</a></li>
           <li><a href="{% url 'events_announcements' %}" class="hover:underline">{% trans 'мероприятия' %}</a></li>
-          <li><a href="" class="hover:underline">{% trans 'контакты' %}</a></li>
+          <li><a href="{% url 'contacts' %}" class="hover:underline">{% trans 'контакты' %}</a></li>
         </ul>
       </div>
 
