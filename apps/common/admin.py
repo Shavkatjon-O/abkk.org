@@ -63,10 +63,12 @@ class EventsAnnouncementsAdmin(TabbedTranslationAdmin):
     pass
 
 
+@admin.register(models.EventsEvents)
+class EventsEventsAdmin(TabbedTranslationAdmin):
+    pass
+
+
 admin.site.register(models.EventsAboutUs)
-
-
-##########################
 
 
 @admin.register(models.Gallery)

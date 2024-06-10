@@ -62,7 +62,9 @@ class EventsAnnouncementsTranslationOptions(TranslationOptions):
     fields = ("title", "content")
 
 
-###################
+@register(models.EventsEvents)
+class EventsEventsTranslationOptions(TranslationOptions):
+    fields = ("title",)
 
 
 @register(models.Gallery)
