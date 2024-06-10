@@ -135,6 +135,12 @@ class EventsAnnouncementsListView(ListView):
     context_object_name = "announcements"
 
 
+class EventsEventsListView(ListView):
+    model = models.EventsEvents
+    template_name = "events_events.html"
+    context_object_name = "events"
+
+
 class EventsAnnouncementsDetailView(DetailView):
     model = models.EventsAnnouncements
     template_name = "events_announcements_detail.html"

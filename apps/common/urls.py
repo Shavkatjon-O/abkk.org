@@ -55,6 +55,7 @@ urlpatterns = [
         views.EventsAnnouncementsDetailView.as_view(),
         name="events_announcements_detail",
     ),
+    path("events/events/", views.EventsEventsListView.as_view(), name="events_events"),
     path("events/about_us/", views.EventsAboutUsView.as_view(), name="events_about_us"),
     path("contacts/", views.ContactsView.as_view(), name="contacts"),
     path("gallery/photo/", views.GalleryPhotoListView.as_view(), name="gallery_photo"),
