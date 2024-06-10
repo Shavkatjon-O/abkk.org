@@ -13,6 +13,7 @@ class HomePageView(TemplateView):
         context["announcement"] = models.EventsAnnouncements.objects.first()
         context["carousel"] = models.Carousel.objects.all()
         context["gallery"] = models.Gallery.objects.all().order_by("-id")[:3]
+        context["event"] = models.EventsEvents.objects.first()
 
         return context
 
