@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-10 12:14+0500\n"
-"PO-Revision-Date: 2024-06-10 12:15+0500\n"
+"PO-Revision-Date: 2024-06-10 13:08+0500\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -187,7 +187,7 @@ msgstr "Галерея"
 
 #: templates/gallery_photo.html:31 templates/gallery_video.html:28
 msgid "Нажмите, чтобы просмотреть"
-msgstr ""
+msgstr "Кӧриш учун басинг"
 
 #: templates/gallery_video.html:6 templates/gallery_video.html:11
 #: templates/includes/footer.html:33 templates/includes/header/mobile.html:126
@@ -268,7 +268,7 @@ msgstr "Аълоқа учун"
 
 #: templates/includes/socials.html:4
 msgid "Следите за новостями"
-msgstr ""
+msgstr "Yangiliklarni kuzatib boring"
 
 #: templates/includes/sponsors/mobile.html:6
 #: templates/includes/sponsors/web.html:16
