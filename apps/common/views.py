@@ -10,10 +10,15 @@ class HomePageView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        context["announcement"] = models.EventsAnnouncements.objects.first()
+        # context["announcement"] = models.EventsAnnouncements.objects.first()
+        context["announcement"] = models.EventsAnnouncements.objects.latest('created_at')
+
         context["carousel"] = models.Carousel.objects.all()
         context["gallery"] = models.Gallery.objects.all().order_by("-id")[:3]
-        context["event"] = models.EventsEvents.objects.first()
+
+        # context["event"] = models.EventsEvents.objects.first()
+        context["event"] = models.EventsEvents.objects.latest('created_at')
+
 
         return context
 
